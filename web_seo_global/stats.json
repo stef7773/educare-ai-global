@@ -1,0 +1,30 @@
+{
+  "fecha_generacion": "2026-02-28T18:14:07.884866",
+  "total_paginas": 2400,
+  "idiomas": [
+    "en",
+    "es",
+    "de",
+    "fr",
+    "pt",
+    "it"
+  ],
+  "categorias": [
+    "matematicas",
+    "fisica",
+    "quimica",
+    "biologia",
+    "ingenieria",
+    "ingenieria_alimentos",
+    "recetas_cocina",
+    "deportes",
+    "estilo_vida",
+    "noticias",
+    "foros_discusion",
+    "redes_sociales",
+    "viajes_turismo",
+    "negocios_emprendimiento",
+    "tecnologia",
+    "salud_bienestar"
+  ]
+}
