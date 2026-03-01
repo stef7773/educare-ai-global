@@ -201,7 +201,7 @@ CATEGORIAS = {
 }
 
 # ============================================
-# ESTRATEGIA GLOBAL - MEGA EXPANDIDA
+# ESTRATEGIA GLOBAL - MEGA EXPANDIDA CON NUEVOS IDIOMAS
 # ============================================
 estrategia_global = {
     "en": [
@@ -583,7 +583,409 @@ estrategia_global = {
     ] + [f"{adj} {cat} {suf}"
          for adj in ["migliore", "top", "gratis", "online", "avanzato", "professionale"]
          for cat in ["matematica", "fisica", "chimica", "biologia", "ingegneria", "alimenti", "ricette", "sport", "stile vita", "notizie", "forum", "social media", "viaggi", "business", "tecnologia", "salute"]
-         for suf in ["risolutore", "calcolatrice", "aiuto", "assistente", "strumento", "app", "tutor", "consigli"]]
+         for suf in ["risolutore", "calcolatrice", "aiuto", "assistente", "strumento", "app", "tutor", "consigli"]],
+    
+    # ===== NUEVOS IDIOMAS ESTRATÉGICOS =====
+    
+    "jp": [  # Japonés
+        "微分積分 問題 解決", "積分計算 ステップバイステップ",
+        "微分 計算機 オンライン", "代数方程式 解き方",
+        "幾何学 問題 解決", "三角関数 計算機",
+        "統計学 宿題 ヘルプ", "確率 計算機",
+        "行列 計算 ステップ", "ベクトル 解析",
+        "微分方程式 解法", "線形代数 計算機",
+        "二次方程式 解く", "対数 計算機",
+        "分数 簡略化", "パーセント 計算",
+        "平方根 計算機", "指数 計算機",
+        "多項式 因数分解", "複素数 計算機",
+        "極限 計算機", "数列 級数",
+        "物理 問題 解決", "力学 計算機",
+        "熱力学 計算機", "電磁気学 問題",
+        "波動 計算機", "量子力学 ヘルプ",
+        "化学 問題 解決", "化学反応式 バランサー",
+        "有機化学 ヘルプ", "周期表 アプリ",
+        "生物学 ヘルプ", "細胞生物学 問題",
+        "遺伝学 問題 解決", "DNA複製 解説",
+        "工学 問題 解決", "回路設計 ヘルプ",
+        "プログラミング 演習", "アルゴリズム 解決",
+        "データ構造 ヘルプ", "データベース 設計",
+        "ネットワーク 計算機", "自動化 ソルバー",
+        "ロボット工学", "AI アルゴリズム",
+        "機械学習 ヘルプ", "深層学習 アシスタント",
+        "食品工学", "簡単 レシピ", "時短 レシピ",
+        "スポーツ ニュース", "サッカー 速報",
+        "ライフスタイル ヒント", "自己啓発",
+        "最新ニュース", "国際ニュース",
+        "フォーラム 議論", "オンライン コミュニティ",
+        "ソーシャルメディア 活用", "インスタグラム フォロワー 増やし方",
+        "旅行 情報", "格安 旅行", "観光地 おすすめ",
+        "ビジネス アイデア", "起業 ヒント", "スタートアップ",
+        "テクノロジー ニュース", "人工知能", "プログラミング言語",
+        "健康 ライフスタイル", "ウェルネス", "栄養学"
+    ] + [f"{adj}{cat}{suf}"
+         for adj in ["最高の", "トップ", "無料", "オンライン", "プロ", "簡単"]
+         for cat in ["数学", "物理", "化学", "生物", "工学", "料理", "スポーツ", "生活", "ニュース", "旅行", "ビジネス", "テクノロジー", "健康"]
+         for suf in ["解法", "計算機", "ヘルプ", "アシスタント", "ツール", "アプリ", "ガイド", "コツ"]],
+    
+    "kr": [  # Coreano
+        "미적분 문제 해결", "적분 계산 단계별",
+        "미분 계산기 온라인", "대수 방정식 풀이",
+        "기하학 문제 해결", "삼각법 계산기",
+        "통계 숙제 도움", "확률 계산기",
+        "행렬 계산 단계별", "벡터 해석",
+        "미분방정식 풀이", "선형대수 계산기",
+        "이차방정식 풀기", "로그 계산기",
+        "분수 단순화", "백분율 계산",
+        "제곱근 계산기", "지수 계산기",
+        "다항식 인수분해", "복소수 계산기",
+        "극한 계산기", "수열 급수",
+        "물리 문제 해결", "역학 계산기",
+        "열역학 계산기", "전자기학 문제",
+        "파동 계산기", "양자역학 도움",
+        "화학 문제 해결", "화학 반응식 균형 맞추기",
+        "유기화학 도움", "주기율표 앱",
+        "생물학 도움", "세포생물학 문제",
+        "유전학 문제 해결", "DNA 복제 설명",
+        "공학 문제 해결", "회로 설계 도움",
+        "프로그래밍 연습", "알고리즘 해결",
+        "자료 구조 도움", "데이터베이스 설계",
+        "네트워크 계산기", "자동화 솔버",
+        "로봇 공학", "AI 알고리즘",
+        "머신러닝 도움", "딥러닝 어시스턴트",
+        "식품 공학", "간단한 레시피", "빠른 레시피",
+        "스포츠 뉴스", "축구 소식",
+        "라이프스타일 팁", "자기 계발",
+        "최신 뉴스", "국제 뉴스",
+        "포럼 토론", "온라인 커뮤니티",
+        "소셜 미디어 팁", "인스타그램 팔로워 늘리기",
+        "여행 정보", "저렴한 여행", "관광지 추천",
+        "비즈니스 아이디어", "창업 팁", "스타트업",
+        "기술 뉴스", "인공지능", "프로그래밍 언어",
+        "건강 라이프스타일", "웰니스", "영양학"
+    ] + [f"{adj}{cat}{suf}"
+         for adj in ["최고의", "톱", "무료", "온라인", "전문가", "간편한"]
+         for cat in ["수학", "물리학", "화학", "생물학", "공학", "요리", "스포츠", "라이프", "뉴스", "여행", "비즈니스", "기술", "건강"]
+         for suf in ["해결사", "계산기", "도움", "어시스턴트", "도구", "앱", "가이드", "팁"]],
+    
+    "zh": [  # Chino simplificado
+        "微积分问题解决", "积分计算步骤",
+        "导数计算器在线", "代数方程求解",
+        "几何问题解决", "三角计算器",
+        "统计作业帮助", "概率计算器",
+        "矩阵计算步骤", "向量分析",
+        "微分方程求解", "线性代数计算器",
+        "二次方程求解", "对数计算器",
+        "分数简化", "百分比计算",
+        "平方根计算器", "指数计算器",
+        "多项式因式分解", "复数计算器",
+        "极限计算器", "数列级数",
+        "物理问题解决", "力学计算器",
+        "热力学计算器", "电磁学问题",
+        "波动计算器", "量子力学帮助",
+        "化学问题解决", "化学方程式配平",
+        "有机化学帮助", "元素周期表应用",
+        "生物学帮助", "细胞生物学问题",
+        "遗传学问题解决", "DNA复制解释",
+        "工程问题解决", "电路设计帮助",
+        "编程练习", "算法解决",
+        "数据结构帮助", "数据库设计",
+        "网络计算器", "自动化求解器",
+        "机器人技术", "人工智能算法",
+        "机器学习帮助", "深度学习助手",
+        "食品工程", "简单食谱", "快速食谱",
+        "体育新闻", "足球资讯",
+        "生活方式技巧", "个人发展",
+        "最新新闻", "国际新闻",
+        "论坛讨论", "在线社区",
+        "社交媒体技巧", "Instagram粉丝增长",
+        "旅游信息", "经济旅行", "景点推荐",
+        "商业创意", "创业技巧", "初创企业",
+        "科技新闻", "人工智能", "编程语言",
+        "健康生活方式", "健康", "营养学"
+    ] + [f"{adj}{cat}{suf}"
+         for adj in ["最好的", "顶级", "免费", "在线", "专业", "简单"]
+         for cat in ["数学", "物理", "化学", "生物", "工程", "食谱", "体育", "生活", "新闻", "旅游", "商业", "科技", "健康"]
+         for suf in ["解决器", "计算器", "帮助", "助手", "工具", "应用", "指南", "技巧"]],
+    
+    "ru": [  # Ruso
+        "решение задач по математике", "интегральный калькулятор по шагам",
+        "производная калькулятор онлайн", "решение алгебраических уравнений",
+        "решение задач по геометрии", "тригонометрический калькулятор",
+        "помощь со статистикой", "калькулятор вероятности",
+        "матричный калькулятор", "векторный анализ",
+        "дифференциальные уравнения решение", "линейная алгебра калькулятор",
+        "квадратное уравнение решение", "логарифмический калькулятор",
+        "упрощение дробей", "процентный калькулятор",
+        "квадратный корень калькулятор", "степенной калькулятор",
+        "разложение многочленов", "комплексные числа калькулятор",
+        "предел функции калькулятор", "ряды и последовательности",
+        "решение задач по физике", "калькулятор механики",
+        "термодинамика калькулятор", "электромагнетизм задачи",
+        "волновая физика", "квантовая механика помощь",
+        "решение задач по химии", "балансировка химических уравнений",
+        "органическая химия помощь", "таблица Менделеева",
+        "помощь по биологии", "клеточная биология",
+        "генетика задачи", "репликация ДНК",
+        "решение инженерных задач", "проектирование схем",
+        "программирование упражнения", "алгоритмы решение",
+        "структуры данных помощь", "проектирование баз данных",
+        "сетевой калькулятор", "автоматизация",
+        "робототехника", "алгоритмы ИИ",
+        "машинное обучение помощь", "глубокое обучение ассистент",
+        "пищевая инженерия", "простые рецепты", "быстрые рецепты",
+        "спортивные новости", "футбол новости",
+        "советы по образу жизни", "саморазвитие",
+        "последние новости", "международные новости",
+        "форумы обсуждения", "онлайн сообщества",
+        "советы по соцсетям", "рост Instagram",
+        "путешествия информация", "бюджетные путешествия",
+        "бизнес идеи", "предпринимательство советы",
+        "технологии новости", "искусственный интеллект",
+        "здоровый образ жизни", "здоровье", "питание"
+    ] + [f"{adj} {cat} {suf}"
+         for adj in ["лучший", "топ", "бесплатный", "онлайн", "продвинутый", "профессиональный"]
+         for cat in ["математика", "физика", "химия", "биология", "инженерия", "рецепты", "спорт", "жизнь", "новости", "путешествия", "бизнес", "технологии", "здоровье"]
+         for suf in ["решатель", "калькулятор", "помощь", "ассистент", "инструмент", "приложение", "гид", "советы"]],
+    
+    "ar": [  # Árabe
+        "حل مسائل التفاضل والتكامل", "حاسبة التكامل خطوة بخطوة",
+        "حاسبة المشتقات اونلاين", "حل المعادلات الجبرية",
+        "حل مسائل الهندسة", "حاسبة المثلثات",
+        "مساعدة في الإحصاء", "حاسبة الاحتمالات",
+        "حاسبة المصفوفات", "تحليل المتجهات",
+        "حل المعادلات التفاضلية", "حاسبة الجبر الخطي",
+        "حل المعادلة التربيعية", "حاسبة اللوغاريتمات",
+        "تبسيط الكسور", "حاسبة النسب المئوية",
+        "حاسبة الجذر التربيعي", "حاسبة الأسس",
+        "تحليل كثيرات الحدود", "حاسبة الأعداد المركبة",
+        "حاسبة النهايات", "المتسلسلات",
+        "حل مسائل الفيزياء", "حاسبة الميكانيكا",
+        "حاسبة الديناميكا الحرارية", "مسائل الكهرومغناطيسية",
+        "حاسبة الموجات", "مساعدة في ميكانيكا الكم",
+        "حل مسائل الكيمياء", "موازنة المعادلات الكيميائية",
+        "مساعدة في الكيمياء العضوية", "الجدول الدوري",
+        "مساعدة في علم الأحياء", "بيولوجيا الخلية",
+        "مسائل علم الوراثة", "تكرار الحمض النووي",
+        "حل مسائل الهندسة", "تصميم الدوائر",
+        "تمارين البرمجة", "حل الخوارزميات",
+        "مساعدة في هياكل البيانات", "تصميم قواعد البيانات",
+        "حاسبة الشبكات", "حلول الأتمتة",
+        "الروبوتات", "خوارزميات الذكاء الاصطناعي",
+        "مساعدة في تعلم الآلة", "مساعد التعلم العميق",
+        "هندسة الأغذية", "وصفات سهلة", "وصفات سريعة",
+        "أخبار رياضية", "أخبار كرة القدم",
+        "نصائح نمط الحياة", "تطوير الذات",
+        "آخر الأخبار", "أخبار دولية",
+        "منتديات نقاش", "مجتمعات اونلاين",
+        "نصائح لوسائل التواصل", "نمو انستغرام",
+        "معلومات السفر", "سفر اقتصادي",
+        "أفكار تجارية", "نصائح ريادة الأعمال",
+        "أخبار التكنولوجيا", "الذكاء الاصطناعي",
+        "صحة", "عافية", "تغذية"
+    ] + [f"{adj} {cat} {suf}"
+         for adj in ["أفضل", "ممتاز", "مجاني", "اونلاين", "متقدم", "احترافي"]
+         for cat in ["رياضيات", "فيزياء", "كيمياء", "أحياء", "هندسة", "وصفات", "رياضة", "حياة", "أخبار", "سفر", "أعمال", "تكنولوجيا", "صحة"]
+         for suf in ["حل", "حاسبة", "مساعدة", "مساعد", "أداة", "تطبيق", "دليل", "نصائح"]],
+    
+    "hi": [  # Hindi
+        "कैलकुलस समस्या हल करें", "इंटीग्रल कैलकुलेटर स्टेप बाय स्टेप",
+        "डेरिवेटिव सॉल्वर ऑनलाइन", "बीजगणित समीकरण हल करें",
+        "ज्यामिति समस्या हल करें", "त्रिकोणमिति कैलकुलेटर",
+        "सांख्यिकी होमवर्क हेल्पर", "प्रायिकता कैलकुलेटर",
+        "मैट्रिक्स कैलकुलेटर", "वेक्टर कैलकुलस",
+        "डिफरेंशियल इक्वेशन सॉल्वर", "लीनियर अलजेब्रा कैलकुलेटर",
+        "क्वाड्रेटिक इक्वेशन सॉल्वर", "लघुगणक कैलकुलेटर",
+        "भिन्न सरल करें", "प्रतिशत कैलकुलेटर",
+        "वर्गमूल कैलकुलेटर", "घातांक कैलकुलेटर",
+        "बहुपद गुणनखंड", "सम्मिश्र संख्या कैलकुलेटर",
+        "सीमा कैलकुलेटर", "श्रेणी और अनुक्रम",
+        "भौतिकी समस्या हल करें", "यांत्रिकी कैलकुलेटर",
+        "ऊष्मागतिकी कैलकुलेटर", "विद्युत चुंबकत्व समस्या",
+        "तरंग भौतिकी", "क्वांटम यांत्रिकी सहायता",
+        "रसायन विज्ञान समस्या हल करें", "रासायनिक समीकरण संतुलित करें",
+        "कार्बनिक रसायन सहायता", "आवर्त सारणी",
+        "जीव विज्ञान सहायता", "कोशिका जीव विज्ञान",
+        "आनुवंशिकी समस्या", "डीएनए प्रतिकृति",
+        "इंजीनियरिंग समस्या हल करें", "सर्किट डिजाइन सहायता",
+        "प्रोग्रामिंग अभ्यास", "एल्गोरिदम सॉल्वर",
+        "डेटा संरचना सहायता", "डेटाबेस डिजाइन",
+        "नेटवर्क कैलकुलेटर", "स्वचालन सॉल्वर",
+        "रोबोटिक्स", "एआई एल्गोरिदम",
+        "मशीन लर्निंग सहायता", "डीप लर्निंग असिस्टेंट",
+        "खाद्य इंजीनियरिंग", "आसान रेसिपी", "त्वरित रेसिपी",
+        "खेल समाचार", "फुटबॉल समाचार",
+        "जीवन शैली टिप्स", "आत्म विकास",
+        "ताजा समाचार", "अंतरराष्ट्रीय समाचार",
+        "फोरम चर्चा", "ऑनलाइन समुदाय",
+        "सोशल मीडिया टिप्स", "इंस्टाग्राम ग्रोथ",
+        "यात्रा जानकारी", "बजट यात्रा",
+        "व्यवसाय विचार", "उद्यमिता टिप्स",
+        "प्रौद्योगिकी समाचार", "आर्टिफिशियल इंटेलिजेंस",
+        "स्वस्थ जीवन शैली", "कल्याण", "पोषण"
+    ] + [f"{adj} {cat} {suf}"
+         for adj in ["सर्वश्रेष्ठ", "शीर्ष", "मुफ्त", "ऑनलाइन", "उन्नत", "पेशेवर"]
+         for cat in ["गणित", "भौतिकी", "रसायन", "जीव विज्ञान", "इंजीनियरिंग", "रेसिपी", "खेल", "जीवन शैली", "समाचार", "यात्रा", "व्यवसाय", "प्रौद्योगिकी", "स्वास्थ्य"]
+         for suf in ["हल करने वाला", "कैलकुलेटर", "सहायता", "सहायक", "उपकरण", "ऐप", "गाइड", "टिप्स"]],
+    
+    "nl": [  # Holandés
+        "calculus problemen oplossen", "integrale rekenmachine stap voor stap",
+        "afgeleide solver online", "algebra vergelijking oplossen",
+        "meetkunde problemen oplossen", "trigonometrie rekenmachine",
+        "statistiek huiswerk hulp", "kansrekening rekenmachine",
+        "matrix rekenmachine", "vector calculus",
+        "differentiaalvergelijkingen oplossen", "lineaire algebra rekenmachine",
+        "kwadratische vergelijking oplossen", "logaritme rekenmachine",
+        "breuken vereenvoudigen", "procent rekenmachine",
+        "wortel rekenmachine", "exponent rekenmachine",
+        "polynomen ontbinden", "complexe getallen rekenmachine",
+        "limiet rekenmachine", "reeksen",
+        "natuurkunde problemen oplossen", "mechanica rekenmachine",
+        "thermodynamica rekenmachine", "elektromagnetisme problemen",
+        "golven natuurkunde", "kwantummechanica hulp",
+        "scheikunde problemen oplossen", "chemische vergelijkingen balanceren",
+        "organische chemie hulp", "periodiek systeem",
+        "biologie hulp", "celbiologie",
+        "genetica problemen", "DNA replicatie",
+        "techniek problemen oplossen", "circuit ontwerp hulp",
+        "programmeren oefeningen", "algoritmes solver",
+        "datastructuren hulp", "database ontwerp",
+        "netwerk rekenmachine", "automatisering solver",
+        "robotica", "AI algoritmes",
+        "machine learning hulp", "deep learning assistent",
+        "voedingstechnologie", "makkelijk recepten", "snelle recepten",
+        "sport nieuws", "voetbal nieuws",
+        "levensstijl tips", "persoonlijke ontwikkeling",
+        "laatste nieuws", "internationaal nieuws",
+        "forum discussies", "online communities",
+        "sociale media tips", "instagram groei",
+        "reis informatie", "budget reizen",
+        "zakelijke ideeën", "ondernemerschap tips",
+        "technologie nieuws", "kunstmatige intelligentie",
+        "gezond leven", "welzijn", "voeding"
+    ] + [f"{adj} {cat} {suf}"
+         for adj in ["beste", "top", "gratis", "online", "geavanceerd", "professioneel"]
+         for cat in ["wiskunde", "natuurkunde", "scheikunde", "biologie", "techniek", "recepten", "sport", "levensstijl", "nieuws", "reizen", "zaken", "technologie", "gezondheid"]
+         for suf in ["oplosser", "rekenmachine", "hulp", "assistent", "tool", "app", "gids", "tips"]],
+    
+    "pl": [  # Polaco
+        "rozwiązywanie problemów rachunku różniczkowego", "kalkulator całek krok po kroku",
+        "kalkulator pochodnych online", "rozwiązywanie równań algebraicznych",
+        "rozwiązywanie problemów geometrycznych", "kalkulator trygonometryczny",
+        "pomoc z statystyki", "kalkulator prawdopodobieństwa",
+        "kalkulator macierzy", "rachunek wektorowy",
+        "rozwiązywanie równań różniczkowych", "kalkulator algebry liniowej",
+        "rozwiązywanie równań kwadratowych", "kalkulator logarytmów",
+        "upraszczanie ułamków", "kalkulator procentów",
+        "kalkulator pierwiastków", "kalkulator potęg",
+        "faktoryzacja wielomianów", "kalkulator liczb zespolonych",
+        "kalkulator granic", "szeregi i ciągi",
+        "rozwiązywanie problemów fizycznych", "kalkulator mechaniki",
+        "kalkulator termodynamiki", "problemy elektromagnetyzmu",
+        "fizyka fal", "pomoc z mechaniki kwantowej",
+        "rozwiązywanie problemów chemicznych", "bilansowanie równań chemicznych",
+        "pomoc z chemii organicznej", "układ okresowy",
+        "pomoc z biologii", "biologia komórkowa",
+        "problemy genetyczne", "replikacja DNA",
+        "rozwiązywanie problemów inżynieryjnych", "projektowanie obwodów",
+        "ćwiczenia z programowania", "rozwiązywanie algorytmów",
+        "struktury danych pomoc", "projektowanie baz danych",
+        "kalkulator sieciowy", "automatyzacja",
+        "robotyka", "algorytmy AI",
+        "uczenie maszynowe pomoc", "głębokie uczenie asystent",
+        "inżynieria żywności", "łatwe przepisy", "szybkie przepisy",
+        "wiadomości sportowe", "wiadomości piłkarskie",
+        "wskazówki dotyczące stylu życia", "rozwój osobisty",
+        "najnowsze wiadomości", "wiadomości międzynarodowe",
+        "fora dyskusyjne", "społeczności online",
+        "wskazówki dotyczące mediów społecznościowych", "wzrost na Instagramie",
+        "informacje turystyczne", "budżetowe podróże",
+        "pomysły na biznes", "wskazówki dotyczące przedsiębiorczości",
+        "wiadomości technologiczne", "sztuczna inteligencja",
+        "zdrowy styl życia", "dobrostan", "odżywianie"
+    ] + [f"{adj} {cat} {suf}"
+         for adj in ["najlepszy", "top", "darmowy", "online", "zaawansowany", "profesjonalny"]
+         for cat in ["matematyka", "fizyka", "chemia", "biologia", "inżynieria", "przepisy", "sport", "styl życia", "wiadomości", "podróże", "biznes", "technologia", "zdrowie"]
+         for suf in ["rozwiązywacz", "kalkulator", "pomoc", "asystent", "narzędzie", "aplikacja", "przewodnik", "wskazówki"]],
+    
+    "tr": [  # Turco
+        "kalkülüs problemleri çözme", "integral hesaplama adım adım",
+        "türev çözücü online", "cebir denklem çözme",
+        "geometri problemleri çözme", "trigonometri hesaplayıcı",
+        "istatistik ödev yardımı", "olasılık hesaplayıcı",
+        "matris hesaplayıcı", "vektör hesabı",
+        "diferansiyel denklem çözücü", "lineer cebir hesaplayıcı",
+        "ikinci dereceden denklem çözücü", "logaritma hesaplayıcı",
+        "kesir sadeleştirme", "yüzde hesaplayıcı",
+        "karekök hesaplayıcı", "üs hesaplayıcı",
+        "polinom çarpanlara ayırma", "karmaşık sayı hesaplayıcı",
+        "limit hesaplayıcı", "diziler ve seriler",
+        "fizik problemleri çözme", "mekanik hesaplayıcı",
+        "termodinamik hesaplayıcı", "elektromanyetizma problemleri",
+        "dalga fiziği", "kuantum mekaniği yardım",
+        "kimya problemleri çözme", "kimyasal denklem dengeleme",
+        "organik kimya yardım", "periyodik tablo",
+        "biyoloji yardım", "hücre biyolojisi",
+        "genetik problemleri", "DNA replikasyonu",
+        "mühendislik problemleri çözme", "devre tasarımı yardım",
+        "programlama alıştırmaları", "algoritma çözücü",
+        "veri yapıları yardım", "veritabanı tasarımı",
+        "ağ hesaplayıcı", "otomasyon çözücü",
+        "robotik", "yapay zeka algoritmaları",
+        "makine öğrenimi yardım", "derin öğrenme asistanı",
+        "gıda mühendisliği", "kolay tarifler", "hızlı tarifler",
+        "spor haberleri", "futbol haberleri",
+        "yaşam tarzı ipuçları", "kişisel gelişim",
+        "son dakika haberleri", "uluslararası haberler",
+        "forum tartışmaları", "çevrimiçi topluluklar",
+        "sosyal medya ipuçları", "instagram büyüme",
+        "seyahat bilgileri", "bütçe dostu seyahat",
+        "iş fikirleri", "girişimcilik ipuçları",
+        "teknoloji haberleri", "yapay zeka",
+        "sağlıklı yaşam", "sağlık", "beslenme"
+    ] + [f"{adj} {cat} {suf}"
+         for adj in ["en iyi", "üst", "ücretsiz", "çevrimiçi", "gelişmiş", "profesyonel"]
+         for cat in ["matematik", "fizik", "kimya", "biyoloji", "mühendislik", "tarifler", "spor", "yaşam", "haberler", "seyahat", "iş", "teknoloji", "sağlık"]
+         for suf in ["çözücü", "hesaplayıcı", "yardım", "asistan", "araç", "uygulama", "rehber", "ipuçları"]],
+    
+    "sv": [  # Sueco
+        "kalkylproblem lösning", "integralkalkylator steg för steg",
+        "derivata lösare online", "algebra ekvationslösning",
+        "geometri problem lösning", "trigonometri kalkylator",
+        "statistik läxhjälp", "sannolikhetskalkylator",
+        "matris kalkylator", "vektoranalys",
+        "differentialekvationer lösare", "linjär algebra kalkylator",
+        "andragradsekvation lösare", "logaritm kalkylator",
+        "bråk förenkling", "procent kalkylator",
+        "kvadratrot kalkylator", "exponent kalkylator",
+        "polynom faktorisering", "komplexa tal kalkylator",
+        "gränsvärde kalkylator", "serier och följder",
+        "fysik problem lösning", "mekanik kalkylator",
+        "termodynamik kalkylator", "elektromagnetism problem",
+        "vågfysik", "kvantmekanik hjälp",
+        "kemi problem lösning", "kemisk ekvation balansering",
+        "organisk kemi hjälp", "periodiska systemet",
+        "biologi hjälp", "cellbiologi",
+        "genetik problem", "DNA-replikation",
+        "ingenjörsproblem lösning", "kretsdesign hjälp",
+        "programmering övningar", "algoritm lösare",
+        "datastrukturer hjälp", "databasdesign",
+        "nätverkskalkylator", "automatisering lösare",
+        "robotik", "AI-algoritmer",
+        "maskininlärning hjälp", "djupinlärning assistent",
+        "livsmedelsteknik", "enkla recept", "snabba recept",
+        "sportnyheter", "fotbollsnyheter",
+        "livsstilstips", "personlig utveckling",
+        "senaste nyheterna", "internationella nyheter",
+        "forumdiskussioner", "onlinegemenskaper",
+        "sociala medier tips", "instagram tillväxt",
+        "reseinformation", "budgetresor",
+        "affärsidéer", "entreprenörskap tips",
+        "tekniknyheter", "artificiell intelligens",
+        "hälsosam livsstil", "välbefinnande", "näring"
+    ] + [f"{adj} {cat} {suf}"
+         for adj in ["bästa", "topp", "gratis", "online", "avancerad", "professionell"]
+         for cat in ["matematik", "fysik", "kemi", "biologi", "ingenjörskonst", "recept", "sport", "livsstil", "nyheter", "resor", "företag", "teknik", "hälsa"]
+         for suf in ["lösare", "kalkylator", "hjälp", "assistent", "verktyg", "app", "guide", "tips"]]
 }
 
 # ============================================
@@ -773,19 +1175,77 @@ textos = {
             "Baixe agora - É grátis!",
             "Comece a aprender mais inteligente hoje"
         ]
+    },
+    "it": {
+        "h1_variations": [
+            "Problemi con {tema}?",
+            "Soluzioni istantanee di {tema} con IA",
+            "Padroneggia {tema} in secondi",
+            "Il tuo tutor personale di {tema}",
+            "Risolvi qualsiasi problema di {tema}",
+            "Risolutore di {tema} con IA",
+            "Smetti di stressarti con {tema}",
+            "Il modo intelligente di imparare {tema}"
+        ],
+        "desc": "Educare AI è lo strumento educativo più avanzato. Risolvi problemi complessi di {tema} all'istante con spiegazioni passo passo. 1M+ studenti già ci usano.",
+        "btn": "🚀 SCARICA SU PLAY STORE",
+        "benefit": "✓ Soluzioni Istantanee ✓ Passo a Passo ✓ Tutor IA 24/7 ✓ 98% Precisione",
+        "subtexts": [
+            "⭐ 4.8/5 da 15.000+ recensioni",
+            "🏆 #1 App Educativa in 25 paesi",
+            "📚 Usato da studenti delle migliori università",
+            "🎓 Migliora i tuoi voti del 40%"
+        ],
+        "features": [
+            "Scansiona e risolvi con la fotocamera",
+            "Spiegazioni passo passo",
+            "Problemi pratici risolti",
+            "Grafici e visualizzazioni",
+            "Salva e condividi soluzioni",
+            "Modalità offline disponibile"
+        ],
+        "cta_urgency": [
+            "Offerta limitata: Prova gratuita",
+            "Scarica ora - Gratis!",
+            "Inizia a imparare in modo più intelligente oggi"
+        ]
     }
 }
 
 # Añadir textos básicos para idiomas que no tienen definición completa
-for lang in ["it", "jp", "kr"]:
+for lang in ["it", "jp", "kr", "zh", "ru", "ar", "hi", "nl", "pl", "tr", "sv"]:
     if lang not in textos:
         textos[lang] = textos["en"].copy()
         if lang == "jp":
             textos[lang]["btn"] = "🚀 Playストアで入手"
+            textos[lang]["desc"] = "Educare AIは最も先進的な教育ツールです。{tema}の複雑な問題をステップバイステップの説明で瞬時に解決します。100万人以上の学生が成績を向上させています。"
         elif lang == "kr":
             textos[lang]["btn"] = "🚀 Play 스토어에서 다운로드"
-        elif lang == "it":
-            textos[lang]["btn"] = "🚀 SCARICA SU PLAY STORE"
+            textos[lang]["desc"] = "Educare AI는 가장 진보된 교육 도구입니다. {tema}의 복잡한 문제를 단계별 설명으로 즉시 해결합니다. 이미 100만 명 이상의 학생들이 성적을 향상시켰습니다."
+        elif lang == "zh":
+            textos[lang]["btn"] = "🚀 在Play商店下载"
+            textos[lang]["desc"] = "Educare AI是最先进的教育工具。通过逐步解释，立即解决{tema}的复杂问题。已有100多万学生提高了他们的成绩。"
+        elif lang == "ru":
+            textos[lang]["btn"] = "🚀 СКАЧАТЬ В PLAY STORE"
+            textos[lang]["desc"] = "Educare AI - самый передовой образовательный инструмент. Мгновенно решайте сложные задачи по {tema} с пошаговыми объяснениями. Более 1 миллиона студентов уже улучшили свои оценки."
+        elif lang == "ar":
+            textos[lang]["btn"] = "🚀 التحميل من متجر بلاي"
+            textos[lang]["desc"] = "Educare AI هي الأداة التعليمية الأكثر تقدمًا. حل مشاكل {tema} المعقدة فورًا مع شرح خطوة بخطوة. انضم إلى أكثر من مليون طالب قاموا بتحسين درجاتهم."
+        elif lang == "hi":
+            textos[lang]["btn"] = "🚀 प्ले स्टोर से डाउनलोड करें"
+            textos[lang]["desc"] = "Educare AI सबसे उन्नत शैक्षिक उपकरण है। चरण-दर-चरण स्पष्टीकरण के साथ {tema} की जटिल समस्याओं को तुरंत हल करें। 10 लाख से अधिक छात्र जुड़ चुके हैं।"
+        elif lang == "nl":
+            textos[lang]["btn"] = "🚀 DOWNLOADEN IN PLAY STORE"
+            textos[lang]["desc"] = "Educare AI is de meest geavanceerde educatieve tool. Los complexe {tema} problemen direct op met stap-voor-stap uitleg. 1M+ studenten gebruiken ons al."
+        elif lang == "pl":
+            textos[lang]["btn"] = "🚀 POBIERZ Z PLAY STORE"
+            textos[lang]["desc"] = "Educare AI to najbardziej zaawansowane narzędzie edukacyjne. Rozwiązuj złożone problemy {tema} natychmiast z wyjaśnieniami krok po kroku. 1M+ studentów już nam ufa."
+        elif lang == "tr":
+            textos[lang]["btn"] = "🚀 PLAY STORE'DAN İNDİR"
+            textos[lang]["desc"] = "Educare AI en gelişmiş eğitim aracıdır. {tema} ile ilgili karmaşık sorunları adım adım açıklamalarla anında çözün. 1 milyondan fazla öğrenci bize katıldı."
+        elif lang == "sv":
+            textos[lang]["btn"] = "🚀 LADDA NER PÅ PLAY STORE"
+            textos[lang]["desc"] = "Educare AI är det mest avancerade pedagogiska verktyget. Lös komplexa {tema} problem direkt med steg-för-steg förklaringar. Över 1 miljon studenter har redan anslutit sig."
 
 # ============================================
 # FUNCIONES DE GENERACIÓN
@@ -803,7 +1263,15 @@ def generar_keywords_infinitas(base_keywords, lang, count=500):
         "pt": ["como resolver", "aprender", "dominar", "entender", "praticar", "tutorial de", "guia para", "ajuda com", "solucionador de", "calculadora de", "dicas para", "conselhos para", "encontrar", "buscar", "descobrir"],
         "it": ["come risolvere", "imparare", "padroneggiare", "capire", "praticare", "tutorial per", "guida per", "aiuto con", "risolutore per", "calcolatrice di", "consigli per", "suggerimenti per", "trovare", "cercare", "scoprire"],
         "jp": ["解き方", "学習", "マスター", "理解", "練習", "チュートリアル", "ガイド", "ヘルプ", "ソルバー", "計算機", "ヒント", "アドバイス", "見つける", "検索", "発見"],
-        "kr": ["해결 방법", "학습", "마스터", "이해", "연습", "튜토리얼", "가이드", "도움", "해결사", "계산기", "팁", "조언", "찾기", "검색", "발견"]
+        "kr": ["해결 방법", "학습", "마스터", "이해", "연습", "튜토리얼", "가이드", "도움", "해결사", "계산기", "팁", "조언", "찾기", "검색", "발견"],
+        "zh": ["如何解决", "学习", "掌握", "理解", "练习", "教程", "指南", "帮助", "解决器", "计算器", "提示", "建议", "找到", "搜索", "发现"],
+        "ru": ["как решить", "учиться", "освоить", "понять", "практиковаться", "учебник", "руководство", "помощь", "решатель", "калькулятор", "советы", "рекомендации", "найти", "искать", "открыть"],
+        "ar": ["كيفية حل", "تعلم", "إتقان", "فهم", "ممارسة", "برنامج تعليمي", "دليل", "مساعدة", "حلال", "آلة حاسبة", "نصائح", "اقتراحات", "العثور على", "بحث", "اكتشاف"],
+        "hi": ["कैसे हल करें", "सीखें", "मास्टर", "समझें", "अभ्यास करें", "ट्यूटोरियल", "गाइड", "सहायता", "हल करने वाला", "कैलकुलेटर", "सुझाव", "सलाह", "ढूंढें", "खोजें", "खोज करें"],
+        "nl": ["hoe op te lossen", "leren", "beheersen", "begrijpen", "oefenen", "tutorial voor", "gids voor", "hulp bij", "oplosser voor", "rekenmachine voor", "tips voor", "advies over", "vinden", "zoeken", "ontdekken"],
+        "pl": ["jak rozwiązać", "uczyć się", "opanować", "zrozumieć", "ćwiczyć", "samouczek", "przewodnik", "pomoc", "rozwiązywacz", "kalkulator", "wskazówki", "porady", "znaleźć", "szukać", "odkryć"],
+        "tr": ["nasıl çözülür", "öğrenmek", "ustalaşmak", "anlamak", "pratik yapmak", "eğitici", "rehber", "yardım", "çözücü", "hesaplayıcı", "ipuçları", "tavsiye", "bulmak", "aramak", "keşfetmek"],
+        "sv": ["hur man löser", "lära sig", "bemästra", "förstå", "öva", "handledning för", "guide till", "hjälp med", "lösare för", "kalkylator för", "tips för", "råd om", "hitta", "söka", "upptäcka"]
     }
     
     sufijos = {
@@ -814,7 +1282,15 @@ def generar_keywords_infinitas(base_keywords, lang, count=500):
         "pt": ["passo a passo", "online grátis", "com IA", "calculadora", "solucionador", "ajuda", "tutor", "guia", "exercícios", "problemas", "dicas", "conselhos", "truques", "segredos", "recomendações"],
         "it": ["passo dopo passo", "online gratis", "con IA", "calcolatrice", "risolutore", "aiuto", "tutor", "guida", "esercizi", "problemi", "consigli", "suggerimenti", "trucchi", "segreti", "raccomandazioni"],
         "jp": ["ステップバイステップ", "オンライン無料", "AI付き", "計算機", "ソルバー", "ヘルプ", "チューター", "ガイド", "練習問題", "演習", "ヒント", "アドバイス", "コツ", "秘訣", "おすすめ"],
-        "kr": ["단계별", "온라인 무료", "AI 포함", "계산기", "해결사", "도움", "튜터", "가이드", "연습문제", "문제", "팁", "조언", "꿀팁", "비결", "추천"]
+        "kr": ["단계별", "온라인 무료", "AI 포함", "계산기", "해결사", "도움", "튜터", "가이드", "연습문제", "문제", "팁", "조언", "꿀팁", "비결", "추천"],
+        "zh": ["逐步", "在线免费", "带AI", "计算器", "解决器", "帮助", "导师", "指南", "练习题", "练习", "提示", "建议", "技巧", "秘诀", "推荐"],
+        "ru": ["шаг за шагом", "бесплатно онлайн", "с ИИ", "калькулятор", "решатель", "помощь", "репетитор", "руководство", "задачи для практики", "упражнения", "советы", "рекомендации", "трюки", "секреты", "лайфхаки"],
+        "ar": ["خطوة بخطوة", "مجاني اونلاين", "مع الذكاء الاصطناعي", "آلة حاسبة", "حلال", "مساعدة", "مدرس", "دليل", "مسائل تدريبية", "تمارين", "نصائح", "اقتراحات", "حيل", "أسرار", "توصيات"],
+        "hi": ["चरण दर चरण", "ऑनलाइन मुफ्त", "AI के साथ", "कैलकुलेटर", "हल करने वाला", "सहायता", "ट्यूटर", "गाइड", "अभ्यास समस्याएं", "अभ्यास", "सुझाव", "सलाह", "ट्रिक्स", "रहस्य", "सिफारिशें"],
+        "nl": ["stap voor stap", "online gratis", "met AI", "rekenmachine", "oplosser", "hulp", "tutor", "gids", "oefenproblemen", "oefeningen", "tips", "advies", "trucs", "geheimen", "aanbevelingen"],
+        "pl": ["krok po kroku", "online za darmo", "z AI", "kalkulator", "rozwiązywacz", "pomoc", "korepetytor", "przewodnik", "problemy do ćwiczeń", "ćwiczenia", "wskazówki", "porady", "sztuczki", "sekrety", "rekomendacje"],
+        "tr": ["adım adım", "ücretsiz online", "AI ile", "hesaplayıcı", "çözücü", "yardım", "eğitmen", "rehber", "pratik problemler", "alıştırmalar", "ipuçları", "tavsiyeler", "püf noktaları", "sırlar", "öneriler"],
+        "sv": ["steg för steg", "online gratis", "med AI", "kalkylator", "lösare", "hjälp", "handledare", "guide", "övningsproblem", "övningar", "tips", "råd", "knep", "hemligheter", "rekommendationer"]
     }
     
     pref_list = prefijos.get(lang, prefijos["en"])
@@ -1246,9 +1722,9 @@ def fabricar_paginas_globales():
     
     print("""
     ╔══════════════════════════════════════════════════════════╗
-    ║     🚀 EDUCARE AI - VERSIÓN CORREGIDA                   ║
-    ║     BACKEND: 5000+ páginas SEO en web_seo_global/      ║
-    ║     FRONTEND: Portada impactante en la RAÍZ            ║
+    ║     🚀 EDUCARE AI - IMPERIO GLOBAL 2.0                  ║
+    ║     17 IDIOMAS | 5000+ PÁGINAS POR IDIOMA              ║
+    ║     BACKEND: web_seo_global/ | FRONTEND: RAÍZ          ║
     ╚══════════════════════════════════════════════════════════╝
     """)
     
@@ -1333,7 +1809,7 @@ def fabricar_paginas_globales():
     print(f"{'='*70}")
     print(f"\n📋 PRÓXIMOS PASOS:")
     print(f"   1. git add .")
-    print(f"   2. git commit -m 'Versión final con portada en raíz'")
+    print(f"   2. git commit -m '🌍 Imperio global: 17 idiomas añadidos'")
     print(f"   3. git push origin main")
     print(f"   4. Esperar 5 minutos")
     print(f"   5. Abrir https://stef7773.github.io/educare-ai-global/")
