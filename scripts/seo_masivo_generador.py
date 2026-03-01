@@ -4,7 +4,7 @@ import json
 from datetime import datetime
 
 # ============================================
-# CONFIGURACIÓN MEGA EXPANDIDA
+# CONFIGURACIÓN (igual que antes)
 # ============================================
 
 CATEGORIAS = {
@@ -201,7 +201,7 @@ CATEGORIAS = {
 }
 
 # ============================================
-# ESTRATEGIA GLOBAL - MEGA EXPANDIDA
+# ESTRATEGIA GLOBAL (igual)
 # ============================================
 estrategia_global = {
     "en": [
@@ -987,7 +987,7 @@ estrategia_global = {
 }
 
 # ============================================
-# CONTENIDO PERSUASIVO POR IDIOMA - VERSIÓN PREMIUM
+# CONTENIDO PERSUASIVO POR IDIOMA (igual)
 # ============================================
 textos = {
     "en": {
@@ -1713,10 +1713,10 @@ def generar_keywords_infinitas(base_keywords, lang, count=500):
     return expanded[:count]
 
 # ============================================
-# 🎨 FUNCIÓN PRINCIPAL DE GENERACIÓN HTML - VERSIÓN PREMIUM ÚNICA
+# 🎨 FUNCIÓN PRINCIPAL DE GENERACIÓN HTML - VERSIÓN FUTURISTA CON LOGO
 # ============================================
 def generar_html_seo(tema, lang, idx):
-    """Genera HTML con diseño ESPECTACULAR para TODOS los idiomas"""
+    """Genera HTML con diseño FUTURISTA y LOGO E para TODOS los idiomas"""
     textos_lang = textos.get(lang, textos["en"])
     h1_template = random.choice(textos_lang["h1_variations"])
     h1 = h1_template.replace("{tema}", tema)
@@ -1775,38 +1775,195 @@ def generar_html_seo(tema, lang, idx):
         * {{ margin: 0; padding: 0; box-sizing: border-box; }}
         body {{
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #0f0c1f 0%, #1a1a3a 100%);
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 20px;
+            position: relative;
+            overflow-x: hidden;
         }}
+        
+        /* Partículas de fondo */
+        body::before {{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle at 20% 30%, rgba(102, 126, 234, 0.1) 0%, transparent 20%),
+                radial-gradient(circle at 80% 70%, rgba(118, 75, 162, 0.1) 0%, transparent 20%),
+                radial-gradient(circle at 40% 80%, rgba(102, 126, 234, 0.1) 0%, transparent 20%),
+                radial-gradient(circle at 70% 20%, rgba(118, 75, 162, 0.1) 0%, transparent 20%);
+            z-index: 0;
+        }}
+        
         .card {{
-            background: white;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
             padding: 50px;
-            border-radius: 30px;
+            border-radius: 40px;
             max-width: 800px;
             width: 100%;
             text-align: center;
-            box-shadow: 0 30px 70px rgba(0,0,0,0.3);
-            transition: transform 0.3s;
-            animation: fadeIn 0.5s ease-in;
+            box-shadow: 0 30px 70px rgba(0,0,0,0.4), 0 0 0 2px rgba(102, 126, 234, 0.2);
+            transition: transform 0.4s, box-shadow 0.4s;
+            animation: fadeIn 0.6s ease-out;
+            position: relative;
+            z-index: 1;
+            border: 1px solid rgba(255,255,255,0.3);
         }}
+        
         @keyframes fadeIn {{
-            from {{ opacity: 0; transform: translateY(20px); }}
+            from {{ opacity: 0; transform: translateY(30px); }}
             to {{ opacity: 1; transform: translateY(0); }}
         }}
-        .card:hover {{ transform: translateY(-10px); }}
-        h1 {{ color: #2d3748; font-size: 2.8em; margin-bottom: 20px; font-weight: 800; line-height: 1.2; }}
-        .highlight {{ background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }}
-        .description {{ font-size: 1.3em; color: #4a5568; margin-bottom: 30px; line-height: 1.6; }}
-        .benefit {{ background: #f7fafc; padding: 15px; border-radius: 15px; margin-bottom: 25px; font-weight: 600; color: #2d3748; font-size: 1.1em; border: 1px solid #e2e8f0; }}
-        .features {{ background: linear-gradient(135deg, #f6f9fc 0%, #edf2f7 100%); padding: 20px; border-radius: 15px; margin-bottom: 25px; color: #2d3748; font-weight: 500; font-size: 1.1em; }}
-        .stats {{ display: flex; justify-content: center; gap: 30px; margin: 30px 0; flex-wrap: wrap; }}
-        .stat-item {{ text-align: center; }}
-        .stat-number {{ font-size: 2.5em; font-weight: 900; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; line-height: 1; }}
-        .stat-label {{ font-size: 1em; color: #718096; text-transform: uppercase; letter-spacing: 1px; margin-top: 5px; }}
+        
+        .card:hover {{
+            transform: translateY(-10px);
+            box-shadow: 0 40px 90px rgba(0,0,0,0.5), 0 0 0 4px rgba(102, 126, 234, 0.4);
+        }}
+        
+        /* LOGO E - El corazón del diseño */
+        .logo-e {{
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 25px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 15px 35px rgba(102, 126, 234, 0.5), 0 0 0 3px rgba(255,255,255,0.5);
+            transform: rotate(5deg);
+            transition: transform 0.3s;
+            animation: glow 3s infinite alternate;
+        }}
+        
+        @keyframes glow {{
+            0% {{ box-shadow: 0 15px 35px rgba(102, 126, 234, 0.5), 0 0 0 3px rgba(255,255,255,0.5); }}
+            100% {{ box-shadow: 0 25px 45px rgba(102, 126, 234, 0.8), 0 0 0 5px rgba(255,255,255,0.8); }}
+        }}
+        
+        .logo-e:hover {{
+            transform: rotate(0deg) scale(1.05);
+        }}
+        
+        .logo-e span {{
+            font-size: 4.5em;
+            font-weight: 900;
+            color: white;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+            letter-spacing: -5px;
+            transform: rotate(-5deg);
+            transition: transform 0.3s;
+        }}
+        
+        .logo-e:hover span {{
+            transform: rotate(0deg);
+        }}
+        
+        h1 {{
+            color: #2d3748;
+            font-size: 2.8em;
+            margin-bottom: 20px;
+            font-weight: 800;
+            line-height: 1.2;
+            position: relative;
+            display: inline-block;
+        }}
+        
+        h1::after {{
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 2px;
+        }}
+        
+        .highlight {{ 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+            background-clip: text; 
+        }}
+        
+        .description {{ 
+            font-size: 1.3em; 
+            color: #4a5568; 
+            margin-bottom: 30px; 
+            line-height: 1.6; 
+            font-weight: 400;
+        }}
+        
+        .benefit {{ 
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 15px; 
+            border-radius: 20px; 
+            margin-bottom: 25px; 
+            font-weight: 700; 
+            color: #2d3748; 
+            font-size: 1.1em; 
+            border: 1px solid rgba(102, 126, 234, 0.2);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }}
+        
+        .features {{ 
+            background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+            padding: 20px; 
+            border-radius: 20px; 
+            margin-bottom: 25px; 
+            color: #2d3748; 
+            font-weight: 600; 
+            font-size: 1.1em;
+            border: 1px solid rgba(102, 126, 234, 0.2);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }}
+        
+        .stats {{ 
+            display: flex; 
+            justify-content: center; 
+            gap: 30px; 
+            margin: 30px 0; 
+            flex-wrap: wrap; 
+        }}
+        
+        .stat-item {{ 
+            text-align: center; 
+            background: rgba(102, 126, 234, 0.05);
+            padding: 15px 25px;
+            border-radius: 20px;
+            min-width: 120px;
+            border: 1px solid rgba(102, 126, 234, 0.2);
+            backdrop-filter: blur(5px);
+        }}
+        
+        .stat-number {{ 
+            font-size: 2.5em; 
+            font-weight: 900; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+            background-clip: text; 
+            line-height: 1; 
+        }}
+        
+        .stat-label {{ 
+            font-size: 0.9em; 
+            color: #4a5568; 
+            text-transform: uppercase; 
+            letter-spacing: 1px; 
+            margin-top: 5px; 
+            font-weight: 600;
+        }}
+        
         .btn {{
             display: inline-block;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -1817,37 +1974,81 @@ def generar_html_seo(tema, lang, idx):
             font-weight: 800;
             font-size: 1.5em;
             margin: 20px 0;
-            transition: all 0.3s;
+            transition: all 0.4s;
             box-shadow: 0 20px 40px rgba(102, 126, 234, 0.4);
             border: none;
             cursor: pointer;
             text-transform: uppercase;
-            letter-spacing: 1px;
-            animation: pulse 2s infinite;
+            letter-spacing: 2px;
+            position: relative;
+            overflow: hidden;
         }}
-        @keyframes pulse {{
-            0%, 100% {{ transform: scale(1); box-shadow: 0 20px 40px rgba(102, 126, 234, 0.4); }}
-            50% {{ transform: scale(1.05); box-shadow: 0 30px 60px rgba(102, 126, 234, 0.6); }}
+        
+        .btn::before {{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.6s;
         }}
+        
+        .btn:hover::before {{
+            left: 100%;
+        }}
+        
         .btn:hover {{
             transform: scale(1.05);
             box-shadow: 0 30px 60px rgba(102, 126, 234, 0.6);
-            animation: none;
         }}
-        .subtext {{ color: #718096; font-size: 1.1em; margin: 15px 0; font-weight: 500; }}
-        .cta-urgency {{ background: #fffbeb; color: #d69e2e; padding: 12px; border-radius: 10px; margin: 20px 0 10px; font-weight: 600; border: 1px solid #fbd38d; }}
-        .footer {{ margin-top: 30px; font-size: 0.9em; color: #a0aec0; border-top: 1px solid #e2e8f0; padding-top: 20px; }}
+        
+        .subtext {{ 
+            color: #718096; 
+            font-size: 1.1em; 
+            margin: 15px 0; 
+            font-weight: 500; 
+            font-style: italic;
+        }}
+        
+        .cta-urgency {{ 
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            color: #92400e; 
+            padding: 12px; 
+            border-radius: 15px; 
+            margin: 20px 0 10px; 
+            font-weight: 700; 
+            border: 1px solid #fbbf24;
+            box-shadow: 0 5px 15px rgba(251, 191, 36, 0.2);
+        }}
+        
+        .footer {{ 
+            margin-top: 30px; 
+            font-size: 0.9em; 
+            color: #94a3b8; 
+            border-top: 1px solid #e2e8f0; 
+            padding-top: 20px; 
+            font-weight: 400;
+        }}
+        
         @media (max-width: 768px) {{
             h1 {{ font-size: 2em; }}
             .description {{ font-size: 1.1em; }}
             .btn {{ font-size: 1.2em; padding: 15px 40px; }}
             .stats {{ gap: 15px; }}
+            .stat-item {{ padding: 10px 15px; min-width: 90px; }}
             .card {{ padding: 30px; }}
+            .logo-e {{ width: 80px; height: 80px; }}
+            .logo-e span {{ font-size: 3.5em; }}
         }}
     </style>
 </head>
 <body>
     <div class="card">
+        <div class="logo-e">
+            <span>E</span>
+        </div>
         <h1><span class="highlight">{h1}</span></h1>
         <p class="description">{desc}</p>
         
@@ -1905,10 +2106,10 @@ Sitemap: https://stef7773.github.io/educare-ai-global/web_seo_global/sitemap.xml
         f.write(robots)
 
 # ============================================
-# 🎨 FUNCIÓN DE LA PORTAZA - VERSIÓN PREMIUM
+# 🎨 FUNCIÓN DE LA PORTAZA - VERSIÓN FUTURISTA CON LOGO
 # ============================================
 def generar_frontend_impactante(base_dir):
-    """Genera una página principal visualmente impactante con logo de Educare AI"""
+    """Genera una página principal visualmente impactante con logo E de Educare AI"""
     
     html = """<!DOCTYPE html>
 <html lang="es">
@@ -1930,22 +2131,25 @@ def generar_frontend_impactante(base_dir):
             background: linear-gradient(135deg, #0a0a1a 0%, #1a1a3a 100%);
             color: white;
             overflow-x: hidden;
+            position: relative;
         }
-        .background {
-            position: fixed;
-            width: 100%;
-            height: 100%;
+        
+        /* Partículas de fondo */
+        body::before {
+            content: "";
+            position: absolute;
             top: 0;
             left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(102, 126, 234, 0.15) 0%, transparent 25%),
+                radial-gradient(circle at 90% 70%, rgba(118, 75, 162, 0.15) 0%, transparent 25%),
+                radial-gradient(circle at 30% 80%, rgba(102, 126, 234, 0.15) 0%, transparent 25%),
+                radial-gradient(circle at 70% 10%, rgba(118, 75, 162, 0.15) 0%, transparent 25%);
             z-index: 0;
-            background: radial-gradient(circle at 20% 20%, rgba(102, 126, 234, 0.15) 0%, transparent 40%),
-                        radial-gradient(circle at 80% 80%, rgba(118, 75, 162, 0.15) 0%, transparent 40%);
-            animation: backgroundPulse 8s ease-in-out infinite;
         }
-        @keyframes backgroundPulse {
-            0%, 100% { opacity: 0.6; }
-            50% { opacity: 1; }
-        }
+        
         .container {
             position: relative;
             z-index: 1;
@@ -1959,19 +2163,51 @@ def generar_frontend_impactante(base_dir):
             align-items: center;
             text-align: center;
         }
-        .logo { margin-bottom: 30px; animation: float 6s ease-in-out infinite; }
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-25px); }
-        }
-        .logo-icon {
-            font-size: 10em;
+        
+        /* LOGO E gigante */
+        .logo-e {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 30px;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            filter: drop-shadow(0 20px 40px rgba(102, 126, 234, 0.5));
-            display: inline-block;
+            border-radius: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 20px 50px rgba(102, 126, 234, 0.6), 0 0 0 5px rgba(255,255,255,0.3);
+            transform: rotate(5deg);
+            transition: transform 0.5s, box-shadow 0.5s;
+            animation: float 6s ease-in-out infinite, glow 3s infinite alternate;
         }
+        
+        @keyframes float {
+            0%, 100% { transform: rotate(5deg) translateY(0); }
+            50% { transform: rotate(5deg) translateY(-20px); }
+        }
+        
+        @keyframes glow {
+            0% { box-shadow: 0 20px 50px rgba(102, 126, 234, 0.6), 0 0 0 5px rgba(255,255,255,0.3); }
+            100% { box-shadow: 0 30px 70px rgba(102, 126, 234, 0.9), 0 0 0 8px rgba(255,255,255,0.5); }
+        }
+        
+        .logo-e:hover {
+            transform: rotate(0deg) scale(1.1);
+        }
+        
+        .logo-e span {
+            font-size: 6em;
+            font-weight: 900;
+            color: white;
+            text-shadow: 3px 3px 15px rgba(0,0,0,0.4);
+            letter-spacing: -8px;
+            transform: rotate(-5deg);
+            transition: transform 0.3s;
+        }
+        
+        .logo-e:hover span {
+            transform: rotate(0deg);
+        }
+        
         h1 {
             font-size: 5em;
             font-weight: 900;
@@ -1982,7 +2218,22 @@ def generar_frontend_impactante(base_dir):
             -webkit-text-fill-color: transparent;
             text-transform: uppercase;
             letter-spacing: -1px;
+            position: relative;
+            display: inline-block;
         }
+        
+        h1::after {
+            content: "";
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 5px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 3px;
+        }
+        
         .highlight {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             -webkit-background-clip: text;
@@ -1990,29 +2241,35 @@ def generar_frontend_impactante(base_dir):
             display: block;
             font-size: 1.2em;
         }
+        
         .slogan {
             font-size: 1.8em;
             color: rgba(255,255,255,0.9);
             max-width: 800px;
-            margin: 20px auto;
+            margin: 30px auto;
             font-weight: 400;
             line-height: 1.5;
         }
+        
         .language-badge {
             background: rgba(255,255,255,0.1);
-            padding: 12px 30px;
-            border-radius: 50px;
+            padding: 15px 35px;
+            border-radius: 60px;
             margin: 30px 0;
             font-size: 1.1em;
             border: 1px solid rgba(255,255,255,0.2);
             backdrop-filter: blur(5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
         }
+        
         .language-badge span {
             color: #667eea;
             font-weight: 700;
             margin: 0 5px;
         }
+        
         .download-section { margin: 50px 0 30px; }
+        
         .download-btn {
             display: inline-flex;
             align-items: center;
@@ -2030,23 +2287,49 @@ def generar_frontend_impactante(base_dir):
             cursor: pointer;
             text-transform: uppercase;
             letter-spacing: 2px;
-            animation: pulse 2s infinite;
+            position: relative;
+            overflow: hidden;
         }
+        
+        .download-btn::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.6s;
+        }
+        
+        .download-btn:hover::before {
+            left: 100%;
+        }
+        
         @keyframes pulse {
             0%, 100% { transform: scale(1); box-shadow: 0 20px 40px rgba(102, 126, 234, 0.4); }
             50% { transform: scale(1.05); box-shadow: 0 40px 80px rgba(102, 126, 234, 0.7); }
         }
+        
+        .download-btn {
+            animation: pulse 2s infinite;
+        }
+        
         .download-btn:hover {
             transform: scale(1.1);
             box-shadow: 0 50px 100px rgba(102, 126, 234, 0.9);
+            animation: none;
         }
+        
         .download-btn i { font-size: 1.3em; }
+        
         .btn-sub {
             color: rgba(255,255,255,0.7);
             font-size: 1.3em;
             margin-top: 20px;
             font-weight: 400;
         }
+        
         .stats {
             display: flex;
             justify-content: center;
@@ -2054,7 +2337,17 @@ def generar_frontend_impactante(base_dir):
             margin: 60px 0 30px;
             flex-wrap: wrap;
         }
-        .stat-item { text-align: center; }
+        
+        .stat-item { 
+            text-align: center;
+            background: rgba(255,255,255,0.05);
+            padding: 20px 30px;
+            border-radius: 30px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(255,255,255,0.1);
+            min-width: 150px;
+        }
+        
         .stat-number {
             font-size: 4em;
             font-weight: 900;
@@ -2063,6 +2356,7 @@ def generar_frontend_impactante(base_dir):
             -webkit-text-fill-color: transparent;
             line-height: 1;
         }
+        
         .stat-label {
             font-size: 1.2em;
             color: rgba(255,255,255,0.6);
@@ -2070,19 +2364,30 @@ def generar_frontend_impactante(base_dir):
             letter-spacing: 2px;
             margin-top: 5px;
         }
+        
         .features-preview {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
+            gap: 25px;
             margin: 60px 0;
             max-width: 1000px;
         }
+        
         .feature-item {
             background: rgba(255,255,255,0.05);
-            padding: 20px;
-            border-radius: 20px;
+            padding: 25px 15px;
+            border-radius: 25px;
             border: 1px solid rgba(255,255,255,0.1);
+            backdrop-filter: blur(5px);
+            transition: transform 0.3s;
         }
+        
+        .feature-item:hover {
+            transform: translateY(-10px);
+            background: rgba(255,255,255,0.1);
+            border-color: rgba(102, 126, 234, 0.5);
+        }
+        
         .feature-item i {
             font-size: 2.5em;
             margin-bottom: 15px;
@@ -2090,16 +2395,20 @@ def generar_frontend_impactante(base_dir):
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+        
         .feature-item p {
             font-size: 1.1em;
-            color: rgba(255,255,255,0.8);
+            color: rgba(255,255,255,0.9);
+            font-weight: 600;
         }
+        
         .footer {
             margin-top: 80px;
             padding: 30px;
             border-top: 1px solid rgba(255,255,255,0.1);
             width: 100%;
         }
+        
         .footer-links {
             display: flex;
             justify-content: center;
@@ -2107,23 +2416,29 @@ def generar_frontend_impactante(base_dir):
             margin-bottom: 20px;
             flex-wrap: wrap;
         }
+        
         .footer-links a {
             color: rgba(255,255,255,0.5);
             text-decoration: none;
             font-size: 1.1em;
             transition: color 0.3s;
         }
+        
         .footer-links a:hover { color: white; }
+        
         .copyright {
             color: rgba(255,255,255,0.3);
             font-size: 1em;
         }
+        
         @media (max-width: 768px) {
             h1 { font-size: 3em; }
-            .logo-icon { font-size: 7em; }
+            .logo-e { width: 100px; height: 100px; }
+            .logo-e span { font-size: 4em; }
             .slogan { font-size: 1.3em; }
             .download-btn { font-size: 1.5em; padding: 20px 40px; }
             .stats { gap: 30px; }
+            .stat-item { padding: 15px 20px; min-width: 120px; }
             .stat-number { font-size: 2.5em; }
             .features-preview { grid-template-columns: repeat(2, 1fr); }
             .language-badge { font-size: 0.9em; padding: 10px 20px; }
@@ -2131,10 +2446,9 @@ def generar_frontend_impactante(base_dir):
     </style>
 </head>
 <body>
-    <div class="background"></div>
     <div class="container">
-        <div class="logo">
-            <i class="fas fa-robot logo-icon"></i>
+        <div class="logo-e">
+            <span>E</span>
         </div>
         <h1>
             <span class="highlight">EDUCARE</span>
@@ -2186,7 +2500,7 @@ def generar_frontend_impactante(base_dir):
     with open(ruta_index, 'w', encoding='utf-8') as f:
         f.write(html)
     
-    print(f"   ✅ PORTAZA PREMIUM GUARDADA EN: {ruta_index}")
+    print(f"   ✅ PORTAZA FUTURISTA CON LOGO E GUARDADA EN: {ruta_index}")
     print(f"   ✅ DISPONIBLE EN: https://stef7773.github.io/educare-ai-global/")
 
 # ============================================
@@ -2202,9 +2516,8 @@ def fabricar_paginas_globales():
     
     print("""
     ╔══════════════════════════════════════════════════════════════════════════╗
-    ║     🚀 EDUCARE AI - IMPERIO GLOBAL PREMIUM v6.0                         ║
-    ║     17 IDIOMAS | DISEÑO PREMIUM | TRADUCCIONES PERFECTAS               ║
-    ║     VERSIÓN ÚNICA - SIN DUPLICADOS - 100% FUNCIONAL                    ║
+    ║     🚀 EDUCARE AI - IMPERIO GLOBAL FUTURISTA v7.0                       ║
+    ║     17 IDIOMAS | DISEÑO FUTURISTA | LOGO E | PARTÍCULAS | GLOW         ║
     ╚══════════════════════════════════════════════════════════════════════════╝
     """)
     
@@ -2262,7 +2575,7 @@ def fabricar_paginas_globales():
     generar_sitemap(paginas_generadas, base_dir)
     generar_robots_txt(base_dir)
     
-    print(f"\n🎨 Generando portada premium...")
+    print(f"\n🎨 Generando portada futurista con logo E...")
     generar_frontend_impactante(base_dir)
     
     stats = {
@@ -2276,16 +2589,16 @@ def fabricar_paginas_globales():
         json.dump(stats, f, indent=2, ensure_ascii=False)
     
     print(f"\n{'='*80}")
-    print(f"✅ GENERACIÓN PREMIUM COMPLETADA CON ÉXITO")
+    print(f"✅ GENERACIÓN FUTURISTA COMPLETADA CON ÉXITO")
     print(f"{'='*80}")
     print(f"📊 TOTAL DE PÁGINAS SEO: {total_paginas} (en web_seo_global/)")
-    print(f"🎨 PORTAZA PREMIUM EN: ~/EducareAI_Project/index.html")
+    print(f"🎨 PORTAZA FUTURISTA EN: ~/EducareAI_Project/index.html")
     print(f"🌐 URL PÚBLICA: https://stef7773.github.io/educare-ai-global/")
     print(f"{'='*80}")
     print(f"\n📋 PRÓXIMOS PASOS:")
     print(f"   1. cd ~/EducareAI_Project")
     print(f"   2. git add .")
-    print(f"   3. git commit -m '✨ VERSIÓN PREMIUM DEFINITIVA - Diseño espectacular, traducciones perfectas'")
+    print(f"   3. git commit -m '✨ VERSIÓN FUTURISTA DEFINITIVA - Logo E, partículas, glow, glassmorphism'")
     print(f"   4. git push origin main")
     print(f"   5. Esperar 5 minutos")
     print(f"   6. Abrir https://stef7773.github.io/educare-ai-global/")
