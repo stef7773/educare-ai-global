@@ -1720,7 +1720,7 @@ def generar_keywords_infinitas(base_keywords, lang, count=500):
     return expanded[:count]
 
 def generar_html_seo(tema, lang, idx):
-    """Genera HTML con SEO optimizado y diseño mejorado"""
+    """Genera HTML con SEO optimizado y diseño MEJORADO (como el francés) para TODOS los idiomas"""
     textos_lang = textos.get(lang, textos["en"])
     h1_template = random.choice(textos_lang["h1_variations"])
     h1 = h1_template.replace("{tema}", tema)
@@ -1744,6 +1744,28 @@ def generar_html_seo(tema, lang, idx):
     meta_description = f"{tema} - {desc[:150]}"
     meta_keywords = f"{tema}, {', '.join(keywords_rel[:5])}, educare ai, {lang} education, homework helper, study app"
     
+    # Diccionario de traducciones para las etiquetas de estadísticas
+    stats_labels = {
+        "es": {"students": "ESTUDIANTES", "rating": "VALORACIÓN", "accuracy": "PRECISIÓN"},
+        "en": {"students": "STUDENTS", "rating": "RATING", "accuracy": "ACCURACY"},
+        "de": {"students": "STUDENTEN", "rating": "BEWERTUNG", "accuracy": "GENAUIGKEIT"},
+        "fr": {"students": "ÉTUDIANTS", "rating": "NOTE", "accuracy": "PRÉCISION"},
+        "pt": {"students": "ESTUDANTES", "rating": "AVALIAÇÃO", "accuracy": "PRECISÃO"},
+        "it": {"students": "STUDENTI", "rating": "VALUTAZIONE", "accuracy": "PRECISIONE"},
+        "jp": {"students": "学生", "rating": "評価", "accuracy": "精度"},
+        "kr": {"students": "학생", "rating": "평점", "accuracy": "정확도"},
+        "zh": {"students": "学生", "rating": "评分", "accuracy": "准确率"},
+        "ru": {"students": "СТУДЕНТЫ", "rating": "РЕЙТИНГ", "accuracy": "ТОЧНОСТЬ"},
+        "ar": {"students": "طالب", "rating": "تقييم", "accuracy": "دقة"},
+        "hi": {"students": "छात्र", "rating": "रेटिंग", "accuracy": "सटीकता"},
+        "nl": {"students": "STUDENTEN", "rating": "BEOORDELING", "accuracy": "NAUWKEURIGHEID"},
+        "pl": {"students": "STUDENCI", "rating": "OCENA", "accuracy": "DOKŁADNOŚĆ"},
+        "tr": {"students": "ÖĞRENCİLER", "rating": "DERECE", "accuracy": "DOĞRULUK"},
+        "sv": {"students": "STUDENTER", "rating": "BETYG", "accuracy": "NOGGRANNHET"}
+    }
+    
+    labels = stats_labels.get(lang, stats_labels["en"])
+    
     return f"""<!DOCTYPE html>
 <html lang="{lang}">
 <head>
@@ -1752,7 +1774,7 @@ def generar_html_seo(tema, lang, idx):
     <meta name="description" content="{meta_description}">
     <meta name="keywords" content="{meta_keywords}">
     <meta name="robots" content="index, follow">
-    <title>{tema} | Educare AI - Tu asistente educativo inteligente</title>
+    <title>{tema} | Educare AI</title>
     <style>
         * {{ margin: 0; padding: 0; box-sizing: border-box; }}
         body {{
@@ -1774,122 +1796,22 @@ def generar_html_seo(tema, lang, idx):
             box-shadow: 0 30px 70px rgba(0,0,0,0.3);
             transition: transform 0.3s;
         }}
-        .card:hover {{
-            transform: translateY(-10px);
-        }}
-        h1 {{
-            color: #2d3748;
-            font-size: 2.8em;
-            margin-bottom: 20px;
-            font-weight: 800;
-            line-height: 1.2;
-        }}
-        .highlight {{
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }}
-        .description {{
-            font-size: 1.3em;
-            color: #4a5568;
-            margin-bottom: 30px;
-            line-height: 1.6;
-        }}
-        .benefit {{
-            background: #f7fafc;
-            padding: 15px;
-            border-radius: 15px;
-            margin-bottom: 25px;
-            font-weight: 600;
-            color: #2d3748;
-            font-size: 1.1em;
-            border: 1px solid #e2e8f0;
-        }}
-        .features {{
-            background: linear-gradient(135deg, #f6f9fc 0%, #edf2f7 100%);
-            padding: 20px;
-            border-radius: 15px;
-            margin-bottom: 25px;
-            color: #2d3748;
-            font-weight: 500;
-            font-size: 1.1em;
-        }}
-        .stats {{
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin: 30px 0;
-            flex-wrap: wrap;
-        }}
-        .stat-item {{
-            text-align: center;
-        }}
-        .stat-number {{
-            font-size: 2.5em;
-            font-weight: 900;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            line-height: 1;
-        }}
-        .stat-label {{
-            font-size: 1em;
-            color: #718096;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-top: 5px;
-        }}
-        .btn {{
-            display: inline-block;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 20px 60px;
-            text-decoration: none;
-            border-radius: 60px;
-            font-weight: 800;
-            font-size: 1.5em;
-            margin: 20px 0;
-            transition: all 0.3s;
-            box-shadow: 0 20px 40px rgba(102, 126, 234, 0.4);
-            border: none;
-            cursor: pointer;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }}
-        .btn:hover {{
-            transform: scale(1.05);
-            box-shadow: 0 30px 60px rgba(102, 126, 234, 0.6);
-        }}
-        .subtext {{
-            color: #718096;
-            font-size: 1.1em;
-            margin: 15px 0;
-            font-weight: 500;
-        }}
-        .cta-urgency {{
-            background: #fffbeb;
-            color: #d69e2e;
-            padding: 12px;
-            border-radius: 10px;
-            margin: 20px 0 10px;
-            font-weight: 600;
-            border: 1px solid #fbd38d;
-        }}
-        .footer {{
-            margin-top: 30px;
-            font-size: 0.9em;
-            color: #a0aec0;
-            border-top: 1px solid #e2e8f0;
-            padding-top: 20px;
-        }}
-        @media (max-width: 768px) {{
-            h1 {{ font-size: 2em; }}
-            .description {{ font-size: 1.1em; }}
-            .btn {{ font-size: 1.2em; padding: 15px 40px; }}
-            .stats {{ gap: 15px; }}
-        }}
+        .card:hover {{ transform: translateY(-10px); }}
+        h1 {{ color: #2d3748; font-size: 2.8em; margin-bottom: 20px; font-weight: 800; line-height: 1.2; }}
+        .highlight {{ background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }}
+        .description {{ font-size: 1.3em; color: #4a5568; margin-bottom: 30px; line-height: 1.6; }}
+        .benefit {{ background: #f7fafc; padding: 15px; border-radius: 15px; margin-bottom: 25px; font-weight: 600; color: #2d3748; font-size: 1.1em; border: 1px solid #e2e8f0; }}
+        .features {{ background: linear-gradient(135deg, #f6f9fc 0%, #edf2f7 100%); padding: 20px; border-radius: 15px; margin-bottom: 25px; color: #2d3748; font-weight: 500; font-size: 1.1em; }}
+        .stats {{ display: flex; justify-content: center; gap: 30px; margin: 30px 0; flex-wrap: wrap; }}
+        .stat-item {{ text-align: center; }}
+        .stat-number {{ font-size: 2.5em; font-weight: 900; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; line-height: 1; }}
+        .stat-label {{ font-size: 1em; color: #718096; text-transform: uppercase; letter-spacing: 1px; margin-top: 5px; }}
+        .btn {{ display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px 60px; text-decoration: none; border-radius: 60px; font-weight: 800; font-size: 1.5em; margin: 20px 0; transition: all 0.3s; box-shadow: 0 20px 40px rgba(102, 126, 234, 0.4); border: none; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; }}
+        .btn:hover {{ transform: scale(1.05); box-shadow: 0 30px 60px rgba(102, 126, 234, 0.6); }}
+        .subtext {{ color: #718096; font-size: 1.1em; margin: 15px 0; font-weight: 500; }}
+        .cta-urgency {{ background: #fffbeb; color: #d69e2e; padding: 12px; border-radius: 10px; margin: 20px 0 10px; font-weight: 600; border: 1px solid #fbd38d; }}
+        .footer {{ margin-top: 30px; font-size: 0.9em; color: #a0aec0; border-top: 1px solid #e2e8f0; padding-top: 20px; }}
+        @media (max-width: 768px) {{ h1 {{ font-size: 2em; }} .description {{ font-size: 1.1em; }} .btn {{ font-size: 1.2em; padding: 15px 40px; }} .stats {{ gap: 15px; }} }}
     </style>
 </head>
 <body>
@@ -1900,18 +1822,9 @@ def generar_html_seo(tema, lang, idx):
         <div class="benefit">{benefit}</div>
         
         <div class="stats">
-            <div class="stat-item">
-                <div class="stat-number">1M+</div>
-                <div class="stat-label">ESTUDIANTES</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">4.8</div>
-                <div class="stat-label">⭐ VALORACIÓN</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">98%</div>
-                <div class="stat-label">PRECISIÓN</div>
-            </div>
+            <div class="stat-item"><div class="stat-number">1M+</div><div class="stat-label">{labels['students']}</div></div>
+            <div class="stat-item"><div class="stat-number">4.8</div><div class="stat-label">⭐ {labels['rating']}</div></div>
+            <div class="stat-item"><div class="stat-number">98%</div><div class="stat-label">{labels['accuracy']}</div></div>
         </div>
         
         <div class="features">{features_html}</div>
