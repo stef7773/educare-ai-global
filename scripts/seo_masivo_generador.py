@@ -1713,10 +1713,10 @@ def generar_keywords_infinitas(base_keywords, lang, count=500):
     return expanded[:count]
 
 # ============================================
-# 🎨 FUNCIÓN PRINCIPAL DE GENERACIÓN HTML - VERSIÓN FUTURISTA CON ROBOT
+# 🎨 FUNCIÓN PRINCIPAL - VERSIÓN 9.0 (LA DEFINITIVA)
 # ============================================
 def generar_html_seo(tema, lang, idx):
-    """Genera HTML con diseño FUTURISTA y ROBOT para TODOS los idiomas"""
+    """Genera HTML con diseño FUTURISTA PERFECTO - Robot gradiente + Educare AI juntos"""
     textos_lang = textos.get(lang, textos["en"])
     h1_template = random.choice(textos_lang["h1_variations"])
     h1 = h1_template.replace("{tema}", tema)
@@ -1785,29 +1785,37 @@ def generar_html_seo(tema, lang, idx):
             overflow-x: hidden;
         }}
         
-        /* Partículas flotantes */
+        /* 12 PARTÍCULAS FLOTANTES - MÁS RELAJANTES */
         .particle {{
             position: absolute;
             width: 6px;
             height: 6px;
-            background: rgba(102, 126, 234, 0.3);
+            background: rgba(102, 126, 234, 0.25);
             border-radius: 50%;
             pointer-events: none;
             z-index: 0;
-            animation: floatParticle 15s infinite linear;
+            animation: floatParticle 25s infinite linear;
         }}
         
         @keyframes floatParticle {{
-            0% {{ transform: translateY(0) translateX(0) scale(1); opacity: 0.3; }}
-            50% {{ transform: translateY(-100px) translateX(50px) scale(1.5); opacity: 0.8; }}
-            100% {{ transform: translateY(-200px) translateX(100px) scale(0.5); opacity: 0; }}
+            0% {{ transform: translateY(0) translateX(0) scale(1); opacity: 0.2; }}
+            50% {{ transform: translateY(-150px) translateX(80px) scale(1.8); opacity: 0.6; }}
+            100% {{ transform: translateY(-300px) translateX(150px) scale(0.8); opacity: 0; }}
         }}
         
-        .particle:nth-child(1) {{ top: 10%; left: 20%; animation-duration: 12s; }}
-        .particle:nth-child(2) {{ top: 30%; left: 80%; animation-duration: 18s; width: 8px; height: 8px; }}
-        .particle:nth-child(3) {{ top: 70%; left: 10%; animation-duration: 14s; }}
-        .particle:nth-child(4) {{ top: 50%; left: 60%; animation-duration: 20s; width: 10px; height: 10px; }}
-        .particle:nth-child(5) {{ top: 90%; left: 40%; animation-duration: 16s; }}
+        /* 12 partículas con posiciones y tiempos diferentes */
+        .particle:nth-child(1) {{ top: 5%; left: 10%; animation-duration: 22s; width: 8px; height: 8px; }}
+        .particle:nth-child(2) {{ top: 15%; left: 85%; animation-duration: 28s; width: 10px; height: 10px; }}
+        .particle:nth-child(3) {{ top: 25%; left: 20%; animation-duration: 24s; }}
+        .particle:nth-child(4) {{ top: 35%; left: 70%; animation-duration: 30s; width: 12px; height: 12px; }}
+        .particle:nth-child(5) {{ top: 45%; left: 40%; animation-duration: 26s; }}
+        .particle:nth-child(6) {{ top: 55%; left: 60%; animation-duration: 32s; width: 7px; height: 7px; }}
+        .particle:nth-child(7) {{ top: 65%; left: 15%; animation-duration: 23s; }}
+        .particle:nth-child(8) {{ top: 75%; left: 80%; animation-duration: 29s; width: 9px; height: 9px; }}
+        .particle:nth-child(9) {{ top: 85%; left: 30%; animation-duration: 25s; }}
+        .particle:nth-child(10) {{ top: 95%; left: 50%; animation-duration: 27s; width: 11px; height: 11px; }}
+        .particle:nth-child(11) {{ top: 10%; left: 95%; animation-duration: 31s; }}
+        .particle:nth-child(12) {{ top: 90%; left: 5%; animation-duration: 21s; width: 8px; height: 8px; }}
         
         .card {{
             background: rgba(255, 255, 255, 0.95);
@@ -1835,31 +1843,52 @@ def generar_html_seo(tema, lang, idx):
             box-shadow: 0 40px 90px rgba(0,0,0,0.5), 0 0 0 4px rgba(102, 126, 234, 0.4);
         }}
         
-        /* ROBOT FLOTANTE */
+        /* CABECERA PERFECTA: Robot gradiente + Educare AI */
+        .header {{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }}
+        
         .robot-icon {{
-            font-size: 6em;
-            margin: 0 auto 20px;
+            font-size: 4em;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            filter: drop-shadow(0 15px 30px rgba(102, 126, 234, 0.6));
-            display: inline-block;
+            filter: drop-shadow(0 10px 20px rgba(102, 126, 234, 0.5));
             animation: floatRobot 4s ease-in-out infinite;
-            position: relative;
         }}
         
         @keyframes floatRobot {{
             0%, 100% {{ transform: translateY(0) rotate(0deg); }}
-            25% {{ transform: translateY(-15px) rotate(5deg); }}
-            75% {{ transform: translateY(-5px) rotate(-5deg); }}
+            25% {{ transform: translateY(-8px) rotate(3deg); }}
+            75% {{ transform: translateY(-3px) rotate(-2deg); }}
+        }}
+        
+        .brand {{
+            font-size: 2.5em;
+            font-weight: 900;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -1px;
+        }}
+        
+        .brand span {{
+            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }}
         
         h1 {{
             color: #2d3748;
-            font-size: 2.8em;
+            font-size: 2.5em;
             margin-bottom: 20px;
             font-weight: 800;
-            line-height: 1.2;
+            line-height: 1.3;
             position: relative;
             display: inline-block;
         }}
@@ -1870,7 +1899,7 @@ def generar_html_seo(tema, lang, idx):
             bottom: -10px;
             left: 50%;
             transform: translateX(-50%);
-            width: 100px;
+            width: 80px;
             height: 4px;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             border-radius: 2px;
@@ -1884,9 +1913,9 @@ def generar_html_seo(tema, lang, idx):
         }}
         
         .description {{ 
-            font-size: 1.3em; 
+            font-size: 1.2em; 
             color: #4a5568; 
-            margin-bottom: 30px; 
+            margin-bottom: 25px; 
             line-height: 1.6; 
             font-weight: 400;
         }}
@@ -1898,7 +1927,7 @@ def generar_html_seo(tema, lang, idx):
             margin-bottom: 25px; 
             font-weight: 700; 
             color: #2d3748; 
-            font-size: 1.1em; 
+            font-size: 1em; 
             border: 1px solid rgba(102, 126, 234, 0.2);
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         }}
@@ -1910,7 +1939,7 @@ def generar_html_seo(tema, lang, idx):
             margin-bottom: 25px; 
             color: #2d3748; 
             font-weight: 600; 
-            font-size: 1.1em;
+            font-size: 1em;
             border: 1px solid rgba(102, 126, 234, 0.2);
             box-shadow: 0 5px 15px rgba(0,0,0,0.05);
         }}
@@ -1918,23 +1947,23 @@ def generar_html_seo(tema, lang, idx):
         .stats {{ 
             display: flex; 
             justify-content: center; 
-            gap: 30px; 
-            margin: 30px 0; 
+            gap: 20px; 
+            margin: 25px 0; 
             flex-wrap: wrap; 
         }}
         
         .stat-item {{ 
             text-align: center; 
             background: rgba(102, 126, 234, 0.05);
-            padding: 15px 25px;
+            padding: 12px 20px;
             border-radius: 20px;
-            min-width: 120px;
+            min-width: 100px;
             border: 1px solid rgba(102, 126, 234, 0.2);
             backdrop-filter: blur(5px);
         }}
         
         .stat-number {{ 
-            font-size: 2.5em; 
+            font-size: 2.2em; 
             font-weight: 900; 
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
             -webkit-background-clip: text; 
@@ -1944,7 +1973,7 @@ def generar_html_seo(tema, lang, idx):
         }}
         
         .stat-label {{ 
-            font-size: 0.9em; 
+            font-size: 0.8em; 
             color: #4a5568; 
             text-transform: uppercase; 
             letter-spacing: 1px; 
@@ -1956,18 +1985,18 @@ def generar_html_seo(tema, lang, idx):
             display: inline-block;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 20px 60px;
+            padding: 18px 50px;
             text-decoration: none;
-            border-radius: 60px;
+            border-radius: 50px;
             font-weight: 800;
-            font-size: 1.5em;
+            font-size: 1.3em;
             margin: 20px 0;
             transition: all 0.4s;
-            box-shadow: 0 20px 40px rgba(102, 126, 234, 0.4);
+            box-shadow: 0 15px 30px rgba(102, 126, 234, 0.4);
             border: none;
             cursor: pointer;
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
             position: relative;
             overflow: hidden;
         }}
@@ -1989,13 +2018,13 @@ def generar_html_seo(tema, lang, idx):
         
         .btn:hover {{
             transform: scale(1.05);
-            box-shadow: 0 30px 60px rgba(102, 126, 234, 0.6);
+            box-shadow: 0 25px 50px rgba(102, 126, 234, 0.6);
         }}
         
         .subtext {{ 
             color: #718096; 
-            font-size: 1.1em; 
-            margin: 15px 0; 
+            font-size: 1em; 
+            margin: 12px 0; 
             font-weight: 500; 
             font-style: italic;
         }}
@@ -2003,36 +2032,45 @@ def generar_html_seo(tema, lang, idx):
         .cta-urgency {{ 
             background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
             color: #92400e; 
-            padding: 12px; 
-            border-radius: 15px; 
-            margin: 20px 0 10px; 
+            padding: 10px; 
+            border-radius: 12px; 
+            margin: 15px 0 10px; 
             font-weight: 700; 
             border: 1px solid #fbbf24;
             box-shadow: 0 5px 15px rgba(251, 191, 36, 0.2);
+            font-size: 0.95em;
         }}
         
         .footer {{ 
-            margin-top: 30px; 
-            font-size: 0.9em; 
+            margin-top: 25px; 
+            font-size: 0.85em; 
             color: #94a3b8; 
             border-top: 1px solid #e2e8f0; 
-            padding-top: 20px; 
+            padding-top: 15px; 
             font-weight: 400;
         }}
         
         @media (max-width: 768px) {{
             h1 {{ font-size: 2em; }}
             .description {{ font-size: 1.1em; }}
-            .btn {{ font-size: 1.2em; padding: 15px 40px; }}
-            .stats {{ gap: 15px; }}
-            .stat-item {{ padding: 10px 15px; min-width: 90px; }}
+            .btn {{ font-size: 1.2em; padding: 15px 35px; }}
+            .stats {{ gap: 12px; }}
+            .stat-item {{ padding: 8px 12px; min-width: 80px; }}
             .card {{ padding: 30px; }}
-            .robot-icon {{ font-size: 4em; }}
+            .robot-icon {{ font-size: 3em; }}
+            .brand {{ font-size: 2em; }}
         }}
     </style>
 </head>
 <body>
-    <!-- Partículas flotantes -->
+    <!-- 12 PARTÍCULAS FLOTANTES -->
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
     <div class="particle"></div>
     <div class="particle"></div>
     <div class="particle"></div>
@@ -2040,9 +2078,12 @@ def generar_html_seo(tema, lang, idx):
     <div class="particle"></div>
     
     <div class="card">
-        <div class="robot-icon">
-            <i class="fas fa-robot"></i>
+        <!-- CABECERA PERFECTA: Robot + Educare AI -->
+        <div class="header">
+            <i class="fas fa-robot robot-icon"></i>
+            <div class="brand">EDUCARE <span>AI</span></div>
         </div>
+        
         <h1><span class="highlight">{h1}</span></h1>
         <p class="description">{desc}</p>
         
@@ -2102,10 +2143,10 @@ Sitemap: https://stef7773.github.io/educare-ai-global/web_seo_global/sitemap.xml
         f.write(robots)
 
 # ============================================
-# 🎨 FUNCIÓN DE LA PORTAZA - VERSIÓN FUTURISTA CON ROBOT
+# 🎨 FUNCIÓN DE LA PORTAZA - VERSIÓN 9.0
 # ============================================
 def generar_frontend_impactante(base_dir):
-    """Genera una página principal visualmente impactante con robot de Educare AI"""
+    """Genera una página principal visualmente impactante con robot y 12 partículas"""
     
     html = """<!DOCTYPE html>
 <html lang="es">
@@ -2130,32 +2171,36 @@ def generar_frontend_impactante(base_dir):
             position: relative;
         }
         
-        /* Partículas flotantes */
+        /* 12 PARTÍCULAS FLOTANTES - MÁS RELAJANTES */
         .particle {
             position: fixed;
             width: 8px;
             height: 8px;
-            background: rgba(102, 126, 234, 0.3);
+            background: rgba(102, 126, 234, 0.2);
             border-radius: 50%;
             pointer-events: none;
             z-index: 0;
-            animation: floatParticle 20s infinite linear;
+            animation: floatParticle 30s infinite linear;
         }
         
         @keyframes floatParticle {
-            0% { transform: translateY(0) translateX(0) scale(1); opacity: 0.2; }
-            50% { transform: translateY(-200px) translateX(100px) scale(1.5); opacity: 0.6; }
-            100% { transform: translateY(-400px) translateX(200px) scale(0.5); opacity: 0; }
+            0% { transform: translateY(0) translateX(0) scale(1); opacity: 0.1; }
+            50% { transform: translateY(-200px) translateX(150px) scale(2); opacity: 0.4; }
+            100% { transform: translateY(-400px) translateX(300px) scale(0.5); opacity: 0; }
         }
         
-        .particle:nth-child(1) { top: 10%; left: 20%; animation-duration: 15s; }
-        .particle:nth-child(2) { top: 30%; left: 80%; animation-duration: 25s; width: 12px; height: 12px; }
-        .particle:nth-child(3) { top: 70%; left: 10%; animation-duration: 18s; }
-        .particle:nth-child(4) { top: 50%; left: 60%; animation-duration: 22s; width: 15px; height: 15px; }
-        .particle:nth-child(5) { top: 90%; left: 40%; animation-duration: 20s; }
-        .particle:nth-child(6) { top: 20%; left: 90%; animation-duration: 17s; }
-        .particle:nth-child(7) { top: 80%; left: 70%; animation-duration: 23s; }
-        .particle:nth-child(8) { top: 40%; left: 30%; animation-duration: 19s; }
+        .particle:nth-child(1) { top: 5%; left: 10%; animation-duration: 25s; width: 10px; height: 10px; }
+        .particle:nth-child(2) { top: 15%; left: 90%; animation-duration: 35s; width: 15px; height: 15px; }
+        .particle:nth-child(3) { top: 25%; left: 20%; animation-duration: 28s; }
+        .particle:nth-child(4) { top: 35%; left: 80%; animation-duration: 32s; width: 12px; height: 12px; }
+        .particle:nth-child(5) { top: 45%; left: 40%; animation-duration: 30s; }
+        .particle:nth-child(6) { top: 55%; left: 60%; animation-duration: 38s; width: 14px; height: 14px; }
+        .particle:nth-child(7) { top: 65%; left: 15%; animation-duration: 26s; }
+        .particle:nth-child(8) { top: 75%; left: 85%; animation-duration: 34s; width: 9px; height: 9px; }
+        .particle:nth-child(9) { top: 85%; left: 30%; animation-duration: 29s; }
+        .particle:nth-child(10) { top: 95%; left: 70%; animation-duration: 31s; width: 13px; height: 13px; }
+        .particle:nth-child(11) { top: 10%; left: 95%; animation-duration: 36s; }
+        .particle:nth-child(12) { top: 90%; left: 5%; animation-duration: 27s; width: 11px; height: 11px; }
         
         .container {
             position: relative;
@@ -2171,64 +2216,51 @@ def generar_frontend_impactante(base_dir):
             text-align: center;
         }
         
-        /* ROBOT FLOTANTE GIGANTE */
+        /* CABECERA PERFECTA - IGUAL QUE EN PÁGINAS SECUNDARIAS */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        
         .robot-icon {
-            font-size: 10em;
-            margin: 0 auto 30px;
+            font-size: 6em;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            filter: drop-shadow(0 20px 40px rgba(102, 126, 234, 0.6));
-            display: inline-block;
-            animation: floatRobot 6s ease-in-out infinite;
-            position: relative;
+            filter: drop-shadow(0 15px 30px rgba(102, 126, 234, 0.6));
+            animation: floatRobot 5s ease-in-out infinite;
         }
         
         @keyframes floatRobot {
             0%, 100% { transform: translateY(0) rotate(0deg); }
-            25% { transform: translateY(-20px) rotate(5deg); }
-            75% { transform: translateY(-10px) rotate(-5deg); }
+            25% { transform: translateY(-12px) rotate(4deg); }
+            75% { transform: translateY(-5px) rotate(-3deg); }
         }
         
-        h1 {
-            font-size: 5em;
+        .brand {
+            font-size: 4.5em;
             font-weight: 900;
-            line-height: 1.1;
-            margin-bottom: 20px;
-            background: linear-gradient(135deg, #ffffff 0%, #e0e0ff 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-transform: uppercase;
-            letter-spacing: -1px;
-            position: relative;
-            display: inline-block;
-        }
-        
-        h1::after {
-            content: "";
-            position: absolute;
-            bottom: -15px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 150px;
-            height: 5px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 3px;
-        }
-        
-        .highlight {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            display: block;
-            font-size: 1.2em;
+            letter-spacing: -2px;
+        }
+        
+        .brand span {
+            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
         
         .slogan {
             font-size: 1.8em;
             color: rgba(255,255,255,0.9);
             max-width: 800px;
-            margin: 30px auto;
+            margin: 20px auto;
             font-weight: 400;
             line-height: 1.5;
         }
@@ -2414,8 +2446,8 @@ def generar_frontend_impactante(base_dir):
         }
         
         @media (max-width: 768px) {
-            h1 { font-size: 3em; }
-            .robot-icon { font-size: 7em; }
+            .robot-icon { font-size: 4em; }
+            .brand { font-size: 3em; }
             .slogan { font-size: 1.3em; }
             .download-btn { font-size: 1.5em; padding: 20px 40px; }
             .stats { gap: 30px; }
@@ -2427,7 +2459,11 @@ def generar_frontend_impactante(base_dir):
     </style>
 </head>
 <body>
-    <!-- Partículas flotantes -->
+    <!-- 12 PARTÍCULAS FLOTANTES -->
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
     <div class="particle"></div>
     <div class="particle"></div>
     <div class="particle"></div>
@@ -2438,30 +2474,33 @@ def generar_frontend_impactante(base_dir):
     <div class="particle"></div>
     
     <div class="container">
-        <div class="robot-icon">
-            <i class="fas fa-robot"></i>
+        <!-- CABECERA PERFECTA - IGUAL QUE EN PÁGINAS SECUNDARIAS -->
+        <div class="header">
+            <i class="fas fa-robot robot-icon"></i>
+            <div class="brand">EDUCARE <span>AI</span></div>
         </div>
-        <h1>
-            <span class="highlight">EDUCARE</span>
-            AI
-        </h1>
+        
         <div class="slogan">
             La inteligencia artificial que transforma<br>tu forma de aprender en 17 idiomas.
         </div>
+        
         <div class="language-badge">
             🌍 Disponible en: <span>Español</span> • <span>English</span> • <span>Français</span> • <span>Deutsch</span> • <span>Italiano</span> • <span>Português</span> • <span>日本語</span> • <span>한국어</span> • <span>中文</span> • <span>Русский</span> • <span>العربية</span> • <span>हिन्दी</span> • <span>Nederlands</span> • <span>Polski</span> • <span>Türkçe</span> • <span>Svenska</span>
         </div>
+        
         <div class="stats">
             <div class="stat-item"><div class="stat-number">1M+</div><div class="stat-label">Estudiantes</div></div>
             <div class="stat-item"><div class="stat-number">4.8</div><div class="stat-label">⭐ Valoración</div></div>
             <div class="stat-item"><div class="stat-number">50+</div><div class="stat-label">Países</div></div>
         </div>
+        
         <div class="features-preview">
             <div class="feature-item"><i class="fas fa-camera"></i><p>Escanea y resuelve</p></div>
             <div class="feature-item"><i class="fas fa-language"></i><p>17 idiomas</p></div>
             <div class="feature-item"><i class="fas fa-chart-line"></i><p>Explicaciones paso a paso</p></div>
             <div class="feature-item"><i class="fas fa-mobile-alt"></i><p>Modo offline</p></div>
         </div>
+        
         <div class="download-section">
             <a href="https://play.google.com/store/apps/details?id=com.educareai.app" class="download-btn">
                 <i class="fab fa-google-play"></i>
@@ -2469,6 +2508,7 @@ def generar_frontend_impactante(base_dir):
             </a>
             <div class="btn-sub">Gratis en Google Play • 15,000+ reseñas 5⭐</div>
         </div>
+        
         <footer class="footer">
             <div class="footer-links">
                 <a href="#">Sobre Educare AI</a>
@@ -2481,6 +2521,7 @@ def generar_frontend_impactante(base_dir):
             </div>
         </footer>
     </div>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
 </body>
 </html>"""
@@ -2491,7 +2532,7 @@ def generar_frontend_impactante(base_dir):
     with open(ruta_index, 'w', encoding='utf-8') as f:
         f.write(html)
     
-    print(f"   ✅ PORTAZA FUTURISTA CON ROBOT GUARDADA EN: {ruta_index}")
+    print(f"   ✅ PORTAZA PERFECTA CON ROBOT GRADIENTE GUARDADA EN: {ruta_index}")
     print(f"   ✅ DISPONIBLE EN: https://stef7773.github.io/educare-ai-global/")
 
 # ============================================
@@ -2507,8 +2548,8 @@ def fabricar_paginas_globales():
     
     print("""
     ╔══════════════════════════════════════════════════════════════════════════╗
-    ║     🚀 EDUCARE AI - IMPERIO GLOBAL FUTURISTA v8.0                       ║
-    ║     17 IDIOMAS | ROBOT FLOTANTE | PARTÍCULAS | GLASSMORPHISM           ║
+    ║     🚀 EDUCARE AI - IMPERIO GLOBAL PERFECTO v9.0                       ║
+    ║     17 IDIOMAS | ROBOT GRADIENTE | 12 PARTÍCULAS | SIMETRÍA PERFECTA  ║
     ╚══════════════════════════════════════════════════════════════════════════╝
     """)
     
@@ -2566,7 +2607,7 @@ def fabricar_paginas_globales():
     generar_sitemap(paginas_generadas, base_dir)
     generar_robots_txt(base_dir)
     
-    print(f"\n🎨 Generando portada futurista con robot...")
+    print(f"\n🎨 Generando portada perfecta con robot gradiente...")
     generar_frontend_impactante(base_dir)
     
     stats = {
@@ -2580,16 +2621,16 @@ def fabricar_paginas_globales():
         json.dump(stats, f, indent=2, ensure_ascii=False)
     
     print(f"\n{'='*80}")
-    print(f"✅ GENERACIÓN FUTURISTA COMPLETADA CON ÉXITO")
+    print(f"✅ GENERACIÓN PERFECTA COMPLETADA CON ÉXITO")
     print(f"{'='*80}")
     print(f"📊 TOTAL DE PÁGINAS SEO: {total_paginas} (en web_seo_global/)")
-    print(f"🎨 PORTAZA FUTURISTA EN: ~/EducareAI_Project/index.html")
+    print(f"🎨 PORTAZA PERFECTA EN: ~/EducareAI_Project/index.html")
     print(f"🌐 URL PÚBLICA: https://stef7773.github.io/educare-ai-global/")
     print(f"{'='*80}")
     print(f"\n📋 PRÓXIMOS PASOS:")
     print(f"   1. cd ~/EducareAI_Project")
     print(f"   2. git add .")
-    print(f"   3. git commit -m '✨ VERSIÓN FUTURISTA DEFINITIVA - Robot flotante, partículas, glassmorphism'")
+    print(f"   3. git commit -m '✨ VERSIÓN PERFECTA v9.0 - Robot gradiente, 12 partículas, simetría total'")
     print(f"   4. git push origin main")
     print(f"   5. Esperar 5 minutos")
     print(f"   6. Abrir https://stef7773.github.io/educare-ai-global/")
