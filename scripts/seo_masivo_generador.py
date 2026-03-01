@@ -1712,6 +1712,9 @@ def generar_keywords_infinitas(base_keywords, lang, count=500):
     
     return expanded[:count]
 
+# ============================================
+# 🎨 FUNCIÓN PRINCIPAL DE GENERACIÓN HTML - VERSIÓN ÚNICA Y DEFINITIVA
+# ============================================
 def generar_html_seo(tema, lang, idx):
     """Genera HTML con diseño ESPECTACULAR para TODOS los idiomas"""
     textos_lang = textos.get(lang, textos["en"])
@@ -1759,7 +1762,7 @@ def generar_html_seo(tema, lang, idx):
     
     labels = stats_labels.get(lang, stats_labels["en"])
     
-    return f"""<!DOCTYPE html>
+    return f'''<!DOCTYPE html>
 <html lang="{lang}">
 <head>
     <meta charset="UTF-8">
@@ -1866,7 +1869,7 @@ def generar_html_seo(tema, lang, idx):
         <p class="footer">© 2025 Educare AI - {tema}</p>
     </div>
 </body>
-</html>"""
+</html>'''
 
 def generar_sitemap(paginas_generadas, base_dir):
     """Genera sitemap.xml con URLs absolutas corregidas"""
@@ -2279,11 +2282,12 @@ def fabricar_paginas_globales():
     print(f"🌐 URL PÚBLICA: https://stef7773.github.io/educare-ai-global/")
     print(f"{'='*80}")
     print(f"\n📋 PRÓXIMOS PASOS:")
-    print(f"   1. git add .")
-    print(f"   2. git commit -m '✨ REDISEÑO COMPLETO - Diseño premium, logo integrado, traducciones perfectas'")
-    print(f"   3. git push origin main")
-    print(f"   4. Esperar 5 minutos")
-    print(f"   5. Abrir https://stef7773.github.io/educare-ai-global/")
+    print(f"   1. cd ~/EducareAI_Project")
+    print(f"   2. git add .")
+    print(f"   3. git commit -m '✨ REDISEÑO COMPLETO - Diseño premium, logo integrado, traducciones perfectas'")
+    print(f"   4. git push origin main")
+    print(f"   5. Esperar 5 minutos")
+    print(f"   6. Abrir https://stef7773.github.io/educare-ai-global/")
     print(f"{'='*80}")
 
 if __name__ == "__main__":
