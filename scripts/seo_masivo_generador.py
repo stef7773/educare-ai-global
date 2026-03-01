@@ -4,7 +4,7 @@ import json
 from datetime import datetime
 
 # ============================================
-# CONFIGURACIÓN MEGA EXPANDIDA - 5000+ PALABRAS CLAVE
+# CONFIGURACIÓN MEGA EXPANDIDA
 # ============================================
 
 CATEGORIAS = {
@@ -201,7 +201,7 @@ CATEGORIAS = {
 }
 
 # ============================================
-# ESTRATEGIA GLOBAL - MEGA EXPANDIDA CON NUEVOS IDIOMAS
+# ESTRATEGIA GLOBAL - MEGA EXPANDIDA
 # ============================================
 estrategia_global = {
     "en": [
@@ -585,7 +585,7 @@ estrategia_global = {
          for cat in ["matematica", "fisica", "chimica", "biologia", "ingegneria", "alimenti", "ricette", "sport", "stile vita", "notizie", "forum", "social media", "viaggi", "business", "tecnologia", "salute"]
          for suf in ["risolutore", "calcolatrice", "aiuto", "assistente", "strumento", "app", "tutor", "consigli"]],
     
-    "jp": [  # Japonés
+    "jp": [
         "微分積分 問題 解決", "積分計算 ステップバイステップ",
         "微分 計算機 オンライン", "代数方程式 解き方",
         "幾何学 問題 解決", "三角関数 計算機",
@@ -625,7 +625,7 @@ estrategia_global = {
          for cat in ["数学", "物理", "化学", "生物", "工学", "料理", "スポーツ", "生活", "ニュース", "旅行", "ビジネス", "テクノロジー", "健康"]
          for suf in ["解法", "計算機", "ヘルプ", "アシスタント", "ツール", "アプリ", "ガイド", "コツ"]],
     
-    "kr": [  # Coreano
+    "kr": [
         "미적분 문제 해결", "적분 계산 단계별",
         "미분 계산기 온라인", "대수 방정식 풀이",
         "기하학 문제 해결", "삼각법 계산기",
@@ -665,7 +665,7 @@ estrategia_global = {
          for cat in ["수학", "물리학", "화학", "생물학", "공학", "요리", "스포츠", "라이프", "뉴스", "여행", "비즈니스", "기술", "건강"]
          for suf in ["해결사", "계산기", "도움", "어시스턴트", "도구", "앱", "가이드", "팁"]],
     
-    "zh": [  # Chino simplificado
+    "zh": [
         "微积分问题解决", "积分计算步骤",
         "导数计算器在线", "代数方程求解",
         "几何问题解决", "三角计算器",
@@ -705,7 +705,7 @@ estrategia_global = {
          for cat in ["数学", "物理", "化学", "生物", "工程", "食谱", "体育", "生活", "新闻", "旅游", "商业", "科技", "健康"]
          for suf in ["解决器", "计算器", "帮助", "助手", "工具", "应用", "指南", "技巧"]],
     
-    "ru": [  # Ruso
+    "ru": [
         "решение задач по математике", "интегральный калькулятор по шагам",
         "производная калькулятор онлайн", "решение алгебраических уравнений",
         "решение задач по геометрии", "тригонометрический калькулятор",
@@ -745,7 +745,7 @@ estrategia_global = {
          for cat in ["математика", "физика", "химия", "биология", "инженерия", "рецепты", "спорт", "жизнь", "новости", "путешествия", "бизнес", "технологии", "здоровье"]
          for suf in ["решатель", "калькулятор", "помощь", "ассистент", "инструмент", "приложение", "гид", "советы"]],
     
-    "ar": [  # Árabe
+    "ar": [
         "حل مسائل التفاضل والتكامل", "حاسبة التكامل خطوة بخطوة",
         "حاسبة المشتقات اونلاين", "حل المعادلات الجبرية",
         "حل مسائل الهندسة", "حاسبة المثلثات",
@@ -785,7 +785,7 @@ estrategia_global = {
          for cat in ["رياضيات", "فيزياء", "كيمياء", "أحياء", "هندسة", "وصفات", "رياضة", "حياة", "أخبار", "سفر", "أعمال", "تكنولوجيا", "صحة"]
          for suf in ["حل", "حاسبة", "مساعدة", "مساعد", "أداة", "تطبيق", "دليل", "نصائح"]],
     
-    "hi": [  # Hindi
+    "hi": [
         "कैलकुलस समस्या हल करें", "इंटीग्रल कैलकुलेटर स्टेप बाय स्टेप",
         "डेरिवेटिव सॉल्वर ऑनलाइन", "बीजगणित समीकरण हल करें",
         "ज्यामिति समस्या हल करें", "त्रिकोणमिति कैलकुलेटर",
@@ -825,7 +825,7 @@ estrategia_global = {
          for cat in ["गणित", "भौतिकी", "रसायन", "जीव विज्ञान", "इंजीनियरिंग", "रेसिपी", "खेल", "जीवन शैली", "समाचार", "यात्रा", "व्यवसाय", "प्रौद्योगिकी", "स्वास्थ्य"]
          for suf in ["हल करने वाला", "कैलकुलेटर", "सहायता", "सहायक", "उपकरण", "ऐप", "गाइड", "टिप्स"]],
     
-    "nl": [  # Holandés
+    "nl": [
         "calculus problemen oplossen", "integrale rekenmachine stap voor stap",
         "afgeleide solver online", "algebra vergelijking oplossen",
         "meetkunde problemen oplossen", "trigonometrie rekenmachine",
@@ -865,7 +865,7 @@ estrategia_global = {
          for cat in ["wiskunde", "natuurkunde", "scheikunde", "biologie", "techniek", "recepten", "sport", "levensstijl", "nieuws", "reizen", "zaken", "technologie", "gezondheid"]
          for suf in ["oplosser", "rekenmachine", "hulp", "assistent", "tool", "app", "gids", "tips"]],
     
-    "pl": [  # Polaco
+    "pl": [
         "rozwiązywanie problemów rachunku różniczkowego", "kalkulator całek krok po kroku",
         "kalkulator pochodnych online", "rozwiązywanie równań algebraicznych",
         "rozwiązywanie problemów geometrycznych", "kalkulator trygonometryczny",
@@ -905,7 +905,7 @@ estrategia_global = {
          for cat in ["matematyka", "fizyka", "chemia", "biologia", "inżynieria", "przepisy", "sport", "styl życia", "wiadomości", "podróże", "biznes", "technologia", "zdrowie"]
          for suf in ["rozwiązywacz", "kalkulator", "pomoc", "asystent", "narzędzie", "aplikacja", "przewodnik", "wskazówki"]],
     
-    "tr": [  # Turco
+    "tr": [
         "kalkülüs problemleri çözme", "integral hesaplama adım adım",
         "türev çözücü online", "cebir denklem çözme",
         "geometri problemleri çözme", "trigonometri hesaplayıcı",
@@ -945,7 +945,7 @@ estrategia_global = {
          for cat in ["matematik", "fizik", "kimya", "biyoloji", "mühendislik", "tarifler", "spor", "yaşam", "haberler", "seyahat", "iş", "teknoloji", "sağlık"]
          for suf in ["çözücü", "hesaplayıcı", "yardım", "asistan", "araç", "uygulama", "rehber", "ipuçları"]],
     
-    "sv": [  # Sueco
+    "sv": [
         "kalkylproblem lösning", "integralkalkylator steg för steg",
         "derivata lösare online", "algebra ekvationslösning",
         "geometri problem lösning", "trigonometri kalkylator",
@@ -987,7 +987,7 @@ estrategia_global = {
 }
 
 # ============================================
-# CONTENIDO PERSUASIVO POR IDIOMA - VERSIÓN ÉPICA DEFINITIVA
+# CONTENIDO PERSUASIVO POR IDIOMA - VERSIÓN REDISEÑADA
 # ============================================
 textos = {
     "en": {
@@ -1902,10 +1902,10 @@ Sitemap: https://stef7773.github.io/educare-ai-global/web_seo_global/sitemap.xml
         f.write(robots)
 
 # ============================================
-# 🎨 FUNCIÓN DE LA PORTAZA (VERSIÓN ÉPICA)
+# 🎨 FUNCIÓN DE LA PORTAZA - VERSIÓN REDISEÑADA CON LOGO
 # ============================================
 def generar_frontend_impactante(base_dir):
-    """Genera una página principal visualmente impactante"""
+    """Genera una página principal visualmente impactante con logo de Educare AI"""
     
     html = """<!DOCTYPE html>
 <html lang="es">
@@ -2183,11 +2183,11 @@ def generar_frontend_impactante(base_dir):
     with open(ruta_index, 'w', encoding='utf-8') as f:
         f.write(html)
     
-    print(f"   ✅ PORTAZA ÉPICA GUARDADA EN: {ruta_index}")
+    print(f"   ✅ PORTAZA REDISEÑADA GUARDADA EN: {ruta_index}")
     print(f"   ✅ DISPONIBLE EN: https://stef7773.github.io/educare-ai-global/")
 
 # ============================================
-# 🚀 FUNCIÓN PRINCIPAL ÉPICA
+# 🚀 FUNCIÓN PRINCIPAL
 # ============================================
 def fabricar_paginas_globales():
     base_dir = os.path.expanduser('~/EducareAI_Project/web_seo_global')
@@ -2199,9 +2199,8 @@ def fabricar_paginas_globales():
     
     print("""
     ╔══════════════════════════════════════════════════════════════════════════╗
-    ║     🚀 EDUCARE AI - IMPERIO GLOBAL ÉPICO v4.0                           ║
-    ║     17 IDIOMAS | 400 PÁGINAS POR IDIOMA | DISEÑO ESPECTACULAR          ║
-    ║     TRADUCCIONES PERFECTAS | ANIMACIONES | SOMBRAS | EFECTOS           ║
+    ║     🚀 EDUCARE AI - IMPERIO GLOBAL REDISEÑADO v5.0                      ║
+    ║     17 IDIOMAS | DISEÑO PREMIUM | LOGO INTEGRADO | TRADUCCIONES PERFECTAS║
     ╚══════════════════════════════════════════════════════════════════════════╝
     """)
     
@@ -2259,7 +2258,7 @@ def fabricar_paginas_globales():
     generar_sitemap(paginas_generadas, base_dir)
     generar_robots_txt(base_dir)
     
-    print(f"\n🎨 Generando portada impactante mejorada...")
+    print(f"\n🎨 Generando portada rediseñada con logo...")
     generar_frontend_impactante(base_dir)
     
     stats = {
@@ -2273,15 +2272,15 @@ def fabricar_paginas_globales():
         json.dump(stats, f, indent=2, ensure_ascii=False)
     
     print(f"\n{'='*80}")
-    print(f"✅ GENERACIÓN ÉPICA COMPLETADA CON ÉXITO")
+    print(f"✅ GENERACIÓN REDISEÑADA COMPLETADA CON ÉXITO")
     print(f"{'='*80}")
     print(f"📊 TOTAL DE PÁGINAS SEO: {total_paginas} (en web_seo_global/)")
-    print(f"🎨 PORTAZA ÉPICA EN: ~/EducareAI_Project/index.html")
+    print(f"🎨 PORTAZA REDISEÑADA EN: ~/EducareAI_Project/index.html")
     print(f"🌐 URL PÚBLICA: https://stef7773.github.io/educare-ai-global/")
     print(f"{'='*80}")
     print(f"\n📋 PRÓXIMOS PASOS:")
     print(f"   1. git add .")
-    print(f"   2. git commit -m '✨ VERSIÓN ÉPICA DEFINITIVA - 17 idiomas, diseño espectacular'")
+    print(f"   2. git commit -m '✨ REDISEÑO COMPLETO - Diseño premium, logo integrado, traducciones perfectas'")
     print(f"   3. git push origin main")
     print(f"   4. Esperar 5 minutos")
     print(f"   5. Abrir https://stef7773.github.io/educare-ai-global/")
