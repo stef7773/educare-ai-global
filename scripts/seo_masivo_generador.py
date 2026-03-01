@@ -987,7 +987,7 @@ estrategia_global = {
 }
 
 # ============================================
-# CONTENIDO PERSUASIVO POR IDIOMA - VERSIÓN REDISEÑADA
+# CONTENIDO PERSUASIVO POR IDIOMA - VERSIÓN PREMIUM
 # ============================================
 textos = {
     "en": {
@@ -1649,7 +1649,7 @@ textos = {
 }
 
 # ============================================
-# FUNCIONES DE GENERACIÓN
+# FUNCIÓN DE GENERACIÓN DE KEYWORDS
 # ============================================
 
 def generar_keywords_infinitas(base_keywords, lang, count=500):
@@ -1713,7 +1713,7 @@ def generar_keywords_infinitas(base_keywords, lang, count=500):
     return expanded[:count]
 
 # ============================================
-# 🎨 FUNCIÓN PRINCIPAL DE GENERACIÓN HTML - VERSIÓN ÚNICA Y DEFINITIVA
+# 🎨 FUNCIÓN PRINCIPAL DE GENERACIÓN HTML - VERSIÓN PREMIUM ÚNICA
 # ============================================
 def generar_html_seo(tema, lang, idx):
     """Genera HTML con diseño ESPECTACULAR para TODOS los idiomas"""
@@ -1905,7 +1905,7 @@ Sitemap: https://stef7773.github.io/educare-ai-global/web_seo_global/sitemap.xml
         f.write(robots)
 
 # ============================================
-# 🎨 FUNCIÓN DE LA PORTAZA - VERSIÓN REDISEÑADA CON LOGO
+# 🎨 FUNCIÓN DE LA PORTAZA - VERSIÓN PREMIUM
 # ============================================
 def generar_frontend_impactante(base_dir):
     """Genera una página principal visualmente impactante con logo de Educare AI"""
@@ -2186,7 +2186,7 @@ def generar_frontend_impactante(base_dir):
     with open(ruta_index, 'w', encoding='utf-8') as f:
         f.write(html)
     
-    print(f"   ✅ PORTAZA REDISEÑADA GUARDADA EN: {ruta_index}")
+    print(f"   ✅ PORTAZA PREMIUM GUARDADA EN: {ruta_index}")
     print(f"   ✅ DISPONIBLE EN: https://stef7773.github.io/educare-ai-global/")
 
 # ============================================
@@ -2202,8 +2202,9 @@ def fabricar_paginas_globales():
     
     print("""
     ╔══════════════════════════════════════════════════════════════════════════╗
-    ║     🚀 EDUCARE AI - IMPERIO GLOBAL REDISEÑADO v5.0                      ║
-    ║     17 IDIOMAS | DISEÑO PREMIUM | LOGO INTEGRADO | TRADUCCIONES PERFECTAS║
+    ║     🚀 EDUCARE AI - IMPERIO GLOBAL PREMIUM v6.0                         ║
+    ║     17 IDIOMAS | DISEÑO PREMIUM | TRADUCCIONES PERFECTAS               ║
+    ║     VERSIÓN ÚNICA - SIN DUPLICADOS - 100% FUNCIONAL                    ║
     ╚══════════════════════════════════════════════════════════════════════════╝
     """)
     
@@ -2261,7 +2262,7 @@ def fabricar_paginas_globales():
     generar_sitemap(paginas_generadas, base_dir)
     generar_robots_txt(base_dir)
     
-    print(f"\n🎨 Generando portada rediseñada con logo...")
+    print(f"\n🎨 Generando portada premium...")
     generar_frontend_impactante(base_dir)
     
     stats = {
@@ -2275,16 +2276,16 @@ def fabricar_paginas_globales():
         json.dump(stats, f, indent=2, ensure_ascii=False)
     
     print(f"\n{'='*80}")
-    print(f"✅ GENERACIÓN REDISEÑADA COMPLETADA CON ÉXITO")
+    print(f"✅ GENERACIÓN PREMIUM COMPLETADA CON ÉXITO")
     print(f"{'='*80}")
     print(f"📊 TOTAL DE PÁGINAS SEO: {total_paginas} (en web_seo_global/)")
-    print(f"🎨 PORTAZA REDISEÑADA EN: ~/EducareAI_Project/index.html")
+    print(f"🎨 PORTAZA PREMIUM EN: ~/EducareAI_Project/index.html")
     print(f"🌐 URL PÚBLICA: https://stef7773.github.io/educare-ai-global/")
     print(f"{'='*80}")
     print(f"\n📋 PRÓXIMOS PASOS:")
     print(f"   1. cd ~/EducareAI_Project")
     print(f"   2. git add .")
-    print(f"   3. git commit -m '✨ REDISEÑO COMPLETO - Diseño premium, logo integrado, traducciones perfectas'")
+    print(f"   3. git commit -m '✨ VERSIÓN PREMIUM DEFINITIVA - Diseño espectacular, traducciones perfectas'")
     print(f"   4. git push origin main")
     print(f"   5. Esperar 5 minutos")
     print(f"   6. Abrir https://stef7773.github.io/educare-ai-global/")
