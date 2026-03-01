@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="مساعدة حاسبة المثلثات - Educare AI هي الأداة التعليمية الأكثر تقدمًا. حل مشاكل مساعدة حاسبة المثلثات المعقدة فورًا مع شرح خطوة بخطوة. انضم إلى أكثر من مليون طالب قاموا بتحسين">
+    <meta name="keywords" content="مساعدة حاسبة المثلثات, حاسبة help, حاسبة app, المثلثات solver, حاسبة guide, المثلثات guide, educare ai, ar education, homework helper, study app">
+    <meta name="robots" content="index, follow">
+    <title>مساعدة حاسبة المثلثات | Educare AI</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f0c1f 0%, #1a1a3a 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        /* 20 PARTÍCULAS PLAYSTATION - MÁS RELAJANTES */
+        .particle {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: rgba(102, 126, 234, 0.2);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 0;
+            animation: floatParticle 30s infinite linear;
+        }
+        
+        @keyframes floatParticle {
+            0% { transform: translateY(0) translateX(0) scale(1); opacity: 0.15; }
+            50% { transform: translateY(-200px) translateX(150px) scale(2); opacity: 0.5; }
+            100% { transform: translateY(-400px) translateX(300px) scale(0.5); opacity: 0; }
+        }
+        
+        /* 20 partículas con posiciones y tiempos diferentes */
+        .particle:nth-child(1) { top: 2%; left: 5%; animation-duration: 28s; width: 10px; height: 10px; }
+        .particle:nth-child(2) { top: 8%; left: 92%; animation-duration: 35s; width: 14px; height: 14px; }
+        .particle:nth-child(3) { top: 15%; left: 15%; animation-duration: 32s; width: 7px; height: 7px; }
+        .particle:nth-child(4) { top: 22%; left: 78%; animation-duration: 38s; width: 12px; height: 12px; }
+        .particle:nth-child(5) { top: 30%; left: 25%; animation-duration: 25s; width: 9px; height: 9px; }
+        .particle:nth-child(6) { top: 38%; left: 65%; animation-duration: 42s; width: 15px; height: 15px; }
+        .particle:nth-child(7) { top: 45%; left: 35%; animation-duration: 29s; width: 8px; height: 8px; }
+        .particle:nth-child(8) { top: 52%; left: 55%; animation-duration: 36s; width: 13px; height: 13px; }
+        .particle:nth-child(9) { top: 60%; left: 10%; animation-duration: 31s; width: 11px; height: 11px; }
+        .particle:nth-child(10) { top: 68%; left: 85%; animation-duration: 39s; width: 16px; height: 16px; }
+        .particle:nth-child(11) { top: 75%; left: 20%; animation-duration: 27s; width: 9px; height: 9px; }
+        .particle:nth-child(12) { top: 82%; left: 70%; animation-duration: 33s; width: 14px; height: 14px; }
+        .particle:nth-child(13) { top: 88%; left: 40%; animation-duration: 37s; width: 12px; height: 12px; }
+        .particle:nth-child(14) { top: 94%; left: 60%; animation-duration: 26s; width: 10px; height: 10px; }
+        .particle:nth-child(15) { top: 5%; left: 45%; animation-duration: 34s; width: 13px; height: 13px; }
+        .particle:nth-child(16) { top: 12%; left: 30%; animation-duration: 41s; width: 17px; height: 17px; }
+        .particle:nth-child(17) { top: 19%; left: 50%; animation-duration: 30s; width: 8px; height: 8px; }
+        .particle:nth-child(18) { top: 26%; left: 95%; animation-duration: 36s; width: 11px; height: 11px; }
+        .particle:nth-child(19) { top: 33%; left: 8%; animation-duration: 29s; width: 14px; height: 14px; }
+        .particle:nth-child(20) { top: 40%; left: 75%; animation-duration: 32s; width: 9px; height: 9px; }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 50px;
+            border-radius: 40px;
+            max-width: 800px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 30px 70px rgba(0,0,0,0.4), 0 0 0 2px rgba(102, 126, 234, 0.2);
+            transition: transform 0.4s, box-shadow 0.4s;
+            animation: fadeIn 0.6s ease-out;
+            position: relative;
+            z-index: 1;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 40px 90px rgba(0,0,0,0.5), 0 0 0 4px rgba(102, 126, 234, 0.4);
+        }
+        
+        /* TÍTULO EN FORMATO Educare AI (no mayúsculas) */
+        .brand-title {
+            font-size: 2.8em;
+            font-weight: 800;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+        
+        .brand-title span {
+            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        h1 {
+            color: #2d3748;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            font-weight: 800;
+            line-height: 1.3;
+            position: relative;
+            display: inline-block;
+        }
+        
+        h1::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 2px;
+        }
+        
+        .highlight { 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+            background-clip: text; 
+        }
+        
+        .description { 
+            font-size: 1.2em; 
+            color: #4a5568; 
+            margin-bottom: 25px; 
+            line-height: 1.6; 
+            font-weight: 400;
+        }
+        
+        .benefit { 
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 15px; 
+            border-radius: 20px; 
+            margin-bottom: 25px; 
+            font-weight: 700; 
+            color: #2d3748; 
+            font-size: 1em; 
+            border: 1px solid rgba(102, 126, 234, 0.2);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .features { 
+            background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+            padding: 20px; 
+            border-radius: 20px; 
+            margin-bottom: 25px; 
+            color: #2d3748; 
+            font-weight: 600; 
+            font-size: 1em;
+            border: 1px solid rgba(102, 126, 234, 0.2);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .stats { 
+            display: flex; 
+            justify-content: center; 
+            gap: 20px; 
+            margin: 25px 0; 
+            flex-wrap: wrap; 
+        }
+        
+        .stat-item { 
+            text-align: center; 
+            background: rgba(102, 126, 234, 0.05);
+            padding: 12px 20px;
+            border-radius: 20px;
+            min-width: 100px;
+            border: 1px solid rgba(102, 126, 234, 0.2);
+            backdrop-filter: blur(5px);
+        }
+        
+        .stat-number { 
+            font-size: 2.2em; 
+            font-weight: 900; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+            background-clip: text; 
+            line-height: 1; 
+        }
+        
+        .stat-label { 
+            font-size: 0.8em; 
+            color: #4a5568; 
+            text-transform: uppercase; 
+            letter-spacing: 1px; 
+            margin-top: 5px; 
+            font-weight: 600;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 18px 50px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 1.3em;
+            margin: 20px 0;
+            transition: all 0.4s;
+            box-shadow: 0 15px 30px rgba(102, 126, 234, 0.4);
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            transition: left 0.6s;
+        }
+        
+        .btn:hover::before {
+            left: 100%;
+        }
+        
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 25px 50px rgba(102, 126, 234, 0.6);
+        }
+        
+        .subtext { 
+            color: #718096; 
+            font-size: 1em; 
+            margin: 12px 0; 
+            font-weight: 500; 
+            font-style: italic;
+        }
+        
+        .cta-urgency { 
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            color: #92400e; 
+            padding: 10px; 
+            border-radius: 12px; 
+            margin: 15px 0 10px; 
+            font-weight: 700; 
+            border: 1px solid #fbbf24;
+            box-shadow: 0 5px 15px rgba(251, 191, 36, 0.2);
+            font-size: 0.95em;
+        }
+        
+        .footer { 
+            margin-top: 25px; 
+            font-size: 0.85em; 
+            color: #94a3b8; 
+            border-top: 1px solid #e2e8f0; 
+            padding-top: 15px; 
+            font-weight: 400;
+        }
+        
+        @media (max-width: 768px) {
+            h1 { font-size: 2em; }
+            .brand-title { font-size: 2.2em; }
+            .description { font-size: 1.1em; }
+            .btn { font-size: 1.2em; padding: 15px 35px; }
+            .stats { gap: 12px; }
+            .stat-item { padding: 8px 12px; min-width: 80px; }
+            .card { padding: 30px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- 20 PARTÍCULAS PLAYSTATION -->
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    
+    <div class="card">
+        <!-- TÍTULO Educare AI (sin robot en secundarias) -->
+        <div class="brand-title">Educare <span>AI</span></div>
+        
+        <h1><span class="highlight">اكتشف مساعدة حاسبة المثلثات مع الذكاء الاصطناعي</span></h1>
+        <p class="description">Educare AI هي الأداة التعليمية الأكثر تقدمًا. حل مشاكل مساعدة حاسبة المثلثات المعقدة فورًا مع شرح خطوة بخطوة. انضم إلى أكثر من مليون طالب قاموا بتحسين درجاتهم.</p>
+        
+        <div class="benefit">✓ حلول فورية ✓ خطوة بخطوة ✓ مدرس ذكاء اصطناعي 24/7 ✓ دقة 98%</div>
+        
+        <div class="stats">
+            <div class="stat-item"><div class="stat-number">1M+</div><div class="stat-label">طالب</div></div>
+            <div class="stat-item"><div class="stat-number">4.8</div><div class="stat-label">⭐ تقييم</div></div>
+            <div class="stat-item"><div class="stat-number">98%</div><div class="stat-label">دقة</div></div>
+        </div>
+        
+        <div class="features">مساعد ذكاء اصطناعي 24/7 • وضع عدم الاتصال متاح • احفظ وشارك الحلول • حل بالتصوير باستخدام الكاميرا</div>
+        
+        <a href="https://play.google.com/store/apps/details?id=com.educareai.app" class="btn">🚀 التحميل من متجر بلاي</a>
+        <p class="subtext">📚 يستخدمه طلاب أفضل الجامعات</p>
+        
+        <div class="cta-urgency">ابدأ مجانًا الآن</div>
+        
+        <p class="footer">© 2025 Educare AI - مساعدة حاسبة المثلثات</p>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+</body>
+</html>

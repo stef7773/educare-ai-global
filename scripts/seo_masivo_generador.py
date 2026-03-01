@@ -4,7 +4,7 @@ import json
 from datetime import datetime
 
 # ============================================
-# CONFIGURACIÓN (igual, no cambiar)
+# CONFIGURACIÓN (igual)
 # ============================================
 
 CATEGORIAS = {
@@ -1713,10 +1713,10 @@ def generar_keywords_infinitas(base_keywords, lang, count=500):
     return expanded[:count]
 
 # ============================================
-# 🎨 FUNCIÓN PRINCIPAL - VERSIÓN 9.0 (LA DEFINITIVA)
+# 🎨 FUNCIÓN PRINCIPAL - VERSIÓN 10.0 (PLAYSTATION STYLE)
 # ============================================
 def generar_html_seo(tema, lang, idx):
-    """Genera HTML con diseño FUTURISTA PERFECTO - Robot gradiente + Educare AI juntos"""
+    """Genera HTML con diseño PLAYSTATION - Robot SOLO en principal"""
     textos_lang = textos.get(lang, textos["en"])
     h1_template = random.choice(textos_lang["h1_variations"])
     h1 = h1_template.replace("{tema}", tema)
@@ -1785,37 +1785,45 @@ def generar_html_seo(tema, lang, idx):
             overflow-x: hidden;
         }}
         
-        /* 12 PARTÍCULAS FLOTANTES - MÁS RELAJANTES */
+        /* 20 PARTÍCULAS PLAYSTATION - MÁS RELAJANTES */
         .particle {{
             position: absolute;
-            width: 6px;
-            height: 6px;
-            background: rgba(102, 126, 234, 0.25);
+            width: 8px;
+            height: 8px;
+            background: rgba(102, 126, 234, 0.2);
             border-radius: 50%;
             pointer-events: none;
             z-index: 0;
-            animation: floatParticle 25s infinite linear;
+            animation: floatParticle 30s infinite linear;
         }}
         
         @keyframes floatParticle {{
-            0% {{ transform: translateY(0) translateX(0) scale(1); opacity: 0.2; }}
-            50% {{ transform: translateY(-150px) translateX(80px) scale(1.8); opacity: 0.6; }}
-            100% {{ transform: translateY(-300px) translateX(150px) scale(0.8); opacity: 0; }}
+            0% {{ transform: translateY(0) translateX(0) scale(1); opacity: 0.15; }}
+            50% {{ transform: translateY(-200px) translateX(150px) scale(2); opacity: 0.5; }}
+            100% {{ transform: translateY(-400px) translateX(300px) scale(0.5); opacity: 0; }}
         }}
         
-        /* 12 partículas con posiciones y tiempos diferentes */
-        .particle:nth-child(1) {{ top: 5%; left: 10%; animation-duration: 22s; width: 8px; height: 8px; }}
-        .particle:nth-child(2) {{ top: 15%; left: 85%; animation-duration: 28s; width: 10px; height: 10px; }}
-        .particle:nth-child(3) {{ top: 25%; left: 20%; animation-duration: 24s; }}
-        .particle:nth-child(4) {{ top: 35%; left: 70%; animation-duration: 30s; width: 12px; height: 12px; }}
-        .particle:nth-child(5) {{ top: 45%; left: 40%; animation-duration: 26s; }}
-        .particle:nth-child(6) {{ top: 55%; left: 60%; animation-duration: 32s; width: 7px; height: 7px; }}
-        .particle:nth-child(7) {{ top: 65%; left: 15%; animation-duration: 23s; }}
-        .particle:nth-child(8) {{ top: 75%; left: 80%; animation-duration: 29s; width: 9px; height: 9px; }}
-        .particle:nth-child(9) {{ top: 85%; left: 30%; animation-duration: 25s; }}
-        .particle:nth-child(10) {{ top: 95%; left: 50%; animation-duration: 27s; width: 11px; height: 11px; }}
-        .particle:nth-child(11) {{ top: 10%; left: 95%; animation-duration: 31s; }}
-        .particle:nth-child(12) {{ top: 90%; left: 5%; animation-duration: 21s; width: 8px; height: 8px; }}
+        /* 20 partículas con posiciones y tiempos diferentes */
+        .particle:nth-child(1) {{ top: 2%; left: 5%; animation-duration: 28s; width: 10px; height: 10px; }}
+        .particle:nth-child(2) {{ top: 8%; left: 92%; animation-duration: 35s; width: 14px; height: 14px; }}
+        .particle:nth-child(3) {{ top: 15%; left: 15%; animation-duration: 32s; width: 7px; height: 7px; }}
+        .particle:nth-child(4) {{ top: 22%; left: 78%; animation-duration: 38s; width: 12px; height: 12px; }}
+        .particle:nth-child(5) {{ top: 30%; left: 25%; animation-duration: 25s; width: 9px; height: 9px; }}
+        .particle:nth-child(6) {{ top: 38%; left: 65%; animation-duration: 42s; width: 15px; height: 15px; }}
+        .particle:nth-child(7) {{ top: 45%; left: 35%; animation-duration: 29s; width: 8px; height: 8px; }}
+        .particle:nth-child(8) {{ top: 52%; left: 55%; animation-duration: 36s; width: 13px; height: 13px; }}
+        .particle:nth-child(9) {{ top: 60%; left: 10%; animation-duration: 31s; width: 11px; height: 11px; }}
+        .particle:nth-child(10) {{ top: 68%; left: 85%; animation-duration: 39s; width: 16px; height: 16px; }}
+        .particle:nth-child(11) {{ top: 75%; left: 20%; animation-duration: 27s; width: 9px; height: 9px; }}
+        .particle:nth-child(12) {{ top: 82%; left: 70%; animation-duration: 33s; width: 14px; height: 14px; }}
+        .particle:nth-child(13) {{ top: 88%; left: 40%; animation-duration: 37s; width: 12px; height: 12px; }}
+        .particle:nth-child(14) {{ top: 94%; left: 60%; animation-duration: 26s; width: 10px; height: 10px; }}
+        .particle:nth-child(15) {{ top: 5%; left: 45%; animation-duration: 34s; width: 13px; height: 13px; }}
+        .particle:nth-child(16) {{ top: 12%; left: 30%; animation-duration: 41s; width: 17px; height: 17px; }}
+        .particle:nth-child(17) {{ top: 19%; left: 50%; animation-duration: 30s; width: 8px; height: 8px; }}
+        .particle:nth-child(18) {{ top: 26%; left: 95%; animation-duration: 36s; width: 11px; height: 11px; }}
+        .particle:nth-child(19) {{ top: 33%; left: 8%; animation-duration: 29s; width: 14px; height: 14px; }}
+        .particle:nth-child(20) {{ top: 40%; left: 75%; animation-duration: 32s; width: 9px; height: 9px; }}
         
         .card {{
             background: rgba(255, 255, 255, 0.95);
@@ -1843,41 +1851,18 @@ def generar_html_seo(tema, lang, idx):
             box-shadow: 0 40px 90px rgba(0,0,0,0.5), 0 0 0 4px rgba(102, 126, 234, 0.4);
         }}
         
-        /* CABECERA PERFECTA: Robot gradiente + Educare AI */
-        .header {{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 15px;
-            margin-bottom: 30px;
-            flex-wrap: wrap;
-        }}
-        
-        .robot-icon {{
-            font-size: 4em;
+        /* TÍTULO EN FORMATO Educare AI (no mayúsculas) */
+        .brand-title {{
+            font-size: 2.8em;
+            font-weight: 800;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            filter: drop-shadow(0 10px 20px rgba(102, 126, 234, 0.5));
-            animation: floatRobot 4s ease-in-out infinite;
-        }}
-        
-        @keyframes floatRobot {{
-            0%, 100% {{ transform: translateY(0) rotate(0deg); }}
-            25% {{ transform: translateY(-8px) rotate(3deg); }}
-            75% {{ transform: translateY(-3px) rotate(-2deg); }}
-        }}
-        
-        .brand {{
-            font-size: 2.5em;
-            font-weight: 900;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            margin-bottom: 15px;
             letter-spacing: -1px;
         }}
         
-        .brand span {{
+        .brand-title span {{
             background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -2052,18 +2037,25 @@ def generar_html_seo(tema, lang, idx):
         
         @media (max-width: 768px) {{
             h1 {{ font-size: 2em; }}
+            .brand-title {{ font-size: 2.2em; }}
             .description {{ font-size: 1.1em; }}
             .btn {{ font-size: 1.2em; padding: 15px 35px; }}
             .stats {{ gap: 12px; }}
             .stat-item {{ padding: 8px 12px; min-width: 80px; }}
             .card {{ padding: 30px; }}
-            .robot-icon {{ font-size: 3em; }}
-            .brand {{ font-size: 2em; }}
         }}
     </style>
 </head>
 <body>
-    <!-- 12 PARTÍCULAS FLOTANTES -->
+    <!-- 20 PARTÍCULAS PLAYSTATION -->
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
     <div class="particle"></div>
     <div class="particle"></div>
     <div class="particle"></div>
@@ -2078,11 +2070,8 @@ def generar_html_seo(tema, lang, idx):
     <div class="particle"></div>
     
     <div class="card">
-        <!-- CABECERA PERFECTA: Robot + Educare AI -->
-        <div class="header">
-            <i class="fas fa-robot robot-icon"></i>
-            <div class="brand">EDUCARE <span>AI</span></div>
-        </div>
+        <!-- TÍTULO Educare AI (sin robot en secundarias) -->
+        <div class="brand-title">Educare <span>AI</span></div>
         
         <h1><span class="highlight">{h1}</span></h1>
         <p class="description">{desc}</p>
@@ -2143,10 +2132,10 @@ Sitemap: https://stef7773.github.io/educare-ai-global/web_seo_global/sitemap.xml
         f.write(robots)
 
 # ============================================
-# 🎨 FUNCIÓN DE LA PORTAZA - VERSIÓN 9.0
+# 🎨 FUNCIÓN DE LA PORTAZA - VERSIÓN 10.0 PLAYSTATION
 # ============================================
 def generar_frontend_impactante(base_dir):
-    """Genera una página principal visualmente impactante con robot y 12 partículas"""
+    """Genera página principal con ROBOT GIGANTE y 20 partículas"""
     
     html = """<!DOCTYPE html>
 <html lang="es">
@@ -2171,36 +2160,44 @@ def generar_frontend_impactante(base_dir):
             position: relative;
         }
         
-        /* 12 PARTÍCULAS FLOTANTES - MÁS RELAJANTES */
+        /* 20 PARTÍCULAS PLAYSTATION - MÁS RELAJANTES */
         .particle {
             position: fixed;
-            width: 8px;
-            height: 8px;
+            width: 12px;
+            height: 12px;
             background: rgba(102, 126, 234, 0.2);
             border-radius: 50%;
             pointer-events: none;
             z-index: 0;
-            animation: floatParticle 30s infinite linear;
+            animation: floatParticle 35s infinite linear;
         }
         
         @keyframes floatParticle {
             0% { transform: translateY(0) translateX(0) scale(1); opacity: 0.1; }
-            50% { transform: translateY(-200px) translateX(150px) scale(2); opacity: 0.4; }
-            100% { transform: translateY(-400px) translateX(300px) scale(0.5); opacity: 0; }
+            50% { transform: translateY(-250px) translateX(200px) scale(2.5); opacity: 0.4; }
+            100% { transform: translateY(-500px) translateX(400px) scale(0.8); opacity: 0; }
         }
         
-        .particle:nth-child(1) { top: 5%; left: 10%; animation-duration: 25s; width: 10px; height: 10px; }
-        .particle:nth-child(2) { top: 15%; left: 90%; animation-duration: 35s; width: 15px; height: 15px; }
-        .particle:nth-child(3) { top: 25%; left: 20%; animation-duration: 28s; }
-        .particle:nth-child(4) { top: 35%; left: 80%; animation-duration: 32s; width: 12px; height: 12px; }
-        .particle:nth-child(5) { top: 45%; left: 40%; animation-duration: 30s; }
-        .particle:nth-child(6) { top: 55%; left: 60%; animation-duration: 38s; width: 14px; height: 14px; }
-        .particle:nth-child(7) { top: 65%; left: 15%; animation-duration: 26s; }
-        .particle:nth-child(8) { top: 75%; left: 85%; animation-duration: 34s; width: 9px; height: 9px; }
-        .particle:nth-child(9) { top: 85%; left: 30%; animation-duration: 29s; }
-        .particle:nth-child(10) { top: 95%; left: 70%; animation-duration: 31s; width: 13px; height: 13px; }
-        .particle:nth-child(11) { top: 10%; left: 95%; animation-duration: 36s; }
-        .particle:nth-child(12) { top: 90%; left: 5%; animation-duration: 27s; width: 11px; height: 11px; }
+        .particle:nth-child(1) { top: 2%; left: 5%; animation-duration: 32s; width: 18px; height: 18px; }
+        .particle:nth-child(2) { top: 8%; left: 92%; animation-duration: 40s; width: 22px; height: 22px; }
+        .particle:nth-child(3) { top: 15%; left: 15%; animation-duration: 35s; width: 14px; height: 14px; }
+        .particle:nth-child(4) { top: 22%; left: 78%; animation-duration: 42s; width: 20px; height: 20px; }
+        .particle:nth-child(5) { top: 30%; left: 25%; animation-duration: 30s; width: 16px; height: 16px; }
+        .particle:nth-child(6) { top: 38%; left: 65%; animation-duration: 45s; width: 24px; height: 24px; }
+        .particle:nth-child(7) { top: 45%; left: 35%; animation-duration: 33s; width: 15px; height: 15px; }
+        .particle:nth-child(8) { top: 52%; left: 55%; animation-duration: 38s; width: 21px; height: 21px; }
+        .particle:nth-child(9) { top: 60%; left: 10%; animation-duration: 36s; width: 19px; height: 19px; }
+        .particle:nth-child(10) { top: 68%; left: 85%; animation-duration: 43s; width: 25px; height: 25px; }
+        .particle:nth-child(11) { top: 75%; left: 20%; animation-duration: 31s; width: 17px; height: 17px; }
+        .particle:nth-child(12) { top: 82%; left: 70%; animation-duration: 37s; width: 23px; height: 23px; }
+        .particle:nth-child(13) { top: 88%; left: 40%; animation-duration: 39s; width: 20px; height: 20px; }
+        .particle:nth-child(14) { top: 94%; left: 60%; animation-duration: 34s; width: 18px; height: 18px; }
+        .particle:nth-child(15) { top: 5%; left: 45%; animation-duration: 41s; width: 22px; height: 22px; }
+        .particle:nth-child(16) { top: 12%; left: 30%; animation-duration: 44s; width: 26px; height: 26px; }
+        .particle:nth-child(17) { top: 19%; left: 50%; animation-duration: 32s; width: 16px; height: 16px; }
+        .particle:nth-child(18) { top: 26%; left: 95%; animation-duration: 38s; width: 20px; height: 20px; }
+        .particle:nth-child(19) { top: 33%; left: 8%; animation-duration: 35s; width: 24px; height: 24px; }
+        .particle:nth-child(20) { top: 40%; left: 75%; animation-duration: 36s; width: 18px; height: 18px; }
         
         .container {
             position: relative;
@@ -2216,41 +2213,36 @@ def generar_frontend_impactante(base_dir):
             text-align: center;
         }
         
-        /* CABECERA PERFECTA - IGUAL QUE EN PÁGINAS SECUNDARIAS */
-        .header {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 20px;
-            margin-bottom: 30px;
-            flex-wrap: wrap;
-        }
-        
+        /* ROBOT GIGANTE - MÁS GRANDE */
         .robot-icon {
-            font-size: 6em;
+            font-size: 10em;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            filter: drop-shadow(0 15px 30px rgba(102, 126, 234, 0.6));
+            filter: drop-shadow(0 20px 40px rgba(102, 126, 234, 0.6));
             animation: floatRobot 5s ease-in-out infinite;
+            margin-bottom: 20px;
         }
         
         @keyframes floatRobot {
             0%, 100% { transform: translateY(0) rotate(0deg); }
-            25% { transform: translateY(-12px) rotate(4deg); }
+            25% { transform: translateY(-15px) rotate(5deg); }
             75% { transform: translateY(-5px) rotate(-3deg); }
         }
         
-        .brand {
-            font-size: 4.5em;
+        /* TÍTULO GRANDE - FORMATO Educare AI */
+        .brand-title {
+            font-size: 5.5em;
             font-weight: 900;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
             letter-spacing: -2px;
+            line-height: 1.1;
         }
         
-        .brand span {
+        .brand-title span {
             background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -2446,8 +2438,8 @@ def generar_frontend_impactante(base_dir):
         }
         
         @media (max-width: 768px) {
-            .robot-icon { font-size: 4em; }
-            .brand { font-size: 3em; }
+            .robot-icon { font-size: 7em; }
+            .brand-title { font-size: 3.5em; }
             .slogan { font-size: 1.3em; }
             .download-btn { font-size: 1.5em; padding: 20px 40px; }
             .stats { gap: 30px; }
@@ -2459,7 +2451,15 @@ def generar_frontend_impactante(base_dir):
     </style>
 </head>
 <body>
-    <!-- 12 PARTÍCULAS FLOTANTES -->
+    <!-- 20 PARTÍCULAS PLAYSTATION -->
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
     <div class="particle"></div>
     <div class="particle"></div>
     <div class="particle"></div>
@@ -2474,11 +2474,9 @@ def generar_frontend_impactante(base_dir):
     <div class="particle"></div>
     
     <div class="container">
-        <!-- CABECERA PERFECTA - IGUAL QUE EN PÁGINAS SECUNDARIAS -->
-        <div class="header">
-            <i class="fas fa-robot robot-icon"></i>
-            <div class="brand">EDUCARE <span>AI</span></div>
-        </div>
+        <!-- ROBOT GIGANTE + TÍTULO GRANDE -->
+        <i class="fas fa-robot robot-icon"></i>
+        <div class="brand-title">Educare <span>AI</span></div>
         
         <div class="slogan">
             La inteligencia artificial que transforma<br>tu forma de aprender en 17 idiomas.
@@ -2532,7 +2530,7 @@ def generar_frontend_impactante(base_dir):
     with open(ruta_index, 'w', encoding='utf-8') as f:
         f.write(html)
     
-    print(f"   ✅ PORTAZA PERFECTA CON ROBOT GRADIENTE GUARDADA EN: {ruta_index}")
+    print(f"   ✅ PORTAZA PLAYSTATION CON ROBOT GIGANTE GUARDADA EN: {ruta_index}")
     print(f"   ✅ DISPONIBLE EN: https://stef7773.github.io/educare-ai-global/")
 
 # ============================================
@@ -2548,8 +2546,8 @@ def fabricar_paginas_globales():
     
     print("""
     ╔══════════════════════════════════════════════════════════════════════════╗
-    ║     🚀 EDUCARE AI - IMPERIO GLOBAL PERFECTO v9.0                       ║
-    ║     17 IDIOMAS | ROBOT GRADIENTE | 12 PARTÍCULAS | SIMETRÍA PERFECTA  ║
+    ║     🚀 EDUCARE AI - IMPERIO PLAYSTATION v10.0                          ║
+    ║     20 PARTÍCULAS | ROBOT GIGANTE | TÍTULO ELEGANTE                   ║
     ╚══════════════════════════════════════════════════════════════════════════╝
     """)
     
@@ -2607,7 +2605,7 @@ def fabricar_paginas_globales():
     generar_sitemap(paginas_generadas, base_dir)
     generar_robots_txt(base_dir)
     
-    print(f"\n🎨 Generando portada perfecta con robot gradiente...")
+    print(f"\n🎨 Generando portada PlayStation con robot gigante...")
     generar_frontend_impactante(base_dir)
     
     stats = {
@@ -2621,16 +2619,16 @@ def fabricar_paginas_globales():
         json.dump(stats, f, indent=2, ensure_ascii=False)
     
     print(f"\n{'='*80}")
-    print(f"✅ GENERACIÓN PERFECTA COMPLETADA CON ÉXITO")
+    print(f"✅ GENERACIÓN PLAYSTATION COMPLETADA CON ÉXITO")
     print(f"{'='*80}")
     print(f"📊 TOTAL DE PÁGINAS SEO: {total_paginas} (en web_seo_global/)")
-    print(f"🎨 PORTAZA PERFECTA EN: ~/EducareAI_Project/index.html")
+    print(f"🎨 PORTAZA PLAYSTATION EN: ~/EducareAI_Project/index.html")
     print(f"🌐 URL PÚBLICA: https://stef7773.github.io/educare-ai-global/")
     print(f"{'='*80}")
     print(f"\n📋 PRÓXIMOS PASOS:")
     print(f"   1. cd ~/EducareAI_Project")
     print(f"   2. git add .")
-    print(f"   3. git commit -m '✨ VERSIÓN PERFECTA v9.0 - Robot gradiente, 12 partículas, simetría total'")
+    print(f"   3. git commit -m '✨ VERSIÓN PLAYSTATION v10.0 - Robot gigante, 20 partículas, título elegante'")
     print(f"   4. git push origin main")
     print(f"   5. Esperar 5 minutos")
     print(f"   6. Abrir https://stef7773.github.io/educare-ai-global/")
