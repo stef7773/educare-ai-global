@@ -989,7 +989,7 @@ estrategia_global = {
 }
 
 # ============================================
-# CONTENIDO PERSUASIVO POR IDIOMA - VERSIÓN COMPLETA
+# CONTENIDO PERSUASIVO POR IDIOMA - VERSIÓN DEFINITIVA
 # ============================================
 textos = {
     "en": {
@@ -1036,41 +1036,41 @@ textos = {
     "es": {
         "h1_variations": [
             "¿Problemas con {tema}?",
-            "Soluciones instantáneas de {tema} con IA",
+            "Obtén soluciones instantáneas de {tema} con IA",
             "Domina {tema} en segundos",
             "Tu tutor personal de {tema}",
-            "Resuelve cualquier problema de {tema}",
+            "Resuelve cualquier problema de {tema} al instante",
             "Solucionador de {tema} con IA",
             "Deja de estresarte con {tema}",
             "La forma inteligente de aprender {tema}",
             "Encuentra respuestas sobre {tema}",
             "Descubre {tema} con IA"
         ],
-        "desc": "Educare AI es la herramienta educativa más avanzada. Resuelve problemas complejos de {tema} al instante con explicaciones paso a paso. Únete a 1M+ estudiantes que ya mejoraron sus notas.",
+        "desc": "Educare AI es la herramienta educativa más avanzada. Resuelve problemas complejos de {tema} al instante con explicaciones paso a paso. Únete a más de 1 millón de estudiantes que ya mejoraron sus notas.",
         "btn": "🚀 DESCARGAR EN PLAY STORE",
-        "benefit": "✓ Soluciones Instantáneas ✓ Paso a Paso ✓ Tutor IA 24/7 ✓ 98% Precisión",
+        "benefit": "✓ Soluciones instantáneas ✓ Paso a paso ✓ Tutor IA 24/7 ✓ 98 % precisión",
         "subtexts": [
-            "⭐ 4.8/5 de 15,000+ reseñas",
-            "🏆 #1 App Educativa en 25 países",
-            "📚 Usado por estudiantes de universidades top",
-            "🎓 Mejora tus notas un 40%",
-            "🌍 Confiable en 50+ países"
+            "⭐ 4,8/5 con más de 15 000 reseñas",
+            "🏆 Aplicación educativa n.º 1 en 25 países",
+            "📚 Usado por estudiantes de universidades de prestigio",
+            "🎓 Mejora tus notas un 40 %",
+            "🌍 Confiable en más de 50 países"
         ],
         "features": [
             "Escanea y resuelve con la cámara",
             "Explicaciones paso a paso",
-            "Problemas de práctica resueltos",
-            "Gráficas y visualizaciones",
+            "Problemas de práctica con soluciones",
+            "Gráficos interactivos y visualizaciones",
             "Guarda y comparte soluciones",
-            "Modo offline disponible",
-            "Soporte multi-idioma",
-            "Asistente IA 24/7"
+            "Modo sin conexión disponible",
+            "Soporte multilingüe",
+            "Asistente de IA 24/7"
         ],
         "cta_urgency": [
-            "Oferta limitada: Prueba gratis",
-            "Descarga ahora - ¡Es gratis!",
-            "Empieza a aprender más inteligente hoy",
-            "Únete a 1M+ estudiantes felices",
+            "Oferta por tiempo limitado: Prueba gratis",
+            "Descárgala ahora, ¡es gratis!",
+            "Empieza a aprender de forma más inteligente hoy",
+            "Únete a más de 1 millón de estudiantes satisfechos",
             "Comienza gratis ahora"
         ]
     },
@@ -1089,17 +1089,17 @@ textos = {
         ],
         "desc": "Educare AI ist das fortschrittlichste Bildungstool. Löse komplexe {tema}-Probleme sofort mit Schritt-für-Schritt-Erklärungen. Über 1 Million Studenten vertrauen uns bereits und haben ihre Noten verbessert.",
         "btn": "🚀 IM PLAY STORE HERUNTERLADEN",
-        "benefit": "✓ Sofortige Lösungen ✓ Schritt-für-Schritt ✓ KI-Tutor 24/7 ✓ 98% Genauigkeit",
+        "benefit": "✓ Sofortige Lösungen ✓ Schritt-für-Schritt ✓ KI-Tutor 24/7 ✓ 98 % Genauigkeit",
         "subtexts": [
-            "⭐ 4.8/5 von 15.000+ Bewertungen",
+            "⭐ 4,8/5 von über 15.000 Bewertungen",
             "🏆 #1 Bildungs-App in 25 Ländern",
             "📚 Von Studenten der Top-Universitäten genutzt",
-            "🎓 Verbessere deine Noten um 40%",
-            "🌍 Vertrauen in 50+ Ländern"
+            "🎓 Verbessere deine Noten um 40 %",
+            "🌍 Vertrauenswürdig in über 50 Ländern"
         ],
         "features": [
             "Foto erkennen und lösen",
-            "Schritt-für-Schritt Erklärungen",
+            "Schritt-für-Schritt-Erklärungen",
             "Übungsaufgaben mit Lösungen",
             "Interaktive Grafiken",
             "Lösungen speichern und teilen",
@@ -1109,141 +1109,141 @@ textos = {
         ],
         "cta_urgency": [
             "Begrenztes Angebot: Kostenlose Testversion",
-            "Jetzt herunterladen - Kostenlos!",
+            "Jetzt herunterladen – kostenlos!",
             "Starte heute intelligenter zu lernen",
-            "Schließe dich 1M+ zufriedenen Studenten an",
+            "Schließe dich über 1 Million zufriedenen Studenten an",
             "Jetzt kostenlos starten"
         ]
     },
     "fr": {
         "h1_variations": [
-            "Des problèmes avec {tema}?",
-            "Solutions instantanées de {tema} avec IA",
-            "Maîtrisez {tema} en secondes",
+            "Des problèmes avec {tema} ?",
+            "Obtenez des solutions instantanées de {tema} avec l'IA",
+            "Maîtrisez {tema} en quelques secondes",
             "Votre tuteur personnel de {tema}",
-            "Résolvez tout problème de {tema}",
-            "Solveur {tema} avec IA",
+            "Résolvez n'importe quel problème de {tema} instantanément",
+            "Solveur de {tema} avec IA",
             "Arrêtez de stresser pour {tema}",
             "La façon intelligente d'apprendre {tema}",
             "Trouvez des réponses sur {tema}",
-            "Découvrez {tema} avec IA"
+            "Découvrez {tema} avec l'IA"
         ],
-        "desc": "Educare AI est l'outil éducatif le plus avancé. Résolvez instantanément des problèmes complexes de {tema} avec des explications pas à pas. Plus d'1 million d'étudiants nous font confiance et ont amélioré leurs notes.",
+        "desc": "Educare AI est l'outil éducatif le plus avancé. Résolvez instantanément des problèmes complexes de {tema} avec des explications pas à pas. Plus d'un million d'étudiants nous font confiance et ont amélioré leurs notes.",
         "btn": "🚀 TÉLÉCHARGER SUR PLAY STORE",
-        "benefit": "✓ Solutions Instantanées ✓ Pas à Pas ✓ Tutor IA 24/7 ✓ 98% Précision",
+        "benefit": "✓ Solutions instantanées ✓ Pas à pas ✓ Tutor IA 24/7 ✓ 98 % de précision",
         "subtexts": [
-            "⭐ 4.8/5 de 15 000+ avis",
-            "🏆 #1 App Éducative dans 25 pays",
+            "⭐ 4,8/5 avec plus de 15 000 avis",
+            "🏆 Application éducative n° 1 dans 25 pays",
             "📚 Utilisé par les étudiants des meilleures universités",
-            "🎓 Améliorez vos notes de 40%",
-            "🌍 Fiable dans 50+ pays"
+            "🎓 Améliorez vos notes de 40 %",
+            "🌍 Fiable dans plus de 50 pays"
         ],
         "features": [
-            "Scanner et résoudre avec caméra",
+            "Scannez et résolvez avec l'appareil photo",
             "Explications pas à pas",
-            "Problèmes pratiques résolus",
-            "Graphiques et visualisations",
-            "Sauvegarder et partager",
+            "Problèmes pratiques avec solutions",
+            "Graphiques interactifs et visualisations",
+            "Enregistrez et partagez les solutions",
             "Mode hors ligne disponible",
             "Support multilingue",
             "Assistant IA 24/7"
         ],
         "cta_urgency": [
-            "Offre limitée: Essai gratuit",
-            "Télécharger maintenant - Gratuit!",
-            "Commencez à apprendre plus intelligemment",
-            "Rejoignez 1M+ étudiants satisfaits",
-            "Commencez gratuitement"
+            "Offre limitée : Essai gratuit",
+            "Téléchargez maintenant – c'est gratuit !",
+            "Commencez à apprendre plus intelligemment aujourd'hui",
+            "Rejoignez plus d'un million d'étudiants satisfaits",
+            "Commencez gratuitement maintenant"
         ]
     },
     "pt": {
         "h1_variations": [
             "Problemas com {tema}?",
-            "Soluções instantâneas de {tema} com IA",
+            "Obtenha soluções instantâneas de {tema} com IA",
             "Domine {tema} em segundos",
             "Seu tutor pessoal de {tema}",
-            "Resolva qualquer problema de {tema}",
+            "Resolva qualquer problema de {tema} instantaneamente",
             "Solucionador de {tema} com IA",
             "Pare de se estressar com {tema}",
-            "O jeito inteligente de aprender {tema}",
+            "A maneira inteligente de aprender {tema}",
             "Encontre respostas sobre {tema}",
             "Descubra {tema} com IA"
         ],
         "desc": "Educare AI é a ferramenta educacional mais avançada. Resolva problemas complexos de {tema} instantaneamente com explicações passo a passo. Mais de 1 milhão de estudantes já usam e melhoraram suas notas.",
         "btn": "🚀 BAIXAR NA PLAY STORE",
-        "benefit": "✓ Soluções Instantâneas ✓ Passo a Passo ✓ Tutor IA 24/7 ✓ 98% Precisão",
+        "benefit": "✓ Soluções instantâneas ✓ Passo a passo ✓ Tutor IA 24/7 ✓ 98 % de precisão",
         "subtexts": [
-            "⭐ 4.8/5 de 15.000+ avaliações",
-            "🏆 #1 App Educacional em 25 países",
+            "⭐ 4,8/5 com mais de 15.000 avaliações",
+            "🏆 Aplicativo educacional nº 1 em 25 países",
             "📚 Usado por estudantes das melhores universidades",
-            "🎓 Melhore suas notas em 40%",
-            "🌍 Confiável em 50+ países"
+            "🎓 Melhore suas notas em 40 %",
+            "🌍 Confiável em mais de 50 países"
         ],
         "features": [
-            "Escaneie e resolva com câmera",
+            "Escaneie e resolva com a câmera",
             "Explicações passo a passo",
-            "Problemas práticos resolvidos",
-            "Gráficos e visualizações",
+            "Problemas práticos com soluções",
+            "Gráficos interativos e visualizações",
             "Salve e compartilhe soluções",
             "Modo offline disponível",
-            "Suporte multi-idioma",
-            "Assistente IA 24/7"
+            "Suporte multilíngue",
+            "Assistente de IA 24/7"
         ],
         "cta_urgency": [
-            "Oferta limitada: Teste grátis",
-            "Baixe agora - É grátis!",
-            "Comece a aprender mais inteligente hoje",
-            "Junte-se a 1M+ estudantes felizes",
+            "Oferta por tempo limitado: Teste grátis",
+            "Baixe agora – é grátis!",
+            "Comece a aprender de forma mais inteligente hoje",
+            "Junte-se a mais de 1 milhão de estudantes satisfeitos",
             "Comece grátis agora"
         ]
     },
     "it": {
         "h1_variations": [
-            "Hai problemi con {tema}?",
-            "Soluzioni istantanee di {tema} con IA",
+            "Problemi con {tema}?",
+            "Ottieni soluzioni istantanee di {tema} con l'IA",
             "Padroneggia {tema} in pochi secondi",
             "Il tuo tutor personale di {tema}",
-            "Risolvi qualsiasi problema di {tema}",
+            "Risolvi qualsiasi problema di {tema} all'istante",
             "Solutore di {tema} con IA",
             "Smetti di stressarti con {tema}",
             "Il modo intelligente per imparare {tema}",
             "Trova risposte su {tema}",
-            "Scopri {tema} con IA"
+            "Scopri {tema} con l'IA"
         ],
         "desc": "Educare AI è lo strumento educativo più avanzato. Risolvi problemi complessi di {tema} all'istante con spiegazioni passo passo. Oltre 1 milione di studenti si sono già uniti e hanno migliorato i loro voti.",
         "btn": "🚀 SCARICA SU PLAY STORE",
-        "benefit": "✓ Soluzioni Istantanee ✓ Passo a Passo ✓ Tutor IA 24/7 ✓ 98% Precisione",
+        "benefit": "✓ Soluzioni istantanee ✓ Passo dopo passo ✓ Tutor IA 24/7 ✓ 98 % di precisione",
         "subtexts": [
-            "⭐ 4.8/5 da 15.000+ recensioni",
-            "🏆 #1 App Educativa in 25 paesi",
+            "⭐ 4,8/5 con oltre 15.000 recensioni",
+            "🏆 App educativa n. 1 in 25 paesi",
             "📚 Usato da studenti delle migliori università",
-            "🎓 Migliora i tuoi voti del 40%",
-            "🌍 Fiducia in 50+ paesi"
+            "🎓 Migliora i tuoi voti del 40 %",
+            "🌍 Fiducia in oltre 50 paesi"
         ],
         "features": [
             "Scansiona e risolvi con la fotocamera",
             "Spiegazioni passo passo",
             "Problemi pratici con soluzioni",
-            "Grafici e visualizzazioni interattive",
+            "Grafici interattivi e visualizzazioni",
             "Salva e condividi soluzioni",
             "Modalità offline disponibile",
             "Supporto multilingua",
             "Assistente IA 24/7"
         ],
         "cta_urgency": [
-            "Offerta limitata: Prova gratuita",
-            "Scarica ora - È gratis!",
+            "Offerta a tempo limitato: Prova gratuita",
+            "Scarica ora – è gratis!",
             "Inizia a imparare in modo più intelligente oggi",
-            "Unisciti a 1M+ studenti felici",
+            "Unisciti a oltre 1 milione di studenti soddisfatti",
             "Inizia gratuitamente ora"
         ]
     },
     "jp": {
         "h1_variations": [
-            "{tema}で困っていませんか？",
-            "{tema}の即時解決策をAIで",
+            "{tema}でお困りですか？",
+            "AIで{tema}の即時解決策を入手",
             "{tema}を数秒でマスター",
-            "あなたのパーソナル{tema}チューター",
+            "あなたの専属{tema}チューター",
             "あらゆる{tema}の問題を瞬時に解決",
             "AI搭載の{tema}ソルバー",
             "{tema}のストレスから解放",
@@ -1281,8 +1281,8 @@ textos = {
     },
     "kr": {
         "h1_variations": [
-            "{tema}로 어려움을 겪고 계신가요?",
-            "AI로 즉시 {tema} 해결책 얻기",
+            "{tema}(으)로 어려움을 겪고 계신가요?",
+            "AI로 즉시 {tema} 해결책을 얻으세요",
             "{tema}를 몇 초 만에 마스터하세요",
             "당신의 개인 {tema} 튜터",
             "모든 {tema} 문제를 즉시 해결",
@@ -1325,7 +1325,7 @@ textos = {
             "在{tema}上遇到困难？",
             "用AI即时获取{tema}解决方案",
             "几秒钟内掌握{tema}",
-            "您的个人{tema}导师",
+            "您的专属{tema}导师",
             "即时解决任何{tema}问题",
             "AI驱动的{tema}解决器",
             "摆脱{tema}的压力",
@@ -1364,7 +1364,7 @@ textos = {
     "ru": {
         "h1_variations": [
             "Проблемы с {tema}?",
-            "Мгновенные решения {tema} с ИИ",
+            "Получите мгновенные решения {tema} с ИИ",
             "Освойте {tema} за секунды",
             "Ваш персональный репетитор по {tema}",
             "Решите любую задачу по {tema} мгновенно",
@@ -1374,15 +1374,15 @@ textos = {
             "Найдите ответы по {tema}",
             "Откройте {tema} с ИИ"
         ],
-        "desc": "Educare AI - самый передовой образовательный инструмент. Мгновенно решайте сложные задачи по {tema} с пошаговыми объяснениями. Более 1 миллиона студентов уже улучшили свои оценки.",
+        "desc": "Educare AI — самый передовой образовательный инструмент. Мгновенно решайте сложные задачи по {tema} с пошаговыми объяснениями. Более 1 миллиона студентов уже улучшили свои оценки.",
         "btn": "🚀 СКАЧАТЬ В PLAY STORE",
-        "benefit": "✓ Мгновенные решения ✓ Пошагово ✓ ИИ-репетитор 24/7 ✓ 98% точность",
+        "benefit": "✓ Мгновенные решения ✓ Пошагово ✓ ИИ-репетитор 24/7 ✓ 98 % точность",
         "subtexts": [
-            "⭐ 4.8/5 на основе 15 000+ отзывов",
-            "🏆 #1 Образовательное приложение в 25 странах",
+            "⭐ 4,8/5 на основе более 15 000 отзывов",
+            "🏆 Образовательное приложение № 1 в 25 странах",
             "📚 Используется студентами лучших университетов",
-            "🎓 Улучшите свои оценки на 40%",
-            "🌍 Доверие в 50+ странах"
+            "🎓 Улучшите свои оценки на 40 %",
+            "🌍 Доверие в более чем 50 странах"
         ],
         "features": [
             "Решайте по фото с камеры",
@@ -1396,9 +1396,9 @@ textos = {
         ],
         "cta_urgency": [
             "Ограниченное предложение: Бесплатная пробная версия",
-            "Скачать сейчас - Бесплатно!",
+            "Скачать сейчас – бесплатно!",
             "Начните учиться умнее сегодня",
-            "Присоединяйтесь к 1M+ счастливых студентов",
+            "Присоединяйтесь к более чем 1 млн счастливых студентов",
             "Начните бесплатно прямо сейчас"
         ]
     },
@@ -1419,8 +1419,8 @@ textos = {
         "btn": "🚀 التحميل من متجر بلاي",
         "benefit": "✓ حلول فورية ✓ خطوة بخطوة ✓ مدرس ذكاء اصطناعي 24/7 ✓ دقة 98%",
         "subtexts": [
-            "⭐ 4.8/5 من 15,000+ تقييمًا",
-            "🏆 #1 تطبيق تعليمي في 25 دولة",
+            "⭐ 4.8/5 من أكثر من 15,000 تقييمًا",
+            "🏆 تطبيق تعليمي رقم 1 في 25 دولة",
             "📚 يستخدمه طلاب أفضل الجامعات",
             "🎓 حسّن درجاتك بنسبة 40%",
             "🌍 موثوق في أكثر من 50 دولة"
@@ -1437,7 +1437,7 @@ textos = {
         ],
         "cta_urgency": [
             "عرض محدود: نسخة تجريبية مجانية",
-            "حمّل الآن - مجاني!",
+            "حمّل الآن – مجاني!",
             "ابدأ التعلم بذكاء اليوم",
             "انضم إلى أكثر من مليون طالب سعيد",
             "ابدأ مجانًا الآن"
@@ -1478,7 +1478,7 @@ textos = {
         ],
         "cta_urgency": [
             "सीमित समय: निःशुल्क परीक्षण",
-            "अब डाउनलोड करें - मुफ़्त!",
+            "अब डाउनलोड करें – मुफ़्त!",
             "आज ही स्मार्ट तरीके से सीखना शुरू करें",
             "10 लाख+ खुश छात्रों से जुड़ें",
             "अभी मुफ्त में शुरू करें"
@@ -1499,16 +1499,16 @@ textos = {
         ],
         "desc": "Educare AI is de meest geavanceerde educatieve tool. Los complexe {tema} problemen direct op met stap-voor-stap uitleg. Meer dan 1 miljoen studenten gebruiken ons al en hebben hun cijfers verbeterd.",
         "btn": "🚀 DOWNLOADEN IN PLAY STORE",
-        "benefit": "✓ Directe Oplossingen ✓ Stap-voor-Stap ✓ 24/7 AI Tutor ✓ 98% Nauwkeurigheid",
+        "benefit": "✓ Directe oplossingen ✓ Stap-voor-stap ✓ 24/7 AI-tutor ✓ 98 % nauwkeurigheid",
         "subtexts": [
-            "⭐ 4.8/5 van 15.000+ beoordelingen",
-            "🏆 #1 Educatieve App in 25 landen",
+            "⭐ 4,8/5 van meer dan 15.000 beoordelingen",
+            "🏆 #1 Educatieve app in 25 landen",
             "📚 Gebruikt door studenten van topuniversiteiten",
-            "🎓 Verbeter je cijfers met 40%",
-            "🌍 Vertrouwd in 50+ landen"
+            "🎓 Verbeter je cijfers met 40 %",
+            "🌍 Vertrouwd in meer dan 50 landen"
         ],
         "features": [
-            "Los op met de camera - maak gewoon een foto",
+            "Los op met de camera – maak gewoon een foto",
             "Stap-voor-stap uitleg",
             "Oefenproblemen met oplossingen",
             "Interactieve grafieken",
@@ -1519,9 +1519,9 @@ textos = {
         ],
         "cta_urgency": [
             "Beperkte tijd: Gratis proefperiode",
-            "Download nu - Gratis!",
+            "Download nu – gratis!",
             "Begin vandaag nog slimmer te leren",
-            "Sluit je aan bij 1M+ tevreden studenten",
+            "Sluit je aan bij meer dan 1 miljoen tevreden studenten",
             "Begin nu gratis"
         ]
     },
@@ -1540,13 +1540,13 @@ textos = {
         ],
         "desc": "Educare AI to najbardziej zaawansowane narzędzie edukacyjne. Rozwiązuj złożone problemy {tema} natychmiast z wyjaśnieniami krok po kroku. Ponad 1 milion studentów już nam ufa i poprawiło swoje oceny.",
         "btn": "🚀 POBIERZ Z PLAY STORE",
-        "benefit": "✓ Natychmiastowe rozwiązania ✓ Krok po kroku ✓ 24/7 AI Tutor ✓ 98% dokładności",
+        "benefit": "✓ Natychmiastowe rozwiązania ✓ Krok po kroku ✓ 24/7 AI Tutor ✓ 98 % dokładności",
         "subtexts": [
-            "⭐ 4.8/5 z 15.000+ recenzji",
-            "🏆 #1 Aplikacja edukacyjna w 25 krajach",
+            "⭐ 4,8/5 z ponad 15.000 recenzji",
+            "🏆 Aplikacja edukacyjna nr 1 w 25 krajach",
             "📚 Używane przez studentów najlepszych uniwersytetów",
-            "🎓 Popraw swoje oceny o 40%",
-            "🌍 Zaufanie w 50+ krajach"
+            "🎓 Popraw swoje oceny o 40 %",
+            "🌍 Zaufanie w ponad 50 krajach"
         ],
         "features": [
             "Rozwiązuj przez zrobienie zdjęcia",
@@ -1560,9 +1560,9 @@ textos = {
         ],
         "cta_urgency": [
             "Ograniczona oferta: Darmowy okres próbny",
-            "Pobierz teraz - za darmo!",
+            "Pobierz teraz – za darmo!",
             "Zacznij uczyć się mądrzej już dziś",
-            "Dołącz do 1M+ zadowolonych studentów",
+            "Dołącz do ponad 1 miliona zadowolonych studentów",
             "Zacznij za darmo teraz"
         ]
     },
@@ -1581,13 +1581,13 @@ textos = {
         ],
         "desc": "Educare AI en gelişmiş eğitim aracıdır. {tema} ile ilgili karmaşık sorunları adım adım açıklamalarla anında çözün. 1 milyondan fazla öğrenci notlarını iyileştirdi.",
         "btn": "🚀 PLAY STORE'DAN İNDİR",
-        "benefit": "✓ Anında Çözümler ✓ Adım Adım ✓ 7/24 AI Öğretmen ✓ %98 Doğruluk",
+        "benefit": "✓ Anında çözümler ✓ Adım adım ✓ 7/24 AI öğretmen ✓ %98 doğruluk",
         "subtexts": [
-            "⭐ 15.000+ yorumdan 4.8/5",
-            "🏆 25 ülkede #1 Eğitim Uygulaması",
+            "⭐ 15.000'den fazla yorumda 4,8/5",
+            "🏆 25 ülkede 1 numaralı eğitim uygulaması",
             "📚 En iyi üniversite öğrencileri tarafından kullanılır",
             "🎓 Notlarınızı %40 iyileştirin",
-            "🌍 50+ ülkede güvenilir"
+            "🌍 50'den fazla ülkede güvenilir"
         ],
         "features": [
             "Fotoğraf çekerek çözün",
@@ -1601,9 +1601,9 @@ textos = {
         ],
         "cta_urgency": [
             "Sınırlı süre: Ücretsiz deneme",
-            "Şimdi indir - Ücretsiz!",
+            "Şimdi indir – ücretsiz!",
             "Bugün daha akıllı öğrenmeye başlayın",
-            "1M+ mutlu öğrenciye katılın",
+            "1 milyondan fazla mutlu öğrenciye katılın",
             "Şimdi ücretsiz başlayın"
         ]
     },
@@ -1622,16 +1622,16 @@ textos = {
         ],
         "desc": "Educare AI är det mest avancerade pedagogiska verktyget. Lös komplexa {tema} problem direkt med steg-för-steg förklaringar. Över 1 miljon studenter har redan anslutit sig och förbättrat sina betyg.",
         "btn": "🚀 LADDA NER PÅ PLAY STORE",
-        "benefit": "✓ Omedelbara lösningar ✓ Steg-för-steg ✓ 24/7 AI-handledare ✓ 98% noggrannhet",
+        "benefit": "✓ Omedelbara lösningar ✓ Steg-för-steg ✓ 24/7 AI-handledare ✓ 98 % noggrannhet",
         "subtexts": [
-            "⭐ 4.8/5 från 15.000+ recensioner",
+            "⭐ 4,8/5 från över 15.000 recensioner",
             "🏆 #1 Utbildningsapp i 25 länder",
             "📚 Används av studenter vid toppuniversitet",
-            "🎓 Förbättra dina betyg med 40%",
-            "🌍 Pålitlig i 50+ länder"
+            "🎓 Förbättra dina betyg med 40 %",
+            "🌍 Pålitlig i över 50 länder"
         ],
         "features": [
-            "Lös med kameran - ta bara ett foto",
+            "Lös med kameran – ta bara ett foto",
             "Steg-för-steg förklaringar",
             "Övningsproblem med lösningar",
             "Interaktiva grafer",
@@ -1642,9 +1642,9 @@ textos = {
         ],
         "cta_urgency": [
             "Begränsad tid: Gratis provperiod",
-            "Ladda ner nu - Gratis!",
+            "Ladda ner nu – gratis!",
             "Börja lära dig smartare idag",
-            "Gå med i 1M+ nöjda studenter",
+            "Gå med i över 1 miljon nöjda studenter",
             "Börja gratis nu"
         ]
     }
