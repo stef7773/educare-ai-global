@@ -989,7 +989,7 @@ estrategia_global = {
 }
 
 # ============================================
-# CONTENIDO PERSUASIVO POR IDIOMA
+# CONTENIDO PERSUASIVO POR IDIOMA - VERSIÓN COMPLETA
 # ============================================
 textos = {
     "en": {
@@ -1083,16 +1083,19 @@ textos = {
             "Löse jedes {tema}-Problem sofort",
             "{tema}-Löser mit KI",
             "Kein Stress mehr mit {tema}",
-            "Der intelligente Weg, {tema} zu lernen"
+            "Der intelligente Weg, {tema} zu lernen",
+            "Finde Antworten zu {tema}",
+            "Entdecke {tema} mit KI"
         ],
-        "desc": "Educare AI ist das fortschrittlichste Bildungstool. Löse komplexe {tema}-Probleme sofort mit Schritt-für-Schritt-Erklärungen. 1M+ Studenten vertrauen uns.",
+        "desc": "Educare AI ist das fortschrittlichste Bildungstool. Löse komplexe {tema}-Probleme sofort mit Schritt-für-Schritt-Erklärungen. Über 1 Million Studenten vertrauen uns bereits und haben ihre Noten verbessert.",
         "btn": "🚀 IM PLAY STORE HERUNTERLADEN",
         "benefit": "✓ Sofortige Lösungen ✓ Schritt-für-Schritt ✓ KI-Tutor 24/7 ✓ 98% Genauigkeit",
         "subtexts": [
             "⭐ 4.8/5 von 15.000+ Bewertungen",
             "🏆 #1 Bildungs-App in 25 Ländern",
-            "📚 Von Top-Universitätsstudenten genutzt",
-            "🎓 Verbessere deine Noten um 40%"
+            "📚 Von Studenten der Top-Universitäten genutzt",
+            "🎓 Verbessere deine Noten um 40%",
+            "🌍 Vertrauen in 50+ Ländern"
         ],
         "features": [
             "Foto erkennen und lösen",
@@ -1100,12 +1103,16 @@ textos = {
             "Übungsaufgaben mit Lösungen",
             "Interaktive Grafiken",
             "Lösungen speichern und teilen",
-            "Offline-Modus verfügbar"
+            "Offline-Modus verfügbar",
+            "Mehrsprachige Unterstützung",
+            "KI-Assistent 24/7"
         ],
         "cta_urgency": [
             "Begrenztes Angebot: Kostenlose Testversion",
             "Jetzt herunterladen - Kostenlos!",
-            "Starte heute intelligenter zu lernen"
+            "Starte heute intelligenter zu lernen",
+            "Schließe dich 1M+ zufriedenen Studenten an",
+            "Jetzt kostenlos starten"
         ]
     },
     "fr": {
@@ -1117,16 +1124,19 @@ textos = {
             "Résolvez tout problème de {tema}",
             "Solveur {tema} avec IA",
             "Arrêtez de stresser pour {tema}",
-            "La façon intelligente d'apprendre {tema}"
+            "La façon intelligente d'apprendre {tema}",
+            "Trouvez des réponses sur {tema}",
+            "Découvrez {tema} avec IA"
         ],
-        "desc": "Educare AI est l'outil éducatif le plus avancé. Résolvez instantanément des problèmes complexes de {tema} avec explications. 1M+ étudiants nous font confiance.",
+        "desc": "Educare AI est l'outil éducatif le plus avancé. Résolvez instantanément des problèmes complexes de {tema} avec des explications pas à pas. Plus d'1 million d'étudiants nous font confiance et ont amélioré leurs notes.",
         "btn": "🚀 TÉLÉCHARGER SUR PLAY STORE",
         "benefit": "✓ Solutions Instantanées ✓ Pas à Pas ✓ Tutor IA 24/7 ✓ 98% Précision",
         "subtexts": [
             "⭐ 4.8/5 de 15 000+ avis",
             "🏆 #1 App Éducative dans 25 pays",
             "📚 Utilisé par les étudiants des meilleures universités",
-            "🎓 Améliorez vos notes de 40%"
+            "🎓 Améliorez vos notes de 40%",
+            "🌍 Fiable dans 50+ pays"
         ],
         "features": [
             "Scanner et résoudre avec caméra",
@@ -1134,12 +1144,16 @@ textos = {
             "Problèmes pratiques résolus",
             "Graphiques et visualisations",
             "Sauvegarder et partager",
-            "Mode hors ligne disponible"
+            "Mode hors ligne disponible",
+            "Support multilingue",
+            "Assistant IA 24/7"
         ],
         "cta_urgency": [
             "Offre limitée: Essai gratuit",
             "Télécharger maintenant - Gratuit!",
-            "Commencez à apprendre plus intelligemment"
+            "Commencez à apprendre plus intelligemment",
+            "Rejoignez 1M+ étudiants satisfaits",
+            "Commencez gratuitement"
         ]
     },
     "pt": {
@@ -1151,16 +1165,19 @@ textos = {
             "Resolva qualquer problema de {tema}",
             "Solucionador de {tema} com IA",
             "Pare de se estressar com {tema}",
-            "O jeito inteligente de aprender {tema}"
+            "O jeito inteligente de aprender {tema}",
+            "Encontre respostas sobre {tema}",
+            "Descubra {tema} com IA"
         ],
-        "desc": "Educare AI é a ferramenta educacional mais avançada. Resolva problemas complexos de {tema} instantaneamente com explicações. 1M+ estudantes já usam.",
+        "desc": "Educare AI é a ferramenta educacional mais avançada. Resolva problemas complexos de {tema} instantaneamente com explicações passo a passo. Mais de 1 milhão de estudantes já usam e melhoraram suas notas.",
         "btn": "🚀 BAIXAR NA PLAY STORE",
         "benefit": "✓ Soluções Instantâneas ✓ Passo a Passo ✓ Tutor IA 24/7 ✓ 98% Precisão",
         "subtexts": [
             "⭐ 4.8/5 de 15.000+ avaliações",
             "🏆 #1 App Educacional em 25 países",
             "📚 Usado por estudantes das melhores universidades",
-            "🎓 Melhore suas notas em 40%"
+            "🎓 Melhore suas notas em 40%",
+            "🌍 Confiável em 50+ países"
         ],
         "features": [
             "Escaneie e resolva com câmera",
@@ -1168,84 +1185,475 @@ textos = {
             "Problemas práticos resolvidos",
             "Gráficos e visualizações",
             "Salve e compartilhe soluções",
-            "Modo offline disponível"
+            "Modo offline disponível",
+            "Suporte multi-idioma",
+            "Assistente IA 24/7"
         ],
         "cta_urgency": [
             "Oferta limitada: Teste grátis",
             "Baixe agora - É grátis!",
-            "Comece a aprender mais inteligente hoje"
+            "Comece a aprender mais inteligente hoje",
+            "Junte-se a 1M+ estudantes felizes",
+            "Comece grátis agora"
         ]
     },
     "it": {
         "h1_variations": [
-            "Problemi con {tema}?",
+            "Hai problemi con {tema}?",
             "Soluzioni istantanee di {tema} con IA",
-            "Padroneggia {tema} in secondi",
+            "Padroneggia {tema} in pochi secondi",
             "Il tuo tutor personale di {tema}",
             "Risolvi qualsiasi problema di {tema}",
-            "Risolutore di {tema} con IA",
+            "Solutore di {tema} con IA",
             "Smetti di stressarti con {tema}",
-            "Il modo intelligente di imparare {tema}"
+            "Il modo intelligente per imparare {tema}",
+            "Trova risposte su {tema}",
+            "Scopri {tema} con IA"
         ],
-        "desc": "Educare AI è lo strumento educativo più avanzato. Risolvi problemi complessi di {tema} all'istante con spiegazioni passo passo. 1M+ studenti già ci usano.",
+        "desc": "Educare AI è lo strumento educativo più avanzato. Risolvi problemi complessi di {tema} all'istante con spiegazioni passo passo. Oltre 1 milione di studenti si sono già uniti e hanno migliorato i loro voti.",
         "btn": "🚀 SCARICA SU PLAY STORE",
         "benefit": "✓ Soluzioni Istantanee ✓ Passo a Passo ✓ Tutor IA 24/7 ✓ 98% Precisione",
         "subtexts": [
             "⭐ 4.8/5 da 15.000+ recensioni",
             "🏆 #1 App Educativa in 25 paesi",
             "📚 Usato da studenti delle migliori università",
-            "🎓 Migliora i tuoi voti del 40%"
+            "🎓 Migliora i tuoi voti del 40%",
+            "🌍 Fiducia in 50+ paesi"
         ],
         "features": [
             "Scansiona e risolvi con la fotocamera",
             "Spiegazioni passo passo",
-            "Problemi pratici risolti",
-            "Grafici e visualizzazioni",
+            "Problemi pratici con soluzioni",
+            "Grafici e visualizzazioni interattive",
             "Salva e condividi soluzioni",
-            "Modalità offline disponibile"
+            "Modalità offline disponibile",
+            "Supporto multilingua",
+            "Assistente IA 24/7"
         ],
         "cta_urgency": [
             "Offerta limitata: Prova gratuita",
-            "Scarica ora - Gratis!",
-            "Inizia a imparare in modo più intelligente oggi"
+            "Scarica ora - È gratis!",
+            "Inizia a imparare in modo più intelligente oggi",
+            "Unisciti a 1M+ studenti felici",
+            "Inizia gratuitamente ora"
+        ]
+    },
+    "jp": {
+        "h1_variations": [
+            "{tema}で困っていませんか？",
+            "{tema}の即時解決策をAIで",
+            "{tema}を数秒でマスター",
+            "あなたのパーソナル{tema}チューター",
+            "あらゆる{tema}の問題を瞬時に解決",
+            "AI搭載の{tema}ソルバー",
+            "{tema}のストレスから解放",
+            "{tema}を学ぶスマートな方法",
+            "{tema}に関する回答を見つける",
+            "AIで{tema}を発見"
+        ],
+        "desc": "Educare AIは最も先進的な教育ツールです。{tema}の複雑な問題をステップバイステップの説明で瞬時に解決します。100万人以上の学生が成績を向上させています。",
+        "btn": "🚀 Playストアで入手",
+        "benefit": "✓ 即時解決 ✓ ステップバイステップ ✓ 24時間AIチューター ✓ 98%の精度",
+        "subtexts": [
+            "⭐ 15,000件以上のレビューで4.8/5",
+            "🏆 25か国で教育アプリ第1位",
+            "📚 トップ大学の学生が利用",
+            "🎓 成績を40%向上",
+            "🌍 50か国以上で信頼"
+        ],
+        "features": [
+            "カメラで撮影して解決",
+            "ステップバイステップの説明",
+            "解答付き練習問題",
+            "インタラクティブなグラフ",
+            "解答を保存・共有",
+            "オフラインモード利用可能",
+            "多言語サポート",
+            "24時間AIアシスタント"
+        ],
+        "cta_urgency": [
+            "期間限定: 無料トライアル",
+            "今すぐダウンロード - 無料！",
+            "今日からスマートに学習",
+            "100万人以上の学生に参加",
+            "今すぐ無料で開始"
+        ]
+    },
+    "kr": {
+        "h1_variations": [
+            "{tema}로 어려움을 겪고 계신가요?",
+            "AI로 즉시 {tema} 해결책 얻기",
+            "{tema}를 몇 초 만에 마스터하세요",
+            "당신의 개인 {tema} 튜터",
+            "모든 {tema} 문제를 즉시 해결",
+            "AI 기반 {tema} 솔버",
+            "{tema} 스트레스에서 벗어나세요",
+            "{tema}를 배우는 스마트한 방법",
+            "{tema}에 대한 답변 찾기",
+            "AI로 {tema} 발견하기"
+        ],
+        "desc": "Educare AI는 가장 진보된 교육 도구입니다. {tema}의 복잡한 문제를 단계별 설명으로 즉시 해결합니다. 이미 100만 명 이상의 학생들이 성적을 향상시켰습니다.",
+        "btn": "🚀 Play 스토어에서 다운로드",
+        "benefit": "✓ 즉시 해결 ✓ 단계별 설명 ✓ 24/7 AI 튜터 ✓ 98% 정확도",
+        "subtexts": [
+            "⭐ 15,000개 이상의 리뷰에서 4.8/5",
+            "🏆 25개국에서 1위 교육 앱",
+            "📚 최고 대학 학생들이 사용",
+            "🎓 성적 40% 향상",
+            "🌍 50개국 이상에서 신뢰"
+        ],
+        "features": [
+            "카메라로 찍어서 해결",
+            "단계별 설명",
+            "해답이 포함된 연습 문제",
+            "대화형 그래프",
+            "해결책 저장 및 공유",
+            "오프라인 모드 사용 가능",
+            "다국어 지원",
+            "24/7 AI 어시스턴트"
+        ],
+        "cta_urgency": [
+            "한정 기간: 무료 체험",
+            "지금 다운로드 - 무료!",
+            "오늘부터 더 스마트하게 학습하세요",
+            "100만 명 이상의 행복한 학생들과 함께",
+            "지금 무료로 시작하기"
+        ]
+    },
+    "zh": {
+        "h1_variations": [
+            "在{tema}上遇到困难？",
+            "用AI即时获取{tema}解决方案",
+            "几秒钟内掌握{tema}",
+            "您的个人{tema}导师",
+            "即时解决任何{tema}问题",
+            "AI驱动的{tema}解决器",
+            "摆脱{tema}的压力",
+            "学习{tema}的智能方法",
+            "找到关于{tema}的答案",
+            "用AI发现{tema}"
+        ],
+        "desc": "Educare AI是最先进的教育工具。通过逐步解释，立即解决{tema}的复杂问题。已有100多万学生提高了他们的成绩。",
+        "btn": "🚀 在Play商店下载",
+        "benefit": "✓ 即时解决 ✓ 逐步指导 ✓ 24/7 AI导师 ✓ 98%准确率",
+        "subtexts": [
+            "⭐ 15,000+条评价中获4.8/5星",
+            "🏆 25个国家排名第一的教育应用",
+            "📚 顶尖大学学生使用",
+            "🎓 提高40%的成绩",
+            "🌍 在50多个国家受信赖"
+        ],
+        "features": [
+            "拍照解题",
+            "逐步解释",
+            "带解答的练习题",
+            "交互式图表",
+            "保存和分享解答",
+            "离线模式可用",
+            "多语言支持",
+            "24/7 AI助手"
+        ],
+        "cta_urgency": [
+            "限时优惠：免费试用",
+            "立即下载 - 免费！",
+            "今天开始更智能地学习",
+            "加入100多万快乐学生",
+            "现在免费开始"
+        ]
+    },
+    "ru": {
+        "h1_variations": [
+            "Проблемы с {tema}?",
+            "Мгновенные решения {tema} с ИИ",
+            "Освойте {tema} за секунды",
+            "Ваш персональный репетитор по {tema}",
+            "Решите любую задачу по {tema} мгновенно",
+            "Решатель {tema} на базе ИИ",
+            "Перестаньте стрессовать из-за {tema}",
+            "Умный способ изучения {tema}",
+            "Найдите ответы по {tema}",
+            "Откройте {tema} с ИИ"
+        ],
+        "desc": "Educare AI - самый передовой образовательный инструмент. Мгновенно решайте сложные задачи по {tema} с пошаговыми объяснениями. Более 1 миллиона студентов уже улучшили свои оценки.",
+        "btn": "🚀 СКАЧАТЬ В PLAY STORE",
+        "benefit": "✓ Мгновенные решения ✓ Пошагово ✓ ИИ-репетитор 24/7 ✓ 98% точность",
+        "subtexts": [
+            "⭐ 4.8/5 на основе 15 000+ отзывов",
+            "🏆 #1 Образовательное приложение в 25 странах",
+            "📚 Используется студентами лучших университетов",
+            "🎓 Улучшите свои оценки на 40%",
+            "🌍 Доверие в 50+ странах"
+        ],
+        "features": [
+            "Решайте по фото с камеры",
+            "Пошаговые объяснения",
+            "Практические задачи с решениями",
+            "Интерактивные графики",
+            "Сохраняйте и делитесь решениями",
+            "Доступен офлайн-режим",
+            "Многоязычная поддержка",
+            "ИИ-помощник 24/7"
+        ],
+        "cta_urgency": [
+            "Ограниченное предложение: Бесплатная пробная версия",
+            "Скачать сейчас - Бесплатно!",
+            "Начните учиться умнее сегодня",
+            "Присоединяйтесь к 1M+ счастливых студентов",
+            "Начните бесплатно прямо сейчас"
+        ]
+    },
+    "ar": {
+        "h1_variations": [
+            "هل تواجه مشاكل مع {tema}؟",
+            "احصل على حلول فورية لـ {tema} مع الذكاء الاصطناعي",
+            "أتقن {tema} في ثوانٍ",
+            "مدرسك الشخصي لـ {tema}",
+            "حل أي مشكلة في {tema} فورًا",
+            "حلال {tema} بالذكاء الاصطناعي",
+            "توقف عن التوتر بشأن {tema}",
+            "الطريقة الذكية لتعلم {tema}",
+            "ابحث عن إجابات حول {tema}",
+            "اكتشف {tema} مع الذكاء الاصطناعي"
+        ],
+        "desc": "Educare AI هي الأداة التعليمية الأكثر تقدمًا. حل مشاكل {tema} المعقدة فورًا مع شرح خطوة بخطوة. انضم إلى أكثر من مليون طالب قاموا بتحسين درجاتهم.",
+        "btn": "🚀 التحميل من متجر بلاي",
+        "benefit": "✓ حلول فورية ✓ خطوة بخطوة ✓ مدرس ذكاء اصطناعي 24/7 ✓ دقة 98%",
+        "subtexts": [
+            "⭐ 4.8/5 من 15,000+ تقييمًا",
+            "🏆 #1 تطبيق تعليمي في 25 دولة",
+            "📚 يستخدمه طلاب أفضل الجامعات",
+            "🎓 حسّن درجاتك بنسبة 40%",
+            "🌍 موثوق في أكثر من 50 دولة"
+        ],
+        "features": [
+            "حل بالتصوير باستخدام الكاميرا",
+            "شروحات خطوة بخطوة",
+            "مسائل تدريبية مع الحلول",
+            "رسوم بيانية وتصورات تفاعلية",
+            "احفظ وشارك الحلول",
+            "وضع عدم الاتصال متاح",
+            "دعم متعدد اللغات",
+            "مساعد ذكاء اصطناعي 24/7"
+        ],
+        "cta_urgency": [
+            "عرض محدود: نسخة تجريبية مجانية",
+            "حمّل الآن - مجاني!",
+            "ابدأ التعلم بذكاء اليوم",
+            "انضم إلى أكثر من مليون طالب سعيد",
+            "ابدأ مجانًا الآن"
+        ]
+    },
+    "hi": {
+        "h1_variations": [
+            "{tema} से परेशान हैं?",
+            "AI के साथ तुरंत {tema} समाधान पाएं",
+            "सेकंडों में {tema} में महारत हासिल करें",
+            "आपका व्यक्तिगत {tema} ट्यूटर",
+            "किसी भी {tema} समस्या को तुरंत हल करें",
+            "AI-संचालित {tema} सॉल्वर",
+            "{tema} के तनाव से मुक्ति पाएं",
+            "{tema} सीखने का स्मार्ट तरीका",
+            "{tema} के बारे में उत्तर खोजें",
+            "AI के साथ {tema} खोजें"
+        ],
+        "desc": "Educare AI सबसे उन्नत शैक्षिक उपकरण है। चरण-दर-चरण स्पष्टीकरण के साथ {tema} की जटिल समस्याओं को तुरंत हल करें। 10 लाख से अधिक छात्र पहले ही अपने ग्रेड में सुधार कर चुके हैं।",
+        "btn": "🚀 प्ले स्टोर से डाउनलोड करें",
+        "benefit": "✓ तुरंत समाधान ✓ चरण-दर-चरण ✓ 24/7 AI ट्यूटर ✓ 98% सटीकता",
+        "subtexts": [
+            "⭐ 15,000+ समीक्षाओं से 4.8/5",
+            "🏆 25 देशों में #1 शैक्षिक ऐप",
+            "📚 शीर्ष विश्वविद्यालयों के छात्रों द्वारा उपयोग",
+            "🎓 अपने ग्रेड में 40% सुधार करें",
+            "🌍 50+ देशों में विश्वसनीय"
+        ],
+        "features": [
+            "कैमरे से फोटो खींचकर हल करें",
+            "चरण-दर-चरण स्पष्टीकरण",
+            "समाधान सहित अभ्यास समस्याएं",
+            "इंटरैक्टिव ग्राफ़ और विज़ुअलाइज़ेशन",
+            "समाधान सहेजें और साझा करें",
+            "ऑफ़लाइन मोड उपलब्ध",
+            "बहु-भाषा समर्थन",
+            "24/7 AI सहायक"
+        ],
+        "cta_urgency": [
+            "सीमित समय: निःशुल्क परीक्षण",
+            "अब डाउनलोड करें - मुफ़्त!",
+            "आज ही स्मार्ट तरीके से सीखना शुरू करें",
+            "10 लाख+ खुश छात्रों से जुड़ें",
+            "अभी मुफ्त में शुरू करें"
+        ]
+    },
+    "nl": {
+        "h1_variations": [
+            "Problemen met {tema}?",
+            "Krijg direct {tema}-oplossingen met AI",
+            "Beheers {tema} in seconden",
+            "Je persoonlijke {tema}-tutor",
+            "Los elk {tema}-probleem direct op",
+            "AI-gestuurde {tema}-oplosser",
+            "Stop met stressen over {tema}",
+            "De slimme manier om {tema} te leren",
+            "Vind antwoorden over {tema}",
+            "Ontdek {tema} met AI"
+        ],
+        "desc": "Educare AI is de meest geavanceerde educatieve tool. Los complexe {tema} problemen direct op met stap-voor-stap uitleg. Meer dan 1 miljoen studenten gebruiken ons al en hebben hun cijfers verbeterd.",
+        "btn": "🚀 DOWNLOADEN IN PLAY STORE",
+        "benefit": "✓ Directe Oplossingen ✓ Stap-voor-Stap ✓ 24/7 AI Tutor ✓ 98% Nauwkeurigheid",
+        "subtexts": [
+            "⭐ 4.8/5 van 15.000+ beoordelingen",
+            "🏆 #1 Educatieve App in 25 landen",
+            "📚 Gebruikt door studenten van topuniversiteiten",
+            "🎓 Verbeter je cijfers met 40%",
+            "🌍 Vertrouwd in 50+ landen"
+        ],
+        "features": [
+            "Los op met de camera - maak gewoon een foto",
+            "Stap-voor-stap uitleg",
+            "Oefenproblemen met oplossingen",
+            "Interactieve grafieken",
+            "Bewaar en deel oplossingen",
+            "Offline modus beschikbaar",
+            "Meertalige ondersteuning",
+            "24/7 AI-assistent"
+        ],
+        "cta_urgency": [
+            "Beperkte tijd: Gratis proefperiode",
+            "Download nu - Gratis!",
+            "Begin vandaag nog slimmer te leren",
+            "Sluit je aan bij 1M+ tevreden studenten",
+            "Begin nu gratis"
+        ]
+    },
+    "pl": {
+        "h1_variations": [
+            "Masz problemy z {tema}?",
+            "Uzyskaj natychmiastowe rozwiązania {tema} z AI",
+            "Opanuj {tema} w kilka sekund",
+            "Twój osobisty nauczyciel {tema}",
+            "Rozwiąż każdy problem {tema} natychmiast",
+            "Rozwiązywacz {tema} oparty na AI",
+            "Przestań się stresować {tema}",
+            "Inteligentny sposób na naukę {tema}",
+            "Znajdź odpowiedzi na temat {tema}",
+            "Odkryj {tema} z AI"
+        ],
+        "desc": "Educare AI to najbardziej zaawansowane narzędzie edukacyjne. Rozwiązuj złożone problemy {tema} natychmiast z wyjaśnieniami krok po kroku. Ponad 1 milion studentów już nam ufa i poprawiło swoje oceny.",
+        "btn": "🚀 POBIERZ Z PLAY STORE",
+        "benefit": "✓ Natychmiastowe rozwiązania ✓ Krok po kroku ✓ 24/7 AI Tutor ✓ 98% dokładności",
+        "subtexts": [
+            "⭐ 4.8/5 z 15.000+ recenzji",
+            "🏆 #1 Aplikacja edukacyjna w 25 krajach",
+            "📚 Używane przez studentów najlepszych uniwersytetów",
+            "🎓 Popraw swoje oceny o 40%",
+            "🌍 Zaufanie w 50+ krajach"
+        ],
+        "features": [
+            "Rozwiązuj przez zrobienie zdjęcia",
+            "Wyjaśnienia krok po kroku",
+            "Problemy praktyczne z rozwiązaniami",
+            "Interaktywne wykresy",
+            "Zapisuj i udostępniaj rozwiązania",
+            "Tryb offline dostępny",
+            "Wsparcie wielojęzyczne",
+            "Asystent AI 24/7"
+        ],
+        "cta_urgency": [
+            "Ograniczona oferta: Darmowy okres próbny",
+            "Pobierz teraz - za darmo!",
+            "Zacznij uczyć się mądrzej już dziś",
+            "Dołącz do 1M+ zadowolonych studentów",
+            "Zacznij za darmo teraz"
+        ]
+    },
+    "tr": {
+        "h1_variations": [
+            "{tema} ile ilgili sorun mu yaşıyorsunuz?",
+            "Yapay zeka ile anında {tema} çözümleri alın",
+            "{tema} konusunu saniyeler içinde öğrenin",
+            "Kişisel {tema} öğretmeniniz",
+            "Herhangi bir {tema} sorununu anında çözün",
+            "Yapay zeka destekli {tema} çözücü",
+            "{tema} hakkında stres yapmayı bırakın",
+            "{tema} öğrenmenin akıllı yolu",
+            "{tema} hakkında cevaplar bulun",
+            "Yapay zeka ile {tema} keşfedin"
+        ],
+        "desc": "Educare AI en gelişmiş eğitim aracıdır. {tema} ile ilgili karmaşık sorunları adım adım açıklamalarla anında çözün. 1 milyondan fazla öğrenci notlarını iyileştirdi.",
+        "btn": "🚀 PLAY STORE'DAN İNDİR",
+        "benefit": "✓ Anında Çözümler ✓ Adım Adım ✓ 7/24 AI Öğretmen ✓ %98 Doğruluk",
+        "subtexts": [
+            "⭐ 15.000+ yorumdan 4.8/5",
+            "🏆 25 ülkede #1 Eğitim Uygulaması",
+            "📚 En iyi üniversite öğrencileri tarafından kullanılır",
+            "🎓 Notlarınızı %40 iyileştirin",
+            "🌍 50+ ülkede güvenilir"
+        ],
+        "features": [
+            "Fotoğraf çekerek çözün",
+            "Adım adım açıklamalar",
+            "Çözümlü pratik problemler",
+            "İnteraktif grafikler",
+            "Çözümleri kaydedin ve paylaşın",
+            "Çevrimdışı mod mevcut",
+            "Çok dilli destek",
+            "7/24 AI asistan"
+        ],
+        "cta_urgency": [
+            "Sınırlı süre: Ücretsiz deneme",
+            "Şimdi indir - Ücretsiz!",
+            "Bugün daha akıllı öğrenmeye başlayın",
+            "1M+ mutlu öğrenciye katılın",
+            "Şimdi ücretsiz başlayın"
+        ]
+    },
+    "sv": {
+        "h1_variations": [
+            "Har du problem med {tema}?",
+            "Få omedelbara {tema}-lösningar med AI",
+            "Bemästra {tema} på några sekunder",
+            "Din personliga {tema}-handledare",
+            "Lös alla {tema}-problem omedelbart",
+            "AI-driven {tema}-lösare",
+            "Sluta stressa över {tema}",
+            "Det smarta sättet att lära sig {tema}",
+            "Hitta svar om {tema}",
+            "Upptäck {tema} med AI"
+        ],
+        "desc": "Educare AI är det mest avancerade pedagogiska verktyget. Lös komplexa {tema} problem direkt med steg-för-steg förklaringar. Över 1 miljon studenter har redan anslutit sig och förbättrat sina betyg.",
+        "btn": "🚀 LADDA NER PÅ PLAY STORE",
+        "benefit": "✓ Omedelbara lösningar ✓ Steg-för-steg ✓ 24/7 AI-handledare ✓ 98% noggrannhet",
+        "subtexts": [
+            "⭐ 4.8/5 från 15.000+ recensioner",
+            "🏆 #1 Utbildningsapp i 25 länder",
+            "📚 Används av studenter vid toppuniversitet",
+            "🎓 Förbättra dina betyg med 40%",
+            "🌍 Pålitlig i 50+ länder"
+        ],
+        "features": [
+            "Lös med kameran - ta bara ett foto",
+            "Steg-för-steg förklaringar",
+            "Övningsproblem med lösningar",
+            "Interaktiva grafer",
+            "Spara och dela lösningar",
+            "Offline-läge tillgängligt",
+            "Flerspråkigt stöd",
+            "24/7 AI-assistent"
+        ],
+        "cta_urgency": [
+            "Begränsad tid: Gratis provperiod",
+            "Ladda ner nu - Gratis!",
+            "Börja lära dig smartare idag",
+            "Gå med i 1M+ nöjda studenter",
+            "Börja gratis nu"
         ]
     }
 }
 
-# Añadir textos básicos para idiomas que no tienen definición completa
-for lang in ["it", "jp", "kr", "zh", "ru", "ar", "hi", "nl", "pl", "tr", "sv"]:
+# Añadir textos básicos para idiomas que no tienen definición completa (por si acaso)
+for lang in ["en", "es", "de", "fr", "pt", "it", "jp", "kr", "zh", "ru", "ar", "hi", "nl", "pl", "tr", "sv"]:
     if lang not in textos:
         textos[lang] = textos["en"].copy()
-        if lang == "jp":
-            textos[lang]["btn"] = "🚀 Playストアで入手"
-            textos[lang]["desc"] = "Educare AIは最も先進的な教育ツールです。{tema}の複雑な問題をステップバイステップの説明で瞬時に解決します。100万人以上の学生が成績を向上させています。"
-        elif lang == "kr":
-            textos[lang]["btn"] = "🚀 Play 스토어에서 다운로드"
-            textos[lang]["desc"] = "Educare AI는 가장 진보된 교육 도구입니다. {tema}의 복잡한 문제를 단계별 설명으로 즉시 해결합니다. 이미 100만 명 이상의 학생들이 성적을 향상시켰습니다."
-        elif lang == "zh":
-            textos[lang]["btn"] = "🚀 在Play商店下载"
-            textos[lang]["desc"] = "Educare AI是最先进的教育工具。通过逐步解释，立即解决{tema}的复杂问题。已有100多万学生提高了他们的成绩。"
-        elif lang == "ru":
-            textos[lang]["btn"] = "🚀 СКАЧАТЬ В PLAY STORE"
-            textos[lang]["desc"] = "Educare AI - самый передовой образовательный инструмент. Мгновенно решайте сложные задачи по {tema} с пошаговыми объяснениями. Более 1 миллиона студентов уже улучшили свои оценки."
-        elif lang == "ar":
-            textos[lang]["btn"] = "🚀 التحميل من متجر بلاي"
-            textos[lang]["desc"] = "Educare AI هي الأداة التعليمية الأكثر تقدمًا. حل مشاكل {tema} المعقدة فورًا مع شرح خطوة بخطوة. انضم إلى أكثر من مليون طالب قاموا بتحسين درجاتهم."
-        elif lang == "hi":
-            textos[lang]["btn"] = "🚀 प्ले स्टोर से डाउनलोड करें"
-            textos[lang]["desc"] = "Educare AI सबसे उन्नत शैक्षिक उपकरण है। चरण-दर-चरण स्पष्टीकरण के साथ {tema} की जटिल समस्याओं को तुरंत हल करें। 10 लाख से अधिक छात्र जुड़ चुके हैं।"
-        elif lang == "nl":
-            textos[lang]["btn"] = "🚀 DOWNLOADEN IN PLAY STORE"
-            textos[lang]["desc"] = "Educare AI is de meest geavanceerde educatieve tool. Los complexe {tema} problemen direct op met stap-voor-stap uitleg. 1M+ studenten gebruiken ons al."
-        elif lang == "pl":
-            textos[lang]["btn"] = "🚀 POBIERZ Z PLAY STORE"
-            textos[lang]["desc"] = "Educare AI to najbardziej zaawansowane narzędzie edukacyjne. Rozwiązuj złożone problemy {tema} natychmiast z wyjaśnieniami krok po kroku. 1M+ studentów już nam ufa."
-        elif lang == "tr":
-            textos[lang]["btn"] = "🚀 PLAY STORE'DAN İNDİR"
-            textos[lang]["desc"] = "Educare AI en gelişmiş eğitim aracıdır. {tema} ile ilgili karmaşık sorunları adım adım açıklamalarla anında çözün. 1 milyondan fazla öğrenci bize katıldı."
-        elif lang == "sv":
-            textos[lang]["btn"] = "🚀 LADDA NER PÅ PLAY STORE"
-            textos[lang]["desc"] = "Educare AI är det mest avancerade pedagogiska verktyget. Lös komplexa {tema} problem direkt med steg-för-steg förklaringar. Över 1 miljon studenter har redan anslutit sig."
 
 # ============================================
 # FUNCIONES DE GENERACIÓN
@@ -1312,12 +1720,16 @@ def generar_keywords_infinitas(base_keywords, lang, count=500):
     return expanded[:count]
 
 def generar_html_seo(tema, lang, idx):
-    """Genera HTML con SEO optimizado"""
+    """Genera HTML con SEO optimizado y diseño mejorado"""
     textos_lang = textos.get(lang, textos["en"])
     h1_template = random.choice(textos_lang["h1_variations"])
     h1 = h1_template.replace("{tema}", tema)
     desc = textos_lang["desc"].replace("{tema}", tema)
+    benefit = textos_lang["benefit"]
     subtext = random.choice(textos_lang["subtexts"])
+    features_list = random.sample(textos_lang["features"], 4)
+    features_html = " • ".join(features_list)
+    cta = random.choice(textos_lang["cta_urgency"])
     fecha_actual = datetime.now().strftime("%Y-%m-%d")
     
     palabras = tema.split()
@@ -1340,11 +1752,11 @@ def generar_html_seo(tema, lang, idx):
     <meta name="description" content="{meta_description}">
     <meta name="keywords" content="{meta_keywords}">
     <meta name="robots" content="index, follow">
-    <title>{tema} | Educare AI</title>
+    <title>{tema} | Educare AI - Tu asistente educativo inteligente</title>
     <style>
         * {{ margin: 0; padding: 0; box-sizing: border-box; }}
         body {{
-            font-family: 'Segoe UI', sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             display: flex;
@@ -1354,75 +1766,205 @@ def generar_html_seo(tema, lang, idx):
         }}
         .card {{
             background: white;
-            padding: 40px;
-            border-radius: 20px;
-            max-width: 600px;
+            padding: 50px;
+            border-radius: 30px;
+            max-width: 800px;
+            width: 100%;
             text-align: center;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            box-shadow: 0 30px 70px rgba(0,0,0,0.3);
+            transition: transform 0.3s;
         }}
-        h1 {{ color: #2d3748; font-size: 2.5em; margin-bottom: 20px; }}
+        .card:hover {{
+            transform: translateY(-10px);
+        }}
+        h1 {{
+            color: #2d3748;
+            font-size: 2.8em;
+            margin-bottom: 20px;
+            font-weight: 800;
+            line-height: 1.2;
+        }}
+        .highlight {{
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }}
+        .description {{
+            font-size: 1.3em;
+            color: #4a5568;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }}
+        .benefit {{
+            background: #f7fafc;
+            padding: 15px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            font-weight: 600;
+            color: #2d3748;
+            font-size: 1.1em;
+            border: 1px solid #e2e8f0;
+        }}
+        .features {{
+            background: linear-gradient(135deg, #f6f9fc 0%, #edf2f7 100%);
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            color: #2d3748;
+            font-weight: 500;
+            font-size: 1.1em;
+        }}
+        .stats {{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }}
+        .stat-item {{
+            text-align: center;
+        }}
+        .stat-number {{
+            font-size: 2.5em;
+            font-weight: 900;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+        }}
+        .stat-label {{
+            font-size: 1em;
+            color: #718096;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 5px;
+        }}
         .btn {{
             display: inline-block;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 15px 40px;
+            padding: 20px 60px;
             text-decoration: none;
-            border-radius: 50px;
-            font-weight: bold;
+            border-radius: 60px;
+            font-weight: 800;
+            font-size: 1.5em;
             margin: 20px 0;
-            transition: 0.3s;
+            transition: all 0.3s;
+            box-shadow: 0 20px 40px rgba(102, 126, 234, 0.4);
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }}
-        .btn:hover {{ transform: scale(1.05); }}
-        .stats {{ display: flex; justify-content: center; gap: 20px; margin: 20px 0; }}
-        .footer {{ margin-top: 30px; font-size: 0.8em; color: #718096; }}
+        .btn:hover {{
+            transform: scale(1.05);
+            box-shadow: 0 30px 60px rgba(102, 126, 234, 0.6);
+        }}
+        .subtext {{
+            color: #718096;
+            font-size: 1.1em;
+            margin: 15px 0;
+            font-weight: 500;
+        }}
+        .cta-urgency {{
+            background: #fffbeb;
+            color: #d69e2e;
+            padding: 12px;
+            border-radius: 10px;
+            margin: 20px 0 10px;
+            font-weight: 600;
+            border: 1px solid #fbd38d;
+        }}
+        .footer {{
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #a0aec0;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 20px;
+        }}
+        @media (max-width: 768px) {{
+            h1 {{ font-size: 2em; }}
+            .description {{ font-size: 1.1em; }}
+            .btn {{ font-size: 1.2em; padding: 15px 40px; }}
+            .stats {{ gap: 15px; }}
+        }}
     </style>
 </head>
 <body>
     <div class="card">
-        <h1>{h1}</h1>
-        <p style="font-size: 1.2em;">{desc}</p>
+        <h1><span class="highlight">{h1}</span></h1>
+        <p class="description">{desc}</p>
+        
+        <div class="benefit">{benefit}</div>
+        
         <div class="stats">
-            <div>⭐ 4.8/5</div>
-            <div>1M+ descargas</div>
-            <div>✓ 98% precisión</div>
+            <div class="stat-item">
+                <div class="stat-number">1M+</div>
+                <div class="stat-label">ESTUDIANTES</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">4.8</div>
+                <div class="stat-label">⭐ VALORACIÓN</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">98%</div>
+                <div class="stat-label">PRECISIÓN</div>
+            </div>
         </div>
+        
+        <div class="features">{features_html}</div>
+        
         <a href="https://play.google.com/store/apps/details?id=com.educareai.app" class="btn">{textos_lang['btn']}</a>
-        <p style="color: #718096;">{subtext}</p>
-        <p class="footer">© 2024 Educare AI - {tema}</p>
+        <p class="subtext">{subtext}</p>
+        
+        <div class="cta-urgency">{cta}</div>
+        
+        <p class="footer">© 2025 Educare AI - {tema}</p>
     </div>
 </body>
 </html>"""
 
 def generar_sitemap(paginas_generadas, base_dir):
-    """Genera sitemap.xml"""
+    """Genera sitemap.xml con URLs absolutas corregidas"""
     fecha_actual = datetime.now().strftime("%Y-%m-%d")
+    base_url = "https://stef7773.github.io/educare-ai-global"
+    
     sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n'
     sitemap += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+    
     for ruta in paginas_generadas[:1000]:
+        # Convertir ruta local a URL pública
+        ruta_relativa = ruta.replace(base_dir, "").replace("/home/stefano/EducareAI_Project/", "").lstrip("/")
+        url_completa = f"{base_url}/{ruta_relativa}"
+        
         sitemap += f'  <url>\n'
-        sitemap += f'    <loc>file://{ruta}</loc>\n'
+        sitemap += f'    <loc>{url_completa}</loc>\n'
         sitemap += f'    <lastmod>{fecha_actual}</lastmod>\n'
         sitemap += f'    <changefreq>daily</changefreq>\n'
         sitemap += f'    <priority>0.9</priority>\n'
         sitemap += f'  </url>\n'
+    
     sitemap += '</urlset>'
+    
     with open(os.path.join(base_dir, 'sitemap.xml'), 'w', encoding='utf-8') as f:
         f.write(sitemap)
 
 def generar_robots_txt(base_dir):
-    """Genera robots.txt"""
+    """Genera robots.txt con ruta correcta"""
     robots = f"""User-agent: *
 Allow: /
-Sitemap: file://{base_dir}/sitemap.xml
+Sitemap: https://stef7773.github.io/educare-ai-global/web_seo_global/sitemap.xml
 """
     with open(os.path.join(base_dir, 'robots.txt'), 'w', encoding='utf-8') as f:
         f.write(robots)
 
 # ============================================
-# 🎨 FUNCIÓN DE LA PORTAZA (VERSIÓN CORREGIDA)
+# 🎨 FUNCIÓN DE LA PORTAZA (VERSIÓN MEJORADA)
 # ============================================
 def generar_frontend_impactante(base_dir):
-    """Genera una página principal visualmente impactante que solo muestra Educare AI"""
+    """Genera una página principal visualmente impactante"""
     
     html = """<!DOCTYPE html>
 <html lang="es">
@@ -1430,7 +1972,10 @@ def generar_frontend_impactante(base_dir):
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Educare AI - Revoluciona tu forma de aprender</title>
-    <meta name="description" content="Educare AI: La aplicación que transforma el aprendizaje con inteligencia artificial. Más de 1 millón de estudiantes ya confían en nosotros.">
+    <meta name="description" content="Educare AI: La aplicación que transforma el aprendizaje con inteligencia artificial. Más de 1 millón de estudiantes ya confían en nosotros. Disponible en 17 idiomas.">
+    <meta name="keywords" content="educación con IA, aprendizaje inteligente, tutor virtual, resolver problemas matemáticos, ayuda con tareas, inteligencia artificial educativa">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://stef7773.github.io/educare-ai-global/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
@@ -1519,12 +2064,28 @@ def generar_frontend_impactante(base_dir):
         }
 
         .slogan {
-            font-size: 1.6em;
+            font-size: 1.8em;
             color: rgba(255,255,255,0.9);
-            max-width: 700px;
+            max-width: 800px;
             margin: 20px auto;
             font-weight: 400;
             line-height: 1.5;
+        }
+
+        .language-badge {
+            background: rgba(255,255,255,0.1);
+            padding: 12px 30px;
+            border-radius: 50px;
+            margin: 30px 0;
+            font-size: 1.1em;
+            border: 1px solid rgba(255,255,255,0.2);
+            backdrop-filter: blur(5px);
+        }
+
+        .language-badge span {
+            color: #667eea;
+            font-weight: 700;
+            margin: 0 5px;
         }
 
         .download-section {
@@ -1567,7 +2128,7 @@ def generar_frontend_impactante(base_dir):
 
         .btn-sub {
             color: rgba(255,255,255,0.7);
-            font-size: 1.2em;
+            font-size: 1.3em;
             margin-top: 20px;
             font-weight: 400;
         }
@@ -1585,7 +2146,7 @@ def generar_frontend_impactante(base_dir):
         }
 
         .stat-number {
-            font-size: 3.5em;
+            font-size: 4em;
             font-weight: 900;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             -webkit-background-clip: text;
@@ -1594,11 +2155,39 @@ def generar_frontend_impactante(base_dir):
         }
 
         .stat-label {
-            font-size: 1.1em;
+            font-size: 1.2em;
             color: rgba(255,255,255,0.6);
             text-transform: uppercase;
             letter-spacing: 2px;
             margin-top: 5px;
+        }
+
+        .features-preview {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin: 60px 0;
+            max-width: 1000px;
+        }
+
+        .feature-item {
+            background: rgba(255,255,255,0.05);
+            padding: 20px;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .feature-item i {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .feature-item p {
+            font-size: 1.1em;
+            color: rgba(255,255,255,0.8);
         }
 
         .footer {
@@ -1619,7 +2208,7 @@ def generar_frontend_impactante(base_dir):
         .footer-links a {
             color: rgba(255,255,255,0.5);
             text-decoration: none;
-            font-size: 1em;
+            font-size: 1.1em;
             transition: color 0.3s;
         }
 
@@ -1629,16 +2218,18 @@ def generar_frontend_impactante(base_dir):
 
         .copyright {
             color: rgba(255,255,255,0.3);
-            font-size: 0.9em;
+            font-size: 1em;
         }
 
         @media (max-width: 768px) {
             h1 { font-size: 3em; }
             .logo-icon { font-size: 7em; }
+            .slogan { font-size: 1.3em; }
             .download-btn { font-size: 1.5em; padding: 20px 40px; }
             .stats { gap: 30px; }
             .stat-number { font-size: 2.5em; }
-            .slogan { font-size: 1.3em; }
+            .features-preview { grid-template-columns: repeat(2, 1fr); }
+            .language-badge { font-size: 0.9em; padding: 10px 20px; }
         }
     </style>
 </head>
@@ -1656,7 +2247,11 @@ def generar_frontend_impactante(base_dir):
         </h1>
         
         <div class="slogan">
-            La inteligencia artificial que transforma<br>tu forma de aprender.
+            La inteligencia artificial que transforma<br>tu forma de aprender en 17 idiomas.
+        </div>
+
+        <div class="language-badge">
+            🌍 Disponible en: <span>Español</span> • <span>English</span> • <span>Français</span> • <span>Deutsch</span> • <span>Italiano</span> • <span>Português</span> • <span>日本語</span> • <span>한국어</span> • <span>中文</span> • <span>Русский</span> • <span>العربية</span> • <span>हिन्दी</span> • <span>Nederlands</span> • <span>Polski</span> • <span>Türkçe</span> • <span>Svenska</span>
         </div>
 
         <div class="stats">
@@ -1671,6 +2266,25 @@ def generar_frontend_impactante(base_dir):
             <div class="stat-item">
                 <div class="stat-number">50+</div>
                 <div class="stat-label">Países</div>
+            </div>
+        </div>
+
+        <div class="features-preview">
+            <div class="feature-item">
+                <i class="fas fa-camera"></i>
+                <p>Escanea y resuelve</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-language"></i>
+                <p>17 idiomas</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-chart-line"></i>
+                <p>Explicaciones paso a paso</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-mobile-alt"></i>
+                <p>Modo offline</p>
             </div>
         </div>
 
@@ -1690,7 +2304,7 @@ def generar_frontend_impactante(base_dir):
                 <a href="#">Contacto</a>
             </div>
             <div class="copyright">
-                © 2024 Educare AI. Todos los derechos reservados.
+                © 2025 Educare AI. Todos los derechos reservados. Imperio Global - 17 idiomas, 6400+ páginas.
             </div>
         </footer>
     </div>
@@ -1699,18 +2313,18 @@ def generar_frontend_impactante(base_dir):
 </body>
 </html>"""
     
-    # GUARDAR EN LA RAÍZ DEL PROYECTO (NO en web_seo_global)
-    ruta_raiz = os.path.dirname(base_dir)  # Esto es ~/EducareAI_Project
+    # GUARDAR EN LA RAÍZ DEL PROYECTO
+    ruta_raiz = os.path.dirname(base_dir)
     ruta_index = os.path.join(ruta_raiz, 'index.html')
     
     with open(ruta_index, 'w', encoding='utf-8') as f:
         f.write(html)
     
-    print(f"   ✅ PORTAZA GUARDADA EN LA RAÍZ: {ruta_index}")
-    print(f"   ✅ DEBERÍA SER VISIBLE EN: https://stef7773.github.io/educare-ai-global/")
+    print(f"   ✅ PORTAZA MEJORADA GUARDADA EN: {ruta_index}")
+    print(f"   ✅ DISPONIBLE EN: https://stef7773.github.io/educare-ai-global/")
 
 # ============================================
-# 🚀 FUNCIÓN PRINCIPAL CORREGIDA
+# 🚀 FUNCIÓN PRINCIPAL MEJORADA
 # ============================================
 def fabricar_paginas_globales():
     base_dir = os.path.expanduser('~/EducareAI_Project/web_seo_global')
@@ -1721,11 +2335,11 @@ def fabricar_paginas_globales():
     total_paginas = 0
     
     print("""
-    ╔══════════════════════════════════════════════════════════╗
-    ║     🚀 EDUCARE AI - IMPERIO GLOBAL 2.0                  ║
-    ║     17 IDIOMAS | 5000+ PÁGINAS POR IDIOMA              ║
-    ║     BACKEND: web_seo_global/ | FRONTEND: RAÍZ          ║
-    ╚══════════════════════════════════════════════════════════╝
+    ╔══════════════════════════════════════════════════════════════════════════╗
+    ║     🚀 EDUCARE AI - IMPERIO GLOBAL DEFINITIVO v3.0                      ║
+    ║     17 IDIOMAS | 400 PÁGINAS POR IDIOMA | DISEÑO MEJORADO              ║
+    ║     BACKEND: web_seo_global/ | FRONTEND: RAÍZ | SIN ERRORES            ║
+    ╚══════════════════════════════════════════════════════════════════════════╝
     """)
     
     # ===== GENERAR BACKEND (PÁGINAS CON KEYWORDS) =====
@@ -1785,8 +2399,8 @@ def fabricar_paginas_globales():
     generar_sitemap(paginas_generadas, base_dir)
     generar_robots_txt(base_dir)
     
-    # ===== GENERAR FRONTEND EN LA RAÍZ (¡CORREGIDO!) =====
-    print(f"\n🎨 Generando portada impactante en la RAÍZ...")
+    # ===== GENERAR FRONTEND EN LA RAÍZ =====
+    print(f"\n🎨 Generando portada impactante mejorada...")
     generar_frontend_impactante(base_dir)
     
     # ===== GUARDAR ESTADÍSTICAS =====
@@ -1800,20 +2414,20 @@ def fabricar_paginas_globales():
     with open(os.path.join(base_dir, 'stats.json'), 'w', encoding='utf-8') as f:
         json.dump(stats, f, indent=2, ensure_ascii=False)
     
-    print(f"\n{'='*70}")
-    print(f"✅ GENERACIÓN COMPLETADA CON ÉXITO")
-    print(f"{'='*70}")
+    print(f"\n{'='*80}")
+    print(f"✅ GENERACIÓN COMPLETADA CON ÉXITO - VERSIÓN DEFINITIVA")
+    print(f"{'='*80}")
     print(f"📊 TOTAL DE PÁGINAS SEO: {total_paginas} (en web_seo_global/)")
-    print(f"🎨 PORTAZA GUARDADA EN: ~/EducareAI_Project/index.html")
+    print(f"🎨 PORTAZA MEJORADA EN: ~/EducareAI_Project/index.html")
     print(f"🌐 URL PÚBLICA: https://stef7773.github.io/educare-ai-global/")
-    print(f"{'='*70}")
+    print(f"{'='*80}")
     print(f"\n📋 PRÓXIMOS PASOS:")
     print(f"   1. git add .")
-    print(f"   2. git commit -m '🌍 Imperio global: 17 idiomas añadidos'")
+    print(f"   2. git commit -m '✨ Versión definitiva: 17 idiomas, diseño mejorado, 6400+ páginas'")
     print(f"   3. git push origin main")
     print(f"   4. Esperar 5 minutos")
     print(f"   5. Abrir https://stef7773.github.io/educare-ai-global/")
-    print(f"{'='*70}")
+    print(f"{'='*80}")
 
 if __name__ == "__main__":
     fabricar_paginas_globales()
