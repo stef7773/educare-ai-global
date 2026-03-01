@@ -12,19 +12,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Montserrat', sans-serif;
             background: linear-gradient(135deg, #0a0a1a 0%, #1a1a3a 100%);
             color: white;
             overflow-x: hidden;
         }
-
         .background {
             position: fixed;
             width: 100%;
@@ -36,12 +30,10 @@
                         radial-gradient(circle at 80% 80%, rgba(118, 75, 162, 0.15) 0%, transparent 40%);
             animation: backgroundPulse 8s ease-in-out infinite;
         }
-
         @keyframes backgroundPulse {
             0%, 100% { opacity: 0.6; }
             50% { opacity: 1; }
         }
-
         .container {
             position: relative;
             z-index: 1;
@@ -55,17 +47,11 @@
             align-items: center;
             text-align: center;
         }
-
-        .logo {
-            margin-bottom: 30px;
-            animation: float 6s ease-in-out infinite;
-        }
-
+        .logo { margin-bottom: 30px; animation: float 6s ease-in-out infinite; }
         @keyframes float {
             0%, 100% { transform: translateY(0); }
             50% { transform: translateY(-25px); }
         }
-
         .logo-icon {
             font-size: 10em;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -74,7 +60,6 @@
             filter: drop-shadow(0 20px 40px rgba(102, 126, 234, 0.5));
             display: inline-block;
         }
-
         h1 {
             font-size: 5em;
             font-weight: 900;
@@ -86,7 +71,6 @@
             text-transform: uppercase;
             letter-spacing: -1px;
         }
-
         .highlight {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             -webkit-background-clip: text;
@@ -94,7 +78,6 @@
             display: block;
             font-size: 1.2em;
         }
-
         .slogan {
             font-size: 1.8em;
             color: rgba(255,255,255,0.9);
@@ -103,7 +86,6 @@
             font-weight: 400;
             line-height: 1.5;
         }
-
         .language-badge {
             background: rgba(255,255,255,0.1);
             padding: 12px 30px;
@@ -113,17 +95,12 @@
             border: 1px solid rgba(255,255,255,0.2);
             backdrop-filter: blur(5px);
         }
-
         .language-badge span {
             color: #667eea;
             font-weight: 700;
             margin: 0 5px;
         }
-
-        .download-section {
-            margin: 50px 0 30px;
-        }
-
+        .download-section { margin: 50px 0 30px; }
         .download-btn {
             display: inline-flex;
             align-items: center;
@@ -143,28 +120,21 @@
             letter-spacing: 2px;
             animation: pulse 2s infinite;
         }
-
         @keyframes pulse {
             0%, 100% { transform: scale(1); box-shadow: 0 20px 40px rgba(102, 126, 234, 0.4); }
             50% { transform: scale(1.05); box-shadow: 0 40px 80px rgba(102, 126, 234, 0.7); }
         }
-
         .download-btn:hover {
             transform: scale(1.1);
             box-shadow: 0 50px 100px rgba(102, 126, 234, 0.9);
         }
-
-        .download-btn i {
-            font-size: 1.3em;
-        }
-
+        .download-btn i { font-size: 1.3em; }
         .btn-sub {
             color: rgba(255,255,255,0.7);
             font-size: 1.3em;
             margin-top: 20px;
             font-weight: 400;
         }
-
         .stats {
             display: flex;
             justify-content: center;
@@ -172,11 +142,7 @@
             margin: 60px 0 30px;
             flex-wrap: wrap;
         }
-
-        .stat-item {
-            text-align: center;
-        }
-
+        .stat-item { text-align: center; }
         .stat-number {
             font-size: 4em;
             font-weight: 900;
@@ -185,7 +151,6 @@
             -webkit-text-fill-color: transparent;
             line-height: 1;
         }
-
         .stat-label {
             font-size: 1.2em;
             color: rgba(255,255,255,0.6);
@@ -193,7 +158,6 @@
             letter-spacing: 2px;
             margin-top: 5px;
         }
-
         .features-preview {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -201,14 +165,12 @@
             margin: 60px 0;
             max-width: 1000px;
         }
-
         .feature-item {
             background: rgba(255,255,255,0.05);
             padding: 20px;
             border-radius: 20px;
             border: 1px solid rgba(255,255,255,0.1);
         }
-
         .feature-item i {
             font-size: 2.5em;
             margin-bottom: 15px;
@@ -216,19 +178,16 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-
         .feature-item p {
             font-size: 1.1em;
             color: rgba(255,255,255,0.8);
         }
-
         .footer {
             margin-top: 80px;
             padding: 30px;
             border-top: 1px solid rgba(255,255,255,0.1);
             width: 100%;
         }
-
         .footer-links {
             display: flex;
             justify-content: center;
@@ -236,23 +195,17 @@
             margin-bottom: 20px;
             flex-wrap: wrap;
         }
-
         .footer-links a {
             color: rgba(255,255,255,0.5);
             text-decoration: none;
             font-size: 1.1em;
             transition: color 0.3s;
         }
-
-        .footer-links a:hover {
-            color: white;
-        }
-
+        .footer-links a:hover { color: white; }
         .copyright {
             color: rgba(255,255,255,0.3);
             font-size: 1em;
         }
-
         @media (max-width: 768px) {
             h1 { font-size: 3em; }
             .logo-icon { font-size: 7em; }
@@ -267,59 +220,31 @@
 </head>
 <body>
     <div class="background"></div>
-    
     <div class="container">
         <div class="logo">
             <i class="fas fa-robot logo-icon"></i>
         </div>
-        
         <h1>
             <span class="highlight">EDUCARE</span>
             AI
         </h1>
-        
         <div class="slogan">
             La inteligencia artificial que transforma<br>tu forma de aprender en 17 idiomas.
         </div>
-
         <div class="language-badge">
             🌍 Disponible en: <span>Español</span> • <span>English</span> • <span>Français</span> • <span>Deutsch</span> • <span>Italiano</span> • <span>Português</span> • <span>日本語</span> • <span>한국어</span> • <span>中文</span> • <span>Русский</span> • <span>العربية</span> • <span>हिन्दी</span> • <span>Nederlands</span> • <span>Polski</span> • <span>Türkçe</span> • <span>Svenska</span>
         </div>
-
         <div class="stats">
-            <div class="stat-item">
-                <div class="stat-number">1M+</div>
-                <div class="stat-label">Estudiantes</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">4.8</div>
-                <div class="stat-label">⭐ Valoración</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">50+</div>
-                <div class="stat-label">Países</div>
-            </div>
+            <div class="stat-item"><div class="stat-number">1M+</div><div class="stat-label">Estudiantes</div></div>
+            <div class="stat-item"><div class="stat-number">4.8</div><div class="stat-label">⭐ Valoración</div></div>
+            <div class="stat-item"><div class="stat-number">50+</div><div class="stat-label">Países</div></div>
         </div>
-
         <div class="features-preview">
-            <div class="feature-item">
-                <i class="fas fa-camera"></i>
-                <p>Escanea y resuelve</p>
-            </div>
-            <div class="feature-item">
-                <i class="fas fa-language"></i>
-                <p>17 idiomas</p>
-            </div>
-            <div class="feature-item">
-                <i class="fas fa-chart-line"></i>
-                <p>Explicaciones paso a paso</p>
-            </div>
-            <div class="feature-item">
-                <i class="fas fa-mobile-alt"></i>
-                <p>Modo offline</p>
-            </div>
+            <div class="feature-item"><i class="fas fa-camera"></i><p>Escanea y resuelve</p></div>
+            <div class="feature-item"><i class="fas fa-language"></i><p>17 idiomas</p></div>
+            <div class="feature-item"><i class="fas fa-chart-line"></i><p>Explicaciones paso a paso</p></div>
+            <div class="feature-item"><i class="fas fa-mobile-alt"></i><p>Modo offline</p></div>
         </div>
-
         <div class="download-section">
             <a href="https://play.google.com/store/apps/details?id=com.educareai.app" class="download-btn">
                 <i class="fab fa-google-play"></i>
@@ -327,7 +252,6 @@
             </a>
             <div class="btn-sub">Gratis en Google Play • 15,000+ reseñas 5⭐</div>
         </div>
-
         <footer class="footer">
             <div class="footer-links">
                 <a href="#">Sobre Educare AI</a>
@@ -340,7 +264,6 @@
             </div>
         </footer>
     </div>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
 </body>
 </html>

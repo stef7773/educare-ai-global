@@ -585,8 +585,6 @@ estrategia_global = {
          for cat in ["matematica", "fisica", "chimica", "biologia", "ingegneria", "alimenti", "ricette", "sport", "stile vita", "notizie", "forum", "social media", "viaggi", "business", "tecnologia", "salute"]
          for suf in ["risolutore", "calcolatrice", "aiuto", "assistente", "strumento", "app", "tutor", "consigli"]],
     
-    # ===== NUEVOS IDIOMAS ESTRATÉGICOS =====
-    
     "jp": [  # Japonés
         "微分積分 問題 解決", "積分計算 ステップバイステップ",
         "微分 計算機 オンライン", "代数方程式 解き方",
@@ -989,7 +987,7 @@ estrategia_global = {
 }
 
 # ============================================
-# CONTENIDO PERSUASIVO POR IDIOMA - VERSIÓN DEFINITIVA
+# CONTENIDO PERSUASIVO POR IDIOMA - VERSIÓN ÉPICA DEFINITIVA
 # ============================================
 textos = {
     "en": {
@@ -1650,11 +1648,6 @@ textos = {
     }
 }
 
-# Añadir textos básicos para idiomas que no tienen definición completa (por si acaso)
-for lang in ["en", "es", "de", "fr", "pt", "it", "jp", "kr", "zh", "ru", "ar", "hi", "nl", "pl", "tr", "sv"]:
-    if lang not in textos:
-        textos[lang] = textos["en"].copy()
-
 # ============================================
 # FUNCIONES DE GENERACIÓN
 # ============================================
@@ -1720,7 +1713,7 @@ def generar_keywords_infinitas(base_keywords, lang, count=500):
     return expanded[:count]
 
 def generar_html_seo(tema, lang, idx):
-    """Genera HTML con SEO optimizado y diseño MEJORADO (como el francés) para TODOS los idiomas"""
+    """Genera HTML con diseño ESPECTACULAR para TODOS los idiomas"""
     textos_lang = textos.get(lang, textos["en"])
     h1_template = random.choice(textos_lang["h1_variations"])
     h1 = h1_template.replace("{tema}", tema)
@@ -1795,6 +1788,11 @@ def generar_html_seo(tema, lang, idx):
             text-align: center;
             box-shadow: 0 30px 70px rgba(0,0,0,0.3);
             transition: transform 0.3s;
+            animation: fadeIn 0.5s ease-in;
+        }}
+        @keyframes fadeIn {{
+            from {{ opacity: 0; transform: translateY(20px); }}
+            to {{ opacity: 1; transform: translateY(0); }}
         }}
         .card:hover {{ transform: translateY(-10px); }}
         h1 {{ color: #2d3748; font-size: 2.8em; margin-bottom: 20px; font-weight: 800; line-height: 1.2; }}
@@ -1806,12 +1804,43 @@ def generar_html_seo(tema, lang, idx):
         .stat-item {{ text-align: center; }}
         .stat-number {{ font-size: 2.5em; font-weight: 900; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; line-height: 1; }}
         .stat-label {{ font-size: 1em; color: #718096; text-transform: uppercase; letter-spacing: 1px; margin-top: 5px; }}
-        .btn {{ display: inline-block; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 20px 60px; text-decoration: none; border-radius: 60px; font-weight: 800; font-size: 1.5em; margin: 20px 0; transition: all 0.3s; box-shadow: 0 20px 40px rgba(102, 126, 234, 0.4); border: none; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; }}
-        .btn:hover {{ transform: scale(1.05); box-shadow: 0 30px 60px rgba(102, 126, 234, 0.6); }}
+        .btn {{
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px 60px;
+            text-decoration: none;
+            border-radius: 60px;
+            font-weight: 800;
+            font-size: 1.5em;
+            margin: 20px 0;
+            transition: all 0.3s;
+            box-shadow: 0 20px 40px rgba(102, 126, 234, 0.4);
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            animation: pulse 2s infinite;
+        }}
+        @keyframes pulse {{
+            0%, 100% {{ transform: scale(1); box-shadow: 0 20px 40px rgba(102, 126, 234, 0.4); }}
+            50% {{ transform: scale(1.05); box-shadow: 0 30px 60px rgba(102, 126, 234, 0.6); }}
+        }}
+        .btn:hover {{
+            transform: scale(1.05);
+            box-shadow: 0 30px 60px rgba(102, 126, 234, 0.6);
+            animation: none;
+        }}
         .subtext {{ color: #718096; font-size: 1.1em; margin: 15px 0; font-weight: 500; }}
         .cta-urgency {{ background: #fffbeb; color: #d69e2e; padding: 12px; border-radius: 10px; margin: 20px 0 10px; font-weight: 600; border: 1px solid #fbd38d; }}
         .footer {{ margin-top: 30px; font-size: 0.9em; color: #a0aec0; border-top: 1px solid #e2e8f0; padding-top: 20px; }}
-        @media (max-width: 768px) {{ h1 {{ font-size: 2em; }} .description {{ font-size: 1.1em; }} .btn {{ font-size: 1.2em; padding: 15px 40px; }} .stats {{ gap: 15px; }} }}
+        @media (max-width: 768px) {{
+            h1 {{ font-size: 2em; }}
+            .description {{ font-size: 1.1em; }}
+            .btn {{ font-size: 1.2em; padding: 15px 40px; }}
+            .stats {{ gap: 15px; }}
+            .card {{ padding: 30px; }}
+        }}
     </style>
 </head>
 <body>
@@ -1848,7 +1877,6 @@ def generar_sitemap(paginas_generadas, base_dir):
     sitemap += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
     
     for ruta in paginas_generadas[:1000]:
-        # Convertir ruta local a URL pública
         ruta_relativa = ruta.replace(base_dir, "").replace("/home/stefano/EducareAI_Project/", "").lstrip("/")
         url_completa = f"{base_url}/{ruta_relativa}"
         
@@ -1874,7 +1902,7 @@ Sitemap: https://stef7773.github.io/educare-ai-global/web_seo_global/sitemap.xml
         f.write(robots)
 
 # ============================================
-# 🎨 FUNCIÓN DE LA PORTAZA (VERSIÓN MEJORADA)
+# 🎨 FUNCIÓN DE LA PORTAZA (VERSIÓN ÉPICA)
 # ============================================
 def generar_frontend_impactante(base_dir):
     """Genera una página principal visualmente impactante"""
@@ -1893,19 +1921,13 @@ def generar_frontend_impactante(base_dir):
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Montserrat', sans-serif;
             background: linear-gradient(135deg, #0a0a1a 0%, #1a1a3a 100%);
             color: white;
             overflow-x: hidden;
         }
-
         .background {
             position: fixed;
             width: 100%;
@@ -1917,12 +1939,10 @@ def generar_frontend_impactante(base_dir):
                         radial-gradient(circle at 80% 80%, rgba(118, 75, 162, 0.15) 0%, transparent 40%);
             animation: backgroundPulse 8s ease-in-out infinite;
         }
-
         @keyframes backgroundPulse {
             0%, 100% { opacity: 0.6; }
             50% { opacity: 1; }
         }
-
         .container {
             position: relative;
             z-index: 1;
@@ -1936,17 +1956,11 @@ def generar_frontend_impactante(base_dir):
             align-items: center;
             text-align: center;
         }
-
-        .logo {
-            margin-bottom: 30px;
-            animation: float 6s ease-in-out infinite;
-        }
-
+        .logo { margin-bottom: 30px; animation: float 6s ease-in-out infinite; }
         @keyframes float {
             0%, 100% { transform: translateY(0); }
             50% { transform: translateY(-25px); }
         }
-
         .logo-icon {
             font-size: 10em;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -1955,7 +1969,6 @@ def generar_frontend_impactante(base_dir):
             filter: drop-shadow(0 20px 40px rgba(102, 126, 234, 0.5));
             display: inline-block;
         }
-
         h1 {
             font-size: 5em;
             font-weight: 900;
@@ -1967,7 +1980,6 @@ def generar_frontend_impactante(base_dir):
             text-transform: uppercase;
             letter-spacing: -1px;
         }
-
         .highlight {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             -webkit-background-clip: text;
@@ -1975,7 +1987,6 @@ def generar_frontend_impactante(base_dir):
             display: block;
             font-size: 1.2em;
         }
-
         .slogan {
             font-size: 1.8em;
             color: rgba(255,255,255,0.9);
@@ -1984,7 +1995,6 @@ def generar_frontend_impactante(base_dir):
             font-weight: 400;
             line-height: 1.5;
         }
-
         .language-badge {
             background: rgba(255,255,255,0.1);
             padding: 12px 30px;
@@ -1994,17 +2004,12 @@ def generar_frontend_impactante(base_dir):
             border: 1px solid rgba(255,255,255,0.2);
             backdrop-filter: blur(5px);
         }
-
         .language-badge span {
             color: #667eea;
             font-weight: 700;
             margin: 0 5px;
         }
-
-        .download-section {
-            margin: 50px 0 30px;
-        }
-
+        .download-section { margin: 50px 0 30px; }
         .download-btn {
             display: inline-flex;
             align-items: center;
@@ -2024,28 +2029,21 @@ def generar_frontend_impactante(base_dir):
             letter-spacing: 2px;
             animation: pulse 2s infinite;
         }
-
         @keyframes pulse {
             0%, 100% { transform: scale(1); box-shadow: 0 20px 40px rgba(102, 126, 234, 0.4); }
             50% { transform: scale(1.05); box-shadow: 0 40px 80px rgba(102, 126, 234, 0.7); }
         }
-
         .download-btn:hover {
             transform: scale(1.1);
             box-shadow: 0 50px 100px rgba(102, 126, 234, 0.9);
         }
-
-        .download-btn i {
-            font-size: 1.3em;
-        }
-
+        .download-btn i { font-size: 1.3em; }
         .btn-sub {
             color: rgba(255,255,255,0.7);
             font-size: 1.3em;
             margin-top: 20px;
             font-weight: 400;
         }
-
         .stats {
             display: flex;
             justify-content: center;
@@ -2053,11 +2051,7 @@ def generar_frontend_impactante(base_dir):
             margin: 60px 0 30px;
             flex-wrap: wrap;
         }
-
-        .stat-item {
-            text-align: center;
-        }
-
+        .stat-item { text-align: center; }
         .stat-number {
             font-size: 4em;
             font-weight: 900;
@@ -2066,7 +2060,6 @@ def generar_frontend_impactante(base_dir):
             -webkit-text-fill-color: transparent;
             line-height: 1;
         }
-
         .stat-label {
             font-size: 1.2em;
             color: rgba(255,255,255,0.6);
@@ -2074,7 +2067,6 @@ def generar_frontend_impactante(base_dir):
             letter-spacing: 2px;
             margin-top: 5px;
         }
-
         .features-preview {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -2082,14 +2074,12 @@ def generar_frontend_impactante(base_dir):
             margin: 60px 0;
             max-width: 1000px;
         }
-
         .feature-item {
             background: rgba(255,255,255,0.05);
             padding: 20px;
             border-radius: 20px;
             border: 1px solid rgba(255,255,255,0.1);
         }
-
         .feature-item i {
             font-size: 2.5em;
             margin-bottom: 15px;
@@ -2097,19 +2087,16 @@ def generar_frontend_impactante(base_dir):
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-
         .feature-item p {
             font-size: 1.1em;
             color: rgba(255,255,255,0.8);
         }
-
         .footer {
             margin-top: 80px;
             padding: 30px;
             border-top: 1px solid rgba(255,255,255,0.1);
             width: 100%;
         }
-
         .footer-links {
             display: flex;
             justify-content: center;
@@ -2117,23 +2104,17 @@ def generar_frontend_impactante(base_dir):
             margin-bottom: 20px;
             flex-wrap: wrap;
         }
-
         .footer-links a {
             color: rgba(255,255,255,0.5);
             text-decoration: none;
             font-size: 1.1em;
             transition: color 0.3s;
         }
-
-        .footer-links a:hover {
-            color: white;
-        }
-
+        .footer-links a:hover { color: white; }
         .copyright {
             color: rgba(255,255,255,0.3);
             font-size: 1em;
         }
-
         @media (max-width: 768px) {
             h1 { font-size: 3em; }
             .logo-icon { font-size: 7em; }
@@ -2148,59 +2129,31 @@ def generar_frontend_impactante(base_dir):
 </head>
 <body>
     <div class="background"></div>
-    
     <div class="container">
         <div class="logo">
             <i class="fas fa-robot logo-icon"></i>
         </div>
-        
         <h1>
             <span class="highlight">EDUCARE</span>
             AI
         </h1>
-        
         <div class="slogan">
             La inteligencia artificial que transforma<br>tu forma de aprender en 17 idiomas.
         </div>
-
         <div class="language-badge">
             🌍 Disponible en: <span>Español</span> • <span>English</span> • <span>Français</span> • <span>Deutsch</span> • <span>Italiano</span> • <span>Português</span> • <span>日本語</span> • <span>한국어</span> • <span>中文</span> • <span>Русский</span> • <span>العربية</span> • <span>हिन्दी</span> • <span>Nederlands</span> • <span>Polski</span> • <span>Türkçe</span> • <span>Svenska</span>
         </div>
-
         <div class="stats">
-            <div class="stat-item">
-                <div class="stat-number">1M+</div>
-                <div class="stat-label">Estudiantes</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">4.8</div>
-                <div class="stat-label">⭐ Valoración</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">50+</div>
-                <div class="stat-label">Países</div>
-            </div>
+            <div class="stat-item"><div class="stat-number">1M+</div><div class="stat-label">Estudiantes</div></div>
+            <div class="stat-item"><div class="stat-number">4.8</div><div class="stat-label">⭐ Valoración</div></div>
+            <div class="stat-item"><div class="stat-number">50+</div><div class="stat-label">Países</div></div>
         </div>
-
         <div class="features-preview">
-            <div class="feature-item">
-                <i class="fas fa-camera"></i>
-                <p>Escanea y resuelve</p>
-            </div>
-            <div class="feature-item">
-                <i class="fas fa-language"></i>
-                <p>17 idiomas</p>
-            </div>
-            <div class="feature-item">
-                <i class="fas fa-chart-line"></i>
-                <p>Explicaciones paso a paso</p>
-            </div>
-            <div class="feature-item">
-                <i class="fas fa-mobile-alt"></i>
-                <p>Modo offline</p>
-            </div>
+            <div class="feature-item"><i class="fas fa-camera"></i><p>Escanea y resuelve</p></div>
+            <div class="feature-item"><i class="fas fa-language"></i><p>17 idiomas</p></div>
+            <div class="feature-item"><i class="fas fa-chart-line"></i><p>Explicaciones paso a paso</p></div>
+            <div class="feature-item"><i class="fas fa-mobile-alt"></i><p>Modo offline</p></div>
         </div>
-
         <div class="download-section">
             <a href="https://play.google.com/store/apps/details?id=com.educareai.app" class="download-btn">
                 <i class="fab fa-google-play"></i>
@@ -2208,7 +2161,6 @@ def generar_frontend_impactante(base_dir):
             </a>
             <div class="btn-sub">Gratis en Google Play • 15,000+ reseñas 5⭐</div>
         </div>
-
         <footer class="footer">
             <div class="footer-links">
                 <a href="#">Sobre Educare AI</a>
@@ -2221,23 +2173,21 @@ def generar_frontend_impactante(base_dir):
             </div>
         </footer>
     </div>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
 </body>
 </html>"""
     
-    # GUARDAR EN LA RAÍZ DEL PROYECTO
     ruta_raiz = os.path.dirname(base_dir)
     ruta_index = os.path.join(ruta_raiz, 'index.html')
     
     with open(ruta_index, 'w', encoding='utf-8') as f:
         f.write(html)
     
-    print(f"   ✅ PORTAZA MEJORADA GUARDADA EN: {ruta_index}")
+    print(f"   ✅ PORTAZA ÉPICA GUARDADA EN: {ruta_index}")
     print(f"   ✅ DISPONIBLE EN: https://stef7773.github.io/educare-ai-global/")
 
 # ============================================
-# 🚀 FUNCIÓN PRINCIPAL MEJORADA
+# 🚀 FUNCIÓN PRINCIPAL ÉPICA
 # ============================================
 def fabricar_paginas_globales():
     base_dir = os.path.expanduser('~/EducareAI_Project/web_seo_global')
@@ -2249,13 +2199,12 @@ def fabricar_paginas_globales():
     
     print("""
     ╔══════════════════════════════════════════════════════════════════════════╗
-    ║     🚀 EDUCARE AI - IMPERIO GLOBAL DEFINITIVO v3.0                      ║
-    ║     17 IDIOMAS | 400 PÁGINAS POR IDIOMA | DISEÑO MEJORADO              ║
-    ║     BACKEND: web_seo_global/ | FRONTEND: RAÍZ | SIN ERRORES            ║
+    ║     🚀 EDUCARE AI - IMPERIO GLOBAL ÉPICO v4.0                           ║
+    ║     17 IDIOMAS | 400 PÁGINAS POR IDIOMA | DISEÑO ESPECTACULAR          ║
+    ║     TRADUCCIONES PERFECTAS | ANIMACIONES | SOMBRAS | EFECTOS           ║
     ╚══════════════════════════════════════════════════════════════════════════╝
     """)
     
-    # ===== GENERAR BACKEND (PÁGINAS CON KEYWORDS) =====
     for lang, base_keywords in estrategia_global.items():
         print(f"\n⚙️  Generando backend para: {lang.upper()} (en web_seo_global/{lang}/)")
         
@@ -2266,7 +2215,6 @@ def fabricar_paginas_globales():
         if not os.path.exists(ruta_idioma): 
             os.makedirs(ruta_idioma)
         
-        # Crear carpetas de categorías
         for cat in CATEGORIAS.keys():
             ruta_cat = os.path.join(ruta_idioma, cat)
             if not os.path.exists(ruta_cat):
@@ -2307,16 +2255,13 @@ def fabricar_paginas_globales():
         
         print(f"   ✅ {paginas_por_idioma} páginas en {lang}")
     
-    # ===== GENERAR ARCHIVOS SEO =====
     print(f"\n📁 Generando sitemap y robots.txt...")
     generar_sitemap(paginas_generadas, base_dir)
     generar_robots_txt(base_dir)
     
-    # ===== GENERAR FRONTEND EN LA RAÍZ =====
     print(f"\n🎨 Generando portada impactante mejorada...")
     generar_frontend_impactante(base_dir)
     
-    # ===== GUARDAR ESTADÍSTICAS =====
     stats = {
         "fecha_generacion": datetime.now().isoformat(),
         "total_paginas": total_paginas,
@@ -2328,15 +2273,15 @@ def fabricar_paginas_globales():
         json.dump(stats, f, indent=2, ensure_ascii=False)
     
     print(f"\n{'='*80}")
-    print(f"✅ GENERACIÓN COMPLETADA CON ÉXITO - VERSIÓN DEFINITIVA")
+    print(f"✅ GENERACIÓN ÉPICA COMPLETADA CON ÉXITO")
     print(f"{'='*80}")
     print(f"📊 TOTAL DE PÁGINAS SEO: {total_paginas} (en web_seo_global/)")
-    print(f"🎨 PORTAZA MEJORADA EN: ~/EducareAI_Project/index.html")
+    print(f"🎨 PORTAZA ÉPICA EN: ~/EducareAI_Project/index.html")
     print(f"🌐 URL PÚBLICA: https://stef7773.github.io/educare-ai-global/")
     print(f"{'='*80}")
     print(f"\n📋 PRÓXIMOS PASOS:")
     print(f"   1. git add .")
-    print(f"   2. git commit -m '✨ Versión definitiva: 17 idiomas, diseño mejorado, 6400+ páginas'")
+    print(f"   2. git commit -m '✨ VERSIÓN ÉPICA DEFINITIVA - 17 idiomas, diseño espectacular'")
     print(f"   3. git push origin main")
     print(f"   4. Esperar 5 minutos")
     print(f"   5. Abrir https://stef7773.github.io/educare-ai-global/")
