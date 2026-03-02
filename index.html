@@ -21,12 +21,12 @@
             position: relative;
         }
         
-        /* 30 PARTÍCULAS - MÁS QUE PLAYSTATION */
+        /* 20 PARTÍCULAS PLAYSTATION */
         .particle {
             position: fixed;
             width: 12px;
             height: 12px;
-            background: rgba(102, 126, 234, 0.2);
+            background: rgba(102, 126, 234, 0.25);
             border-radius: 50%;
             pointer-events: none;
             z-index: 0;
@@ -34,42 +34,31 @@
         }
         
         @keyframes floatParticle {
-            0% { transform: translateY(0) translateX(0) scale(1); opacity: 0.1; }
-            50% { transform: translateY(-250px) translateX(200px) scale(2.5); opacity: 0.4; }
+            0% { transform: translateY(0) translateX(0) scale(1); opacity: 0.15; }
+            50% { transform: translateY(-250px) translateX(200px) scale(2.5); opacity: 0.5; }
             100% { transform: translateY(-500px) translateX(400px) scale(0.8); opacity: 0; }
         }
         
-        /* 30 partículas con posiciones únicas */
-        .particle:nth-child(1) { top: 2%; left: 3%; animation-duration: 32s; width: 18px; height: 18px; }
-        .particle:nth-child(2) { top: 5%; left: 92%; animation-duration: 40s; width: 22px; height: 22px; }
-        .particle:nth-child(3) { top: 8%; left: 15%; animation-duration: 35s; width: 14px; height: 14px; }
-        .particle:nth-child(4) { top: 12%; left: 78%; animation-duration: 42s; width: 20px; height: 20px; }
-        .particle:nth-child(5) { top: 15%; left: 45%; animation-duration: 30s; width: 16px; height: 16px; }
-        .particle:nth-child(6) { top: 18%; left: 65%; animation-duration: 45s; width: 24px; height: 24px; }
-        .particle:nth-child(7) { top: 22%; left: 25%; animation-duration: 33s; width: 15px; height: 15px; }
-        .particle:nth-child(8) { top: 25%; left: 55%; animation-duration: 38s; width: 21px; height: 21px; }
-        .particle:nth-child(9) { top: 28%; left: 85%; animation-duration: 36s; width: 19px; height: 19px; }
-        .particle:nth-child(10) { top: 32%; left: 10%; animation-duration: 43s; width: 25px; height: 25px; }
-        .particle:nth-child(11) { top: 35%; left: 70%; animation-duration: 31s; width: 17px; height: 17px; }
-        .particle:nth-child(12) { top: 38%; left: 35%; animation-duration: 37s; width: 23px; height: 23px; }
-        .particle:nth-child(13) { top: 42%; left: 50%; animation-duration: 39s; width: 20px; height: 20px; }
-        .particle:nth-child(14) { top: 45%; left: 80%; animation-duration: 34s; width: 18px; height: 18px; }
-        .particle:nth-child(15) { top: 48%; left: 20%; animation-duration: 41s; width: 22px; height: 22px; }
-        .particle:nth-child(16) { top: 52%; left: 95%; animation-duration: 44s; width: 26px; height: 26px; }
-        .particle:nth-child(17) { top: 55%; left: 5%; animation-duration: 32s; width: 16px; height: 16px; }
-        .particle:nth-child(18) { top: 58%; left: 60%; animation-duration: 38s; width: 20px; height: 20px; }
-        .particle:nth-child(19) { top: 62%; left: 40%; animation-duration: 35s; width: 24px; height: 24px; }
-        .particle:nth-child(20) { top: 65%; left: 75%; animation-duration: 36s; width: 18px; height: 18px; }
-        .particle:nth-child(21) { top: 68%; left: 12%; animation-duration: 33s; width: 21px; height: 21px; }
-        .particle:nth-child(22) { top: 72%; left: 88%; animation-duration: 40s; width: 19px; height: 19px; }
-        .particle:nth-child(23) { top: 75%; left: 30%; animation-duration: 37s; width: 23px; height: 23px; }
-        .particle:nth-child(24) { top: 78%; left: 55%; animation-duration: 42s; width: 17px; height: 17px; }
-        .particle:nth-child(25) { top: 82%; left: 8%; animation-duration: 39s; width: 22px; height: 22px; }
-        .particle:nth-child(26) { top: 85%; left: 72%; animation-duration: 34s; width: 20px; height: 20px; }
-        .particle:nth-child(27) { top: 88%; left: 45%; animation-duration: 41s; width: 18px; height: 18px; }
-        .particle:nth-child(28) { top: 92%; left: 92%; animation-duration: 36s; width: 24px; height: 24px; }
-        .particle:nth-child(29) { top: 95%; left: 18%; animation-duration: 38s; width: 16px; height: 16px; }
-        .particle:nth-child(30) { top: 98%; left: 65%; animation-duration: 35s; width: 22px; height: 22px; }
+        .particle:nth-child(1) { top: 2%; left: 5%; animation-duration: 32s; width: 18px; height: 18px; }
+        .particle:nth-child(2) { top: 8%; left: 92%; animation-duration: 40s; width: 22px; height: 22px; }
+        .particle:nth-child(3) { top: 15%; left: 15%; animation-duration: 35s; width: 14px; height: 14px; }
+        .particle:nth-child(4) { top: 22%; left: 78%; animation-duration: 42s; width: 20px; height: 20px; }
+        .particle:nth-child(5) { top: 30%; left: 25%; animation-duration: 30s; width: 16px; height: 16px; }
+        .particle:nth-child(6) { top: 38%; left: 65%; animation-duration: 45s; width: 24px; height: 24px; }
+        .particle:nth-child(7) { top: 45%; left: 35%; animation-duration: 33s; width: 15px; height: 15px; }
+        .particle:nth-child(8) { top: 52%; left: 55%; animation-duration: 38s; width: 21px; height: 21px; }
+        .particle:nth-child(9) { top: 60%; left: 10%; animation-duration: 36s; width: 19px; height: 19px; }
+        .particle:nth-child(10) { top: 68%; left: 85%; animation-duration: 43s; width: 25px; height: 25px; }
+        .particle:nth-child(11) { top: 75%; left: 20%; animation-duration: 31s; width: 17px; height: 17px; }
+        .particle:nth-child(12) { top: 82%; left: 70%; animation-duration: 37s; width: 23px; height: 23px; }
+        .particle:nth-child(13) { top: 88%; left: 40%; animation-duration: 39s; width: 20px; height: 20px; }
+        .particle:nth-child(14) { top: 94%; left: 60%; animation-duration: 34s; width: 18px; height: 18px; }
+        .particle:nth-child(15) { top: 5%; left: 45%; animation-duration: 41s; width: 22px; height: 22px; }
+        .particle:nth-child(16) { top: 12%; left: 30%; animation-duration: 44s; width: 26px; height: 26px; }
+        .particle:nth-child(17) { top: 19%; left: 50%; animation-duration: 32s; width: 16px; height: 16px; }
+        .particle:nth-child(18) { top: 26%; left: 95%; animation-duration: 38s; width: 20px; height: 20px; }
+        .particle:nth-child(19) { top: 33%; left: 8%; animation-duration: 35s; width: 24px; height: 24px; }
+        .particle:nth-child(20) { top: 40%; left: 75%; animation-duration: 36s; width: 18px; height: 18px; }
         
         .container {
             position: relative;
@@ -85,16 +74,15 @@
             text-align: center;
         }
         
-        /* ROBOT GIGANTE - 12em */
+        /* ROBOT GIGANTE - MÁS BRILLANTE */
         .robot-icon {
-            font-size: 12em;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-size: 10em;
+            background: linear-gradient(135deg, #5a67d8 0%, #9f7aea 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            filter: drop-shadow(0 20px 40px rgba(102, 126, 234, 0.6));
+            filter: drop-shadow(0 20px 40px rgba(90, 103, 216, 0.6));
             animation: floatRobot 5s ease-in-out infinite;
             margin-bottom: 20px;
-            line-height: 1;
         }
         
         @keyframes floatRobot {
@@ -103,49 +91,49 @@
             75% { transform: translateY(-5px) rotate(-3deg); }
         }
         
-        /* TÍTULO ELEGANTE - Educare AI (exactamente como lo quieres) */
+        /* TÍTULO CON CONTRASTE MEJORADO */
         .main-title {
-            font-size: 6em;
+            font-size: 5.5em;
             font-weight: 900;
-            color: white;
-            margin-bottom: 20px;
-            line-height: 1.1;
-        }
-        
-        .main-title .educare {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #5a67d8 0%, #9f7aea 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            margin-bottom: 20px;
+            letter-spacing: -2px;
+            line-height: 1.1;
+            text-shadow: 0 0 20px rgba(90, 103, 216, 0.4);
         }
         
-        .main-title .ai {
-            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+        .main-title span {
+            background: linear-gradient(135deg, #9f7aea 0%, #5a67d8 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
         
         .slogan {
             font-size: 1.8em;
-            color: rgba(255,255,255,0.9);
+            color: rgba(255,255,255,0.95);
             max-width: 800px;
             margin: 20px auto;
             font-weight: 400;
             line-height: 1.5;
+            text-shadow: 0 0 10px rgba(0,0,0,0.3);
         }
         
         .language-badge {
-            background: rgba(255,255,255,0.1);
+            background: rgba(255,255,255,0.15);
             padding: 15px 35px;
             border-radius: 60px;
             margin: 30px 0;
             font-size: 1.1em;
-            border: 1px solid rgba(255,255,255,0.2);
+            border: 1px solid rgba(255,255,255,0.3);
             backdrop-filter: blur(5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            color: white;
         }
         
         .language-badge span {
-            color: #667eea;
+            color: #9f7aea;
             font-weight: 700;
             margin: 0 5px;
         }
@@ -156,7 +144,7 @@
             display: inline-flex;
             align-items: center;
             gap: 15px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #5a67d8 0%, #9f7aea 100%);
             color: white;
             padding: 25px 80px;
             border-radius: 80px;
@@ -164,8 +152,8 @@
             font-weight: 800;
             font-size: 2.2em;
             transition: all 0.4s;
-            box-shadow: 0 20px 40px rgba(102, 126, 234, 0.4);
-            border: 3px solid rgba(255,255,255,0.2);
+            box-shadow: 0 20px 40px rgba(90, 103, 216, 0.5);
+            border: 3px solid rgba(255,255,255,0.3);
             cursor: pointer;
             text-transform: uppercase;
             letter-spacing: 2px;
@@ -189,8 +177,8 @@
         }
         
         @keyframes pulse {
-            0%, 100% { transform: scale(1); box-shadow: 0 20px 40px rgba(102, 126, 234, 0.4); }
-            50% { transform: scale(1.05); box-shadow: 0 40px 80px rgba(102, 126, 234, 0.7); }
+            0%, 100% { transform: scale(1); box-shadow: 0 20px 40px rgba(90, 103, 216, 0.5); }
+            50% { transform: scale(1.05); box-shadow: 0 40px 80px rgba(90, 103, 216, 0.8); }
         }
         
         .download-btn {
@@ -199,17 +187,18 @@
         
         .download-btn:hover {
             transform: scale(1.1);
-            box-shadow: 0 50px 100px rgba(102, 126, 234, 0.9);
+            box-shadow: 0 50px 100px rgba(90, 103, 216, 1);
             animation: none;
         }
         
         .download-btn i { font-size: 1.3em; }
         
         .btn-sub {
-            color: rgba(255,255,255,0.7);
+            color: rgba(255,255,255,0.8);
             font-size: 1.3em;
             margin-top: 20px;
             font-weight: 400;
+            text-shadow: 0 0 5px rgba(0,0,0,0.3);
         }
         
         .stats {
@@ -222,29 +211,32 @@
         
         .stat-item { 
             text-align: center;
-            background: rgba(255,255,255,0.05);
+            background: rgba(255,255,255,0.1);
             padding: 20px 30px;
             border-radius: 30px;
             backdrop-filter: blur(5px);
-            border: 1px solid rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
             min-width: 150px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
         }
         
         .stat-number {
             font-size: 4em;
             font-weight: 900;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #5a67d8 0%, #9f7aea 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             line-height: 1;
+            filter: drop-shadow(0 0 10px rgba(90, 103, 216, 0.3));
         }
         
         .stat-label {
             font-size: 1.2em;
-            color: rgba(255,255,255,0.6);
+            color: rgba(255,255,255,0.8);
             text-transform: uppercase;
             letter-spacing: 2px;
             margin-top: 5px;
+            font-weight: 600;
         }
         
         .features-preview {
@@ -256,38 +248,40 @@
         }
         
         .feature-item {
-            background: rgba(255,255,255,0.05);
+            background: rgba(255,255,255,0.08);
             padding: 25px 15px;
             border-radius: 25px;
-            border: 1px solid rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.15);
             backdrop-filter: blur(5px);
             transition: transform 0.3s;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
         }
         
         .feature-item:hover {
             transform: translateY(-10px);
-            background: rgba(255,255,255,0.1);
-            border-color: rgba(102, 126, 234, 0.5);
+            background: rgba(255,255,255,0.15);
+            border-color: rgba(159, 122, 234, 0.5);
         }
         
         .feature-item i {
             font-size: 2.5em;
             margin-bottom: 15px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #5a67d8 0%, #9f7aea 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            filter: drop-shadow(0 0 10px rgba(90, 103, 216, 0.3));
         }
         
         .feature-item p {
             font-size: 1.1em;
-            color: rgba(255,255,255,0.9);
+            color: rgba(255,255,255,0.95);
             font-weight: 600;
         }
         
         .footer {
             margin-top: 80px;
             padding: 30px;
-            border-top: 1px solid rgba(255,255,255,0.1);
+            border-top: 1px solid rgba(255,255,255,0.15);
             width: 100%;
         }
         
@@ -300,7 +294,7 @@
         }
         
         .footer-links a {
-            color: rgba(255,255,255,0.5);
+            color: rgba(255,255,255,0.6);
             text-decoration: none;
             font-size: 1.1em;
             transition: color 0.3s;
@@ -314,8 +308,8 @@
         }
         
         @media (max-width: 768px) {
-            .robot-icon { font-size: 8em; }
-            .main-title { font-size: 4em; }
+            .robot-icon { font-size: 7em; }
+            .main-title { font-size: 3.5em; }
             .slogan { font-size: 1.3em; }
             .download-btn { font-size: 1.5em; padding: 20px 40px; }
             .stats { gap: 30px; }
@@ -327,17 +321,7 @@
     </style>
 </head>
 <body>
-    <!-- 30 PARTÍCULAS -->
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
-    <div class="particle"></div>
+    <!-- 20 PARTÍCULAS PLAYSTATION -->
     <div class="particle"></div>
     <div class="particle"></div>
     <div class="particle"></div>
@@ -360,10 +344,10 @@
     <div class="particle"></div>
     
     <div class="container">
-        <!-- ROBOT GIGANTE + TÍTULO PERFECTO "Educare AI" -->
+        <!-- ROBOT GIGANTE + TÍTULO CON CONTRASTE ÓPTIMO -->
         <i class="fas fa-robot robot-icon"></i>
         <div class="main-title">
-            <span class="educare">Educare</span> <span class="ai">AI</span>
+            Educare <span>AI</span>
         </div>
         
         <div class="slogan">
