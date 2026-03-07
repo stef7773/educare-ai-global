@@ -4,6 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- DETECTOR DE IDIOMA AUTOMÁTICO -->
+    <script>
+    (function() {
+        // Detectar idioma del navegador
+        var userLang = navigator.language || navigator.userLanguage;
+        var primaryLang = userLang.split('-')[0]; // Obtiene 'es', 'en', 'fr', etc.
+        
+        // Idiomas soportados (17 idiomas)
+        var supportedLangs = ['en', 'fr', 'de', 'pt', 'it', 'jp', 'kr', 'zh', 'ru', 'ar', 'hi', 'nl', 'pl', 'tr', 'sv'];
+        
+        // Redirigir si el idioma está soportado y NO es español
+        if (supportedLangs.includes(primaryLang) && primaryLang !== 'es') {
+            // Redirigir a la versión en su idioma
+            window.location.href = '/' + primaryLang + '/';
+        }
+    })();
+    </script>
+    
     <!-- Meta tags básicos -->
     <title>Educare AI - Revoluciona tu forma de aprender</title>
     <meta name="description" content="Educare AI: La aplicación que transforma el aprendizaje con inteligencia artificial. Más de 1 millón de estudiantes ya confían en nosotros. Disponible en 17 idiomas.">
@@ -18,16 +36,14 @@
     <meta property="og:url" content="https://stef7773.github.io/educare-ai-global/">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="es">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     
     <!-- Meta tags para Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Educare AI - Revoluciona tu forma de aprender">
     <meta name="twitter:description" content="Educare AI: La aplicación que transforma el aprendizaje con inteligencia artificial. Más de 1 millón de estudiantes ya confían en nosotros. Disponible en 17 idiomas.">
     <meta name="twitter:image" content="https://stef7773.github.io/educare-ai-global/Educare.png">
-    
-    <!-- Meta tags para WhatsApp (usa los mismos de Open Graph) -->
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -416,4 +432,3 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
 </body>
 </html>
-
