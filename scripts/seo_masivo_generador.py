@@ -2132,74 +2132,455 @@ Sitemap: https://stef7773.github.io/educare-ai-global/web_seo_global/sitemap.xml
         f.write(robots)
 
 # ============================================
-# 🎨 FUNCIÓN DE LA PORTAZA - VERSIÓN 10.0 PLAYSTATION
+# 🎨 FUNCIÓN DE LA PORTAZA - VERSIÓN MULTI-IDIOMA
 # ============================================
 def generar_frontend_impactante(base_dir):
-    """Genera página principal con ROBOT GIGANTE y 20 partículas"""
+    """Genera páginas principales para cada idioma con meta tags para compartir"""
     
-    html = """<!DOCTYPE html>
-<html lang="es">
+    # Diccionario de traducciones para la página principal
+    frontend_textos = {
+        "es": {
+            "title": "Educare AI - Revoluciona tu forma de aprender",
+            "description": "Educare AI: La aplicación que transforma el aprendizaje con inteligencia artificial. Más de 1 millón de estudiantes ya confían en nosotros. Disponible en 17 idiomas.",
+            "slogan": "La inteligencia artificial que transforma<br>tu forma de aprender en 17 idiomas.",
+            "badge": "Disponible en:",
+            "students": "Estudiantes",
+            "rating": "Valoración",
+            "countries": "Países",
+            "features": {
+                "camera": "Escanea y resuelve",
+                "languages": "17 idiomas",
+                "steps": "Explicaciones paso a paso",
+                "offline": "Modo offline"
+            },
+            "download": "DESCARGAR",
+            "sub": "Gratis en Google Play • 15,000+ reseñas 5⭐",
+            "footer": "Sobre Educare AI",
+            "privacy": "Privacidad",
+            "terms": "Términos",
+            "contact": "Contacto",
+            "copyright": "© 2025 Educare AI. Todos los derechos reservados. Imperio Global - 17 idiomas, 6400+ páginas."
+        },
+        "en": {
+            "title": "Educare AI - Revolutionize your learning",
+            "description": "Educare AI: The app that transforms learning with artificial intelligence. More than 1 million students already trust us. Available in 17 languages.",
+            "slogan": "The artificial intelligence that transforms<br>your way of learning in 17 languages.",
+            "badge": "Available in:",
+            "students": "Students",
+            "rating": "Rating",
+            "countries": "Countries",
+            "features": {
+                "camera": "Scan and solve",
+                "languages": "17 languages",
+                "steps": "Step-by-step explanations",
+                "offline": "Offline mode"
+            },
+            "download": "DOWNLOAD",
+            "sub": "Free on Google Play • 15,000+ 5⭐ reviews",
+            "footer": "About Educare AI",
+            "privacy": "Privacy",
+            "terms": "Terms",
+            "contact": "Contact",
+            "copyright": "© 2025 Educare AI. All rights reserved. Global Empire - 17 languages, 6400+ pages."
+        },
+        "fr": {
+            "title": "Educare AI - Révolutionnez votre apprentissage",
+            "description": "Educare AI : L'application qui transforme l'apprentissage avec l'intelligence artificielle. Plus d'un million d'étudiants nous font déjà confiance. Disponible en 17 langues.",
+            "slogan": "L'intelligence artificielle qui transforme<br>votre façon d'apprendre en 17 langues.",
+            "badge": "Disponible en :",
+            "students": "Étudiants",
+            "rating": "Note",
+            "countries": "Pays",
+            "features": {
+                "camera": "Scannez et résolvez",
+                "languages": "17 langues",
+                "steps": "Explications pas à pas",
+                "offline": "Mode hors ligne"
+            },
+            "download": "TÉLÉCHARGER",
+            "sub": "Gratuit sur Google Play • 15 000+ avis 5⭐",
+            "footer": "À propos",
+            "privacy": "Confidentialité",
+            "terms": "Conditions",
+            "contact": "Contact",
+            "copyright": "© 2025 Educare AI. Tous droits réservés. Empire Global - 17 langues, 6400+ pages."
+        },
+        "de": {
+            "title": "Educare AI - Revolutionieren Sie Ihr Lernen",
+            "description": "Educare AI: Die App, die Lernen mit künstlicher Intelligenz transformiert. Mehr als 1 Million Studenten vertrauen uns bereits. Verfügbar in 17 Sprachen.",
+            "slogan": "Die künstliche Intelligenz, die<br>Ihre Lernweise in 17 Sprachen transformiert.",
+            "badge": "Verfügbar in:",
+            "students": "Studenten",
+            "rating": "Bewertung",
+            "countries": "Länder",
+            "features": {
+                "camera": "Scannen und lösen",
+                "languages": "17 Sprachen",
+                "steps": "Schritt-für-Schritt-Erklärungen",
+                "offline": "Offline-Modus"
+            },
+            "download": "HERUNTERLADEN",
+            "sub": "Kostenlos im Google Play • 15.000+ 5⭐ Bewertungen",
+            "footer": "Über uns",
+            "privacy": "Datenschutz",
+            "terms": "AGB",
+            "contact": "Kontakt",
+            "copyright": "© 2025 Educare AI. Alle Rechte vorbehalten. Globales Imperium - 17 Sprachen, 6400+ Seiten."
+        },
+        "pt": {
+            "title": "Educare AI - Revolucione seu aprendizado",
+            "description": "Educare AI: O aplicativo que transforma o aprendizado com inteligência artificial. Mais de 1 milhão de estudantes já confiam em nós. Disponível em 17 idiomas.",
+            "slogan": "A inteligência artificial que transforma<br>sua forma de aprender em 17 idiomas.",
+            "badge": "Disponível em:",
+            "students": "Estudantes",
+            "rating": "Avaliação",
+            "countries": "Países",
+            "features": {
+                "camera": "Escaneie e resolva",
+                "languages": "17 idiomas",
+                "steps": "Explicações passo a passo",
+                "offline": "Modo offline"
+            },
+            "download": "BAIXAR",
+            "sub": "Grátis no Google Play • 15.000+ avaliações 5⭐",
+            "footer": "Sobre",
+            "privacy": "Privacidade",
+            "terms": "Termos",
+            "contact": "Contato",
+            "copyright": "© 2025 Educare AI. Todos os direitos reservados. Império Global - 17 idiomas, 6400+ páginas."
+        },
+        "it": {
+            "title": "Educare AI - Rivoluziona il tuo apprendimento",
+            "description": "Educare AI: L'app che trasforma l'apprendimento con l'intelligenza artificiale. Più di 1 milione di studenti già si fidano di noi. Disponibile in 17 lingue.",
+            "slogan": "L'intelligenza artificiale che trasforma<br>il tuo modo di apprendere in 17 lingue.",
+            "badge": "Disponibile in:",
+            "students": "Studenti",
+            "rating": "Valutazione",
+            "countries": "Paesi",
+            "features": {
+                "camera": "Scansiona e risolvi",
+                "languages": "17 lingue",
+                "steps": "Spiegazioni passo passo",
+                "offline": "Modalità offline"
+            },
+            "download": "SCARICA",
+            "sub": "Gratis su Google Play • 15.000+ recensioni 5⭐",
+            "footer": "Chi siamo",
+            "privacy": "Privacy",
+            "terms": "Termini",
+            "contact": "Contatti",
+            "copyright": "© 2025 Educare AI. Tutti i diritti riservati. Impero Globale - 17 lingue, 6400+ pagine."
+        },
+        "jp": {
+            "title": "Educare AI - 学習方法を革新する",
+            "description": "Educare AI：人工知能で学習を変えるアプリ。すでに100万人以上の学生が信頼しています。17言語で利用可能。",
+            "slogan": "17言語であなたの学習方法を<br>変える人工知能。",
+            "badge": "対応言語：",
+            "students": "学生数",
+            "rating": "評価",
+            "countries": "国",
+            "features": {
+                "camera": "スキャンして解決",
+                "languages": "17言語",
+                "steps": "ステップバイステップの説明",
+                "offline": "オフラインモード"
+            },
+            "download": "ダウンロード",
+            "sub": "Google Playで無料 • 15,000件以上の5⭐レビュー",
+            "footer": "会社概要",
+            "privacy": "プライバシー",
+            "terms": "利用規約",
+            "contact": "お問い合わせ",
+            "copyright": "© 2025 Educare AI. 全著作権所有。グローバル帝国 - 17言語、6400+ページ。"
+        },
+        "kr": {
+            "title": "Educare AI - 학습 방법을 혁신하세요",
+            "description": "Educare AI: 인공지능으로 학습을 변화시키는 앱. 이미 100만 명 이상의 학생들이 신뢰하고 있습니다. 17개 언어로 제공됩니다.",
+            "slogan": "17개 언어로 당신의 학습 방식을<br>변화시키는 인공지능.",
+            "badge": "제공 언어:",
+            "students": "학생 수",
+            "rating": "평점",
+            "countries": "국가",
+            "features": {
+                "camera": "스캔하여 해결",
+                "languages": "17개 언어",
+                "steps": "단계별 설명",
+                "offline": "오프라인 모드"
+            },
+            "download": "다운로드",
+            "sub": "Google Play 무료 • 15,000개 이상의 5⭐ 리뷰",
+            "footer": "회사 소개",
+            "privacy": "개인정보",
+            "terms": "이용약관",
+            "contact": "문의하기",
+            "copyright": "© 2025 Educare AI. 모든 권리 보유. 글로벌 제국 - 17개 언어, 6400+ 페이지."
+        },
+        "zh": {
+            "title": "Educare AI - 革新您的学习方式",
+            "description": "Educare AI：利用人工智能改变学习的应用程序。已有超过100万学生信任我们。支持17种语言。",
+            "slogan": "用17种语言改变<br>您学习方式的人工智能。",
+            "badge": "支持语言：",
+            "students": "学生数",
+            "rating": "评分",
+            "countries": "国家",
+            "features": {
+                "camera": "扫描解决",
+                "languages": "17种语言",
+                "steps": "逐步解释",
+                "offline": "离线模式"
+            },
+            "download": "下载",
+            "sub": "Google Play免费 • 15,000+条5⭐评价",
+            "footer": "关于我们",
+            "privacy": "隐私",
+            "terms": "条款",
+            "contact": "联系",
+            "copyright": "© 2025 Educare AI. 保留所有权利。全球帝国 - 17种语言，6400+页面。"
+        },
+        "ru": {
+            "title": "Educare AI - Революция в обучении",
+            "description": "Educare AI: Приложение, которое трансформирует обучение с помощью искусственного интеллекта. Более 1 миллиона студентов уже доверяют нам. Доступно на 17 языках.",
+            "slogan": "Искусственный интеллект, который меняет<br>ваш способ обучения на 17 языках.",
+            "badge": "Доступно на:",
+            "students": "Студентов",
+            "rating": "Рейтинг",
+            "countries": "Стран",
+            "features": {
+                "camera": "Сканируйте и решайте",
+                "languages": "17 языков",
+                "steps": "Пошаговые объяснения",
+                "offline": "Офлайн-режим"
+            },
+            "download": "СКАЧАТЬ",
+            "sub": "Бесплатно в Google Play • 15 000+ отзывов 5⭐",
+            "footer": "О нас",
+            "privacy": "Конфиденциальность",
+            "terms": "Условия",
+            "contact": "Контакты",
+            "copyright": "© 2025 Educare AI. Все права защищены. Глобальная империя - 17 языков, 6400+ страниц."
+        },
+        "ar": {
+            "title": "Educare AI - طور طريقة تعلمك",
+            "description": "Educare AI: التطبيق الذي يحول التعلم باستخدام الذكاء الاصطناعي. أكثر من مليون طالب يثقون بنا بالفعل. متوفر بـ 17 لغة.",
+            "slogan": "الذكاء الاصطناعي الذي يغير<br>طريقة تعلمك بـ 17 لغة.",
+            "badge": "متوفر بـ:",
+            "students": "طالب",
+            "rating": "تقييم",
+            "countries": "دولة",
+            "features": {
+                "camera": "امسح وحل",
+                "languages": "17 لغة",
+                "steps": "شروحات خطوة بخطوة",
+                "offline": "وضع عدم الاتصال"
+            },
+            "download": "تحميل",
+            "sub": "مجاناً على Google Play • 15,000+ تقييم 5⭐",
+            "footer": "عن Educare",
+            "privacy": "الخصوصية",
+            "terms": "الشروط",
+            "contact": "اتصل بنا",
+            "copyright": "© 2025 Educare AI. جميع الحقوق محفوظة. إمبراطورية عالمية - 17 لغة، 6400+ صفحة."
+        },
+        "hi": {
+            "title": "Educare AI - अपने सीखने के तरीके को क्रांतिकारी बनाएं",
+            "description": "Educare AI: आर्टिफिशियल इंटेलिजेंस के साथ सीखने को बदलने वाला ऐप। 1 मिलियन से अधिक छात्र पहले ही हम पर भरोसा कर चुके हैं। 17 भाषाओं में उपलब्ध।",
+            "slogan": "17 भाषाओं में आपके सीखने के तरीके को<br>बदलने वाली आर्टिफिशियल इंटेलिजेंस।",
+            "badge": "उपलब्ध भाषाएँ:",
+            "students": "छात्र",
+            "rating": "रेटिंग",
+            "countries": "देश",
+            "features": {
+                "camera": "स्कैन करें और हल करें",
+                "languages": "17 भाषाएँ",
+                "steps": "चरण-दर-चरण स्पष्टीकरण",
+                "offline": "ऑफ़लाइन मोड"
+            },
+            "download": "डाउनलोड करें",
+            "sub": "Google Play पर मुफ्त • 15,000+ 5⭐ समीक्षाएँ",
+            "footer": "हमारे बारे में",
+            "privacy": "गोपनीयता",
+            "terms": "शर्तें",
+            "contact": "संपर्क करें",
+            "copyright": "© 2025 Educare AI. सर्वाधिकार सुरक्षित। वैश्विक साम्राज्य - 17 भाषाएँ, 6400+ पृष्ठ।"
+        },
+        "nl": {
+            "title": "Educare AI - Revolutioneer je manier van leren",
+            "description": "Educare AI: De app die leren transformeert met kunstmatige intelligentie. Meer dan 1 miljoen studenten vertrouwen ons al. Beschikbaar in 17 talen.",
+            "slogan": "De kunstmatige intelligentie die<br>je leermethode in 17 talen transformeert.",
+            "badge": "Beschikbaar in:",
+            "students": "Studenten",
+            "rating": "Beoordeling",
+            "countries": "Landen",
+            "features": {
+                "camera": "Scan en los op",
+                "languages": "17 talen",
+                "steps": "Stap-voor-stap uitleg",
+                "offline": "Offline modus"
+            },
+            "download": "DOWNLOADEN",
+            "sub": "Gratis op Google Play • 15.000+ 5⭐ beoordelingen",
+            "footer": "Over ons",
+            "privacy": "Privacy",
+            "terms": "Voorwaarden",
+            "contact": "Contact",
+            "copyright": "© 2025 Educare AI. Alle rechten voorbehouden. Wereldwijd Imperium - 17 talen, 6400+ pagina's."
+        },
+        "pl": {
+            "title": "Educare AI - Zrewolucjonizuj swoją naukę",
+            "description": "Educare AI: Aplikacja, która zmienia naukę dzięki sztucznej inteligencji. Ponad 1 milion studentów już nam ufa. Dostępna w 17 językach.",
+            "slogan": "Sztuczna inteligencja, która zmienia<br>twój sposób nauki w 17 językach.",
+            "badge": "Dostępne w:",
+            "students": "Studentów",
+            "rating": "Ocena",
+            "countries": "Krajów",
+            "features": {
+                "camera": "Skanuj i rozwiązuj",
+                "languages": "17 języków",
+                "steps": "Wyjaśnienia krok po kroku",
+                "offline": "Tryb offline"
+            },
+            "download": "POBIERZ",
+            "sub": "Darmowe w Google Play • 15.000+ 5⭐ recenzji",
+            "footer": "O nas",
+            "privacy": "Prywatność",
+            "terms": "Warunki",
+            "contact": "Kontakt",
+            "copyright": "© 2025 Educare AI. Wszelkie prawa zastrzeżone. Globalne Imperium - 17 języków, 6400+ stron."
+        },
+        "tr": {
+            "title": "Educare AI - Öğrenme şeklinizi devrimleştirin",
+            "description": "Educare AI: Yapay zeka ile öğrenmeyi dönüştüren uygulama. 1 milyondan fazla öğrenci bize güveniyor. 17 dilde mevcut.",
+            "slogan": "17 dilde öğrenme şeklinizi<br>dönüştüren yapay zeka.",
+            "badge": "Mevcut diller:",
+            "students": "Öğrenci",
+            "rating": "Puan",
+            "countries": "Ülke",
+            "features": {
+                "camera": "Tara ve çöz",
+                "languages": "17 dil",
+                "steps": "Adım adım açıklamalar",
+                "offline": "Çevrimdışı mod"
+            },
+            "download": "İNDİR",
+            "sub": "Google Play'de ücretsiz • 15.000+ 5⭐ yorum",
+            "footer": "Hakkımızda",
+            "privacy": "Gizlilik",
+            "terms": "Şartlar",
+            "contact": "İletişim",
+            "copyright": "© 2025 Educare AI. Tüm hakları saklıdır. Küresel İmparatorluk - 17 dil, 6400+ sayfa."
+        },
+        "sv": {
+            "title": "Educare AI - Revolutionera ditt lärande",
+            "description": "Educare AI: Appen som förändrar lärande med artificiell intelligens. Över 1 miljon studenter litar redan på oss. Tillgänglig på 17 språk.",
+            "slogan": "Den artificiella intelligensen som förändrar<br>ditt sätt att lära på 17 språk.",
+            "badge": "Tillgänglig på:",
+            "students": "Studenter",
+            "rating": "Betyg",
+            "countries": "Länder",
+            "features": {
+                "camera": "Skanna och lös",
+                "languages": "17 språk",
+                "steps": "Steg-för-steg förklaringar",
+                "offline": "Offline-läge"
+            },
+            "download": "LADDA NER",
+            "sub": "Gratis på Google Play • 15.000+ 5⭐ recensioner",
+            "footer": "Om oss",
+            "privacy": "Sekretess",
+            "terms": "Villkor",
+            "contact": "Kontakt",
+            "copyright": "© 2025 Educare AI. Alla rättigheter förbehållna. Globalt Imperium - 17 språk, 6400+ sidor."
+        }
+    }
+    
+    # URL del logo para compartir (debes subir un logo a tu repositorio)
+    logo_url = "https://stef7773.github.io/educare-ai-global/logo-educare.png"
+    
+    for lang, textos_lang in frontend_textos.items():
+        html = f'''<!DOCTYPE html>
+<html lang="{lang}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Educare AI - Revoluciona tu forma de aprender</title>
-    <meta name="description" content="Educare AI: La aplicación que transforma el aprendizaje con inteligencia artificial. Más de 1 millón de estudiantes ya confían en nosotros. Disponible en 17 idiomas.">
+    
+    <!-- Meta tags básicos -->
+    <title>{textos_lang["title"]}</title>
+    <meta name="description" content="{textos_lang["description"]}">
     <meta name="keywords" content="educación con IA, aprendizaje inteligente, tutor virtual, resolver problemas matemáticos, ayuda con tareas, inteligencia artificial educativa">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://stef7773.github.io/educare-ai-global/">
+    <link rel="canonical" href="https://stef7773.github.io/educare-ai-global/{lang if lang != 'es' else ''}">
+    
+    <!-- Meta tags para compartir en redes (Open Graph / Facebook) -->
+    <meta property="og:title" content="{textos_lang["title"]}">
+    <meta property="og:description" content="{textos_lang["description"]}">
+    <meta property="og:image" content="{logo_url}">
+    <meta property="og:url" content="https://stef7773.github.io/educare-ai-global/{lang if lang != 'es' else ''}">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="{lang}">
+    
+    <!-- Meta tags para Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{textos_lang["title"]}">
+    <meta name="twitter:description" content="{textos_lang["description"]}">
+    <meta name="twitter:image" content="{logo_url}">
+    
+    <!-- Meta tags para WhatsApp (usa los mismos de Open Graph) -->
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
+        * {{ margin: 0; padding: 0; box-sizing: border-box; }}
+        body {{
             font-family: 'Montserrat', sans-serif;
             background: linear-gradient(135deg, #0a0a1a 0%, #1a1a3a 100%);
             color: white;
             overflow-x: hidden;
             position: relative;
-        }
+        }}
         
-        /* 20 PARTÍCULAS PLAYSTATION - MÁS RELAJANTES */
-        .particle {
+        /* 20 PARTÍCULAS PLAYSTATION */
+        .particle {{
             position: fixed;
             width: 12px;
             height: 12px;
-            background: rgba(102, 126, 234, 0.2);
+            background: rgba(102, 126, 234, 0.25);
             border-radius: 50%;
             pointer-events: none;
             z-index: 0;
             animation: floatParticle 35s infinite linear;
-        }
+        }}
         
-        @keyframes floatParticle {
-            0% { transform: translateY(0) translateX(0) scale(1); opacity: 0.1; }
-            50% { transform: translateY(-250px) translateX(200px) scale(2.5); opacity: 0.4; }
-            100% { transform: translateY(-500px) translateX(400px) scale(0.8); opacity: 0; }
-        }
+        @keyframes floatParticle {{
+            0% {{ transform: translateY(0) translateX(0) scale(1); opacity: 0.15; }}
+            50% {{ transform: translateY(-250px) translateX(200px) scale(2.5); opacity: 0.5; }}
+            100% {{ transform: translateY(-500px) translateX(400px) scale(0.8); opacity: 0; }}
+        }}
         
-        .particle:nth-child(1) { top: 2%; left: 5%; animation-duration: 32s; width: 18px; height: 18px; }
-        .particle:nth-child(2) { top: 8%; left: 92%; animation-duration: 40s; width: 22px; height: 22px; }
-        .particle:nth-child(3) { top: 15%; left: 15%; animation-duration: 35s; width: 14px; height: 14px; }
-        .particle:nth-child(4) { top: 22%; left: 78%; animation-duration: 42s; width: 20px; height: 20px; }
-        .particle:nth-child(5) { top: 30%; left: 25%; animation-duration: 30s; width: 16px; height: 16px; }
-        .particle:nth-child(6) { top: 38%; left: 65%; animation-duration: 45s; width: 24px; height: 24px; }
-        .particle:nth-child(7) { top: 45%; left: 35%; animation-duration: 33s; width: 15px; height: 15px; }
-        .particle:nth-child(8) { top: 52%; left: 55%; animation-duration: 38s; width: 21px; height: 21px; }
-        .particle:nth-child(9) { top: 60%; left: 10%; animation-duration: 36s; width: 19px; height: 19px; }
-        .particle:nth-child(10) { top: 68%; left: 85%; animation-duration: 43s; width: 25px; height: 25px; }
-        .particle:nth-child(11) { top: 75%; left: 20%; animation-duration: 31s; width: 17px; height: 17px; }
-        .particle:nth-child(12) { top: 82%; left: 70%; animation-duration: 37s; width: 23px; height: 23px; }
-        .particle:nth-child(13) { top: 88%; left: 40%; animation-duration: 39s; width: 20px; height: 20px; }
-        .particle:nth-child(14) { top: 94%; left: 60%; animation-duration: 34s; width: 18px; height: 18px; }
-        .particle:nth-child(15) { top: 5%; left: 45%; animation-duration: 41s; width: 22px; height: 22px; }
-        .particle:nth-child(16) { top: 12%; left: 30%; animation-duration: 44s; width: 26px; height: 26px; }
-        .particle:nth-child(17) { top: 19%; left: 50%; animation-duration: 32s; width: 16px; height: 16px; }
-        .particle:nth-child(18) { top: 26%; left: 95%; animation-duration: 38s; width: 20px; height: 20px; }
-        .particle:nth-child(19) { top: 33%; left: 8%; animation-duration: 35s; width: 24px; height: 24px; }
-        .particle:nth-child(20) { top: 40%; left: 75%; animation-duration: 36s; width: 18px; height: 18px; }
+        .particle:nth-child(1) {{ top: 2%; left: 5%; animation-duration: 32s; width: 18px; height: 18px; }}
+        .particle:nth-child(2) {{ top: 8%; left: 92%; animation-duration: 40s; width: 22px; height: 22px; }}
+        .particle:nth-child(3) {{ top: 15%; left: 15%; animation-duration: 35s; width: 14px; height: 14px; }}
+        .particle:nth-child(4) {{ top: 22%; left: 78%; animation-duration: 42s; width: 20px; height: 20px; }}
+        .particle:nth-child(5) {{ top: 30%; left: 25%; animation-duration: 30s; width: 16px; height: 16px; }}
+        .particle:nth-child(6) {{ top: 38%; left: 65%; animation-duration: 45s; width: 24px; height: 24px; }}
+        .particle:nth-child(7) {{ top: 45%; left: 35%; animation-duration: 33s; width: 15px; height: 15px; }}
+        .particle:nth-child(8) {{ top: 52%; left: 55%; animation-duration: 38s; width: 21px; height: 21px; }}
+        .particle:nth-child(9) {{ top: 60%; left: 10%; animation-duration: 36s; width: 19px; height: 19px; }}
+        .particle:nth-child(10) {{ top: 68%; left: 85%; animation-duration: 43s; width: 25px; height: 25px; }}
+        .particle:nth-child(11) {{ top: 75%; left: 20%; animation-duration: 31s; width: 17px; height: 17px; }}
+        .particle:nth-child(12) {{ top: 82%; left: 70%; animation-duration: 37s; width: 23px; height: 23px; }}
+        .particle:nth-child(13) {{ top: 88%; left: 40%; animation-duration: 39s; width: 20px; height: 20px; }}
+        .particle:nth-child(14) {{ top: 94%; left: 60%; animation-duration: 34s; width: 18px; height: 18px; }}
+        .particle:nth-child(15) {{ top: 5%; left: 45%; animation-duration: 41s; width: 22px; height: 22px; }}
+        .particle:nth-child(16) {{ top: 12%; left: 30%; animation-duration: 44s; width: 26px; height: 26px; }}
+        .particle:nth-child(17) {{ top: 19%; left: 50%; animation-duration: 32s; width: 16px; height: 16px; }}
+        .particle:nth-child(18) {{ top: 26%; left: 95%; animation-duration: 38s; width: 20px; height: 20px; }}
+        .particle:nth-child(19) {{ top: 33%; left: 8%; animation-duration: 35s; width: 24px; height: 24px; }}
+        .particle:nth-child(20) {{ top: 40%; left: 75%; animation-duration: 36s; width: 18px; height: 18px; }}
         
-        .container {
+        .container {{
             position: relative;
             z-index: 1;
             max-width: 1400px;
@@ -2211,76 +2592,79 @@ def generar_frontend_impactante(base_dir):
             justify-content: center;
             align-items: center;
             text-align: center;
-        }
+        }}
         
-        /* ROBOT GIGANTE - MÁS GRANDE */
-        .robot-icon {
+        /* ROBOT GIGANTE */
+        .robot-icon {{
             font-size: 10em;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #5a67d8 0%, #9f7aea 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            filter: drop-shadow(0 20px 40px rgba(102, 126, 234, 0.6));
+            filter: drop-shadow(0 20px 40px rgba(90, 103, 216, 0.6));
             animation: floatRobot 5s ease-in-out infinite;
             margin-bottom: 20px;
-        }
+        }}
         
-        @keyframes floatRobot {
-            0%, 100% { transform: translateY(0) rotate(0deg); }
-            25% { transform: translateY(-15px) rotate(5deg); }
-            75% { transform: translateY(-5px) rotate(-3deg); }
-        }
+        @keyframes floatRobot {{
+            0%, 100% {{ transform: translateY(0) rotate(0deg); }}
+            25% {{ transform: translateY(-15px) rotate(5deg); }}
+            75% {{ transform: translateY(-5px) rotate(-3deg); }}
+        }}
         
-        /* TÍTULO GRANDE - FORMATO Educare AI */
-        .brand-title {
+        /* TÍTULO PRINCIPAL */
+        .main-title {{
             font-size: 5.5em;
             font-weight: 900;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #5a67d8 0%, #9f7aea 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             margin-bottom: 20px;
             letter-spacing: -2px;
             line-height: 1.1;
-        }
+            text-shadow: 0 0 20px rgba(90, 103, 216, 0.4);
+        }}
         
-        .brand-title span {
-            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+        .main-title span {{
+            background: linear-gradient(135deg, #9f7aea 0%, #5a67d8 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-        }
+        }}
         
-        .slogan {
+        .slogan {{
             font-size: 1.8em;
-            color: rgba(255,255,255,0.9);
+            color: rgba(255,255,255,0.95);
             max-width: 800px;
             margin: 20px auto;
             font-weight: 400;
             line-height: 1.5;
-        }
+            text-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }}
         
-        .language-badge {
-            background: rgba(255,255,255,0.1);
+        .language-badge {{
+            background: rgba(255,255,255,0.15);
             padding: 15px 35px;
             border-radius: 60px;
             margin: 30px 0;
             font-size: 1.1em;
-            border: 1px solid rgba(255,255,255,0.2);
+            border: 1px solid rgba(255,255,255,0.3);
             backdrop-filter: blur(5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            color: white;
+        }}
         
-        .language-badge span {
-            color: #667eea;
+        .language-badge span {{
+            color: #9f7aea;
             font-weight: 700;
             margin: 0 5px;
-        }
+        }}
         
-        .download-section { margin: 50px 0 30px; }
+        .download-section {{ margin: 50px 0 30px; }}
         
-        .download-btn {
+        .download-btn {{
             display: inline-flex;
             align-items: center;
             gap: 15px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #5a67d8 0%, #9f7aea 100%);
             color: white;
             padding: 25px 80px;
             border-radius: 80px;
@@ -2288,16 +2672,16 @@ def generar_frontend_impactante(base_dir):
             font-weight: 800;
             font-size: 2.2em;
             transition: all 0.4s;
-            box-shadow: 0 20px 40px rgba(102, 126, 234, 0.4);
-            border: 3px solid rgba(255,255,255,0.2);
+            box-shadow: 0 20px 40px rgba(90, 103, 216, 0.5);
+            border: 3px solid rgba(255,255,255,0.3);
             cursor: pointer;
             text-transform: uppercase;
             letter-spacing: 2px;
             position: relative;
             overflow: hidden;
-        }
+        }}
         
-        .download-btn::before {
+        .download-btn::before {{
             content: "";
             position: absolute;
             top: 0;
@@ -2306,148 +2690,154 @@ def generar_frontend_impactante(base_dir):
             height: 100%;
             background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
             transition: left 0.6s;
-        }
+        }}
         
-        .download-btn:hover::before {
+        .download-btn:hover::before {{
             left: 100%;
-        }
+        }}
         
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); box-shadow: 0 20px 40px rgba(102, 126, 234, 0.4); }
-            50% { transform: scale(1.05); box-shadow: 0 40px 80px rgba(102, 126, 234, 0.7); }
-        }
+        @keyframes pulse {{
+            0%, 100% {{ transform: scale(1); box-shadow: 0 20px 40px rgba(90, 103, 216, 0.5); }}
+            50% {{ transform: scale(1.05); box-shadow: 0 40px 80px rgba(90, 103, 216, 0.8); }}
+        }}
         
-        .download-btn {
+        .download-btn {{
             animation: pulse 2s infinite;
-        }
+        }}
         
-        .download-btn:hover {
+        .download-btn:hover {{
             transform: scale(1.1);
-            box-shadow: 0 50px 100px rgba(102, 126, 234, 0.9);
+            box-shadow: 0 50px 100px rgba(90, 103, 216, 1);
             animation: none;
-        }
+        }}
         
-        .download-btn i { font-size: 1.3em; }
+        .download-btn i {{ font-size: 1.3em; }}
         
-        .btn-sub {
-            color: rgba(255,255,255,0.7);
+        .btn-sub {{
+            color: rgba(255,255,255,0.8);
             font-size: 1.3em;
             margin-top: 20px;
             font-weight: 400;
-        }
+            text-shadow: 0 0 5px rgba(0,0,0,0.3);
+        }}
         
-        .stats {
+        .stats {{
             display: flex;
             justify-content: center;
             gap: 60px;
             margin: 60px 0 30px;
             flex-wrap: wrap;
-        }
+        }}
         
-        .stat-item { 
+        .stat-item {{ 
             text-align: center;
-            background: rgba(255,255,255,0.05);
+            background: rgba(255,255,255,0.1);
             padding: 20px 30px;
             border-radius: 30px;
             backdrop-filter: blur(5px);
-            border: 1px solid rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
             min-width: 150px;
-        }
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }}
         
-        .stat-number {
+        .stat-number {{
             font-size: 4em;
             font-weight: 900;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #5a67d8 0%, #9f7aea 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             line-height: 1;
-        }
+            filter: drop-shadow(0 0 10px rgba(90, 103, 216, 0.3));
+        }}
         
-        .stat-label {
+        .stat-label {{
             font-size: 1.2em;
-            color: rgba(255,255,255,0.6);
+            color: rgba(255,255,255,0.8);
             text-transform: uppercase;
             letter-spacing: 2px;
             margin-top: 5px;
-        }
+            font-weight: 600;
+        }}
         
-        .features-preview {
+        .features-preview {{
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 25px;
             margin: 60px 0;
             max-width: 1000px;
-        }
+        }}
         
-        .feature-item {
-            background: rgba(255,255,255,0.05);
+        .feature-item {{
+            background: rgba(255,255,255,0.08);
             padding: 25px 15px;
             border-radius: 25px;
-            border: 1px solid rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.15);
             backdrop-filter: blur(5px);
             transition: transform 0.3s;
-        }
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }}
         
-        .feature-item:hover {
+        .feature-item:hover {{
             transform: translateY(-10px);
-            background: rgba(255,255,255,0.1);
-            border-color: rgba(102, 126, 234, 0.5);
-        }
+            background: rgba(255,255,255,0.15);
+            border-color: rgba(159, 122, 234, 0.5);
+        }}
         
-        .feature-item i {
+        .feature-item i {{
             font-size: 2.5em;
             margin-bottom: 15px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #5a67d8 0%, #9f7aea 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-        }
+            filter: drop-shadow(0 0 10px rgba(90, 103, 216, 0.3));
+        }}
         
-        .feature-item p {
+        .feature-item p {{
             font-size: 1.1em;
-            color: rgba(255,255,255,0.9);
+            color: rgba(255,255,255,0.95);
             font-weight: 600;
-        }
+        }}
         
-        .footer {
+        .footer {{
             margin-top: 80px;
             padding: 30px;
-            border-top: 1px solid rgba(255,255,255,0.1);
+            border-top: 1px solid rgba(255,255,255,0.15);
             width: 100%;
-        }
+        }}
         
-        .footer-links {
+        .footer-links {{
             display: flex;
             justify-content: center;
             gap: 30px;
             margin-bottom: 20px;
             flex-wrap: wrap;
-        }
+        }}
         
-        .footer-links a {
-            color: rgba(255,255,255,0.5);
+        .footer-links a {{
+            color: rgba(255,255,255,0.6);
             text-decoration: none;
             font-size: 1.1em;
             transition: color 0.3s;
-        }
+        }}
         
-        .footer-links a:hover { color: white; }
+        .footer-links a:hover {{ color: white; }}
         
-        .copyright {
+        .copyright {{
             color: rgba(255,255,255,0.3);
             font-size: 1em;
-        }
+        }}
         
-        @media (max-width: 768px) {
-            .robot-icon { font-size: 7em; }
-            .brand-title { font-size: 3.5em; }
-            .slogan { font-size: 1.3em; }
-            .download-btn { font-size: 1.5em; padding: 20px 40px; }
-            .stats { gap: 30px; }
-            .stat-item { padding: 15px 20px; min-width: 120px; }
-            .stat-number { font-size: 2.5em; }
-            .features-preview { grid-template-columns: repeat(2, 1fr); }
-            .language-badge { font-size: 0.9em; padding: 10px 20px; }
-        }
+        @media (max-width: 768px) {{
+            .robot-icon {{ font-size: 7em; }}
+            .main-title {{ font-size: 3.5em; }}
+            .slogan {{ font-size: 1.3em; }}
+            .download-btn {{ font-size: 1.5em; padding: 20px 40px; }}
+            .stats {{ gap: 30px; }}
+            .stat-item {{ padding: 15px 20px; min-width: 120px; }}
+            .stat-number {{ font-size: 2.5em; }}
+            .features-preview {{ grid-template-columns: repeat(2, 1fr); }}
+            .language-badge {{ font-size: 0.9em; padding: 10px 20px; }}
+        }}
     </style>
 </head>
 <body>
@@ -2474,64 +2864,75 @@ def generar_frontend_impactante(base_dir):
     <div class="particle"></div>
     
     <div class="container">
-        <!-- ROBOT GIGANTE + TÍTULO GRANDE -->
+        <!-- ROBOT GIGANTE + TÍTULO -->
         <i class="fas fa-robot robot-icon"></i>
-        <div class="brand-title">Educare <span>AI</span></div>
+        <div class="main-title">
+            Educare <span>AI</span>
+        </div>
         
         <div class="slogan">
-            La inteligencia artificial que transforma<br>tu forma de aprender en 17 idiomas.
+            {textos_lang["slogan"]}
         </div>
         
         <div class="language-badge">
-            🌍 Disponible en: <span>Español</span> • <span>English</span> • <span>Français</span> • <span>Deutsch</span> • <span>Italiano</span> • <span>Português</span> • <span>日本語</span> • <span>한국어</span> • <span>中文</span> • <span>Русский</span> • <span>العربية</span> • <span>हिन्दी</span> • <span>Nederlands</span> • <span>Polski</span> • <span>Türkçe</span> • <span>Svenska</span>
+            🌍 {textos_lang["badge"]} <span>Español</span> • <span>English</span> • <span>Français</span> • <span>Deutsch</span> • <span>Italiano</span> • <span>Português</span> • <span>日本語</span> • <span>한국어</span> • <span>中文</span> • <span>Русский</span> • <span>العربية</span> • <span>हिन्दी</span> • <span>Nederlands</span> • <span>Polski</span> • <span>Türkçe</span> • <span>Svenska</span>
         </div>
         
         <div class="stats">
-            <div class="stat-item"><div class="stat-number">1M+</div><div class="stat-label">Estudiantes</div></div>
-            <div class="stat-item"><div class="stat-number">4.8</div><div class="stat-label">⭐ Valoración</div></div>
-            <div class="stat-item"><div class="stat-number">50+</div><div class="stat-label">Países</div></div>
+            <div class="stat-item"><div class="stat-number">1M+</div><div class="stat-label">{textos_lang["students"]}</div></div>
+            <div class="stat-item"><div class="stat-number">4.8</div><div class="stat-label">⭐ {textos_lang["rating"]}</div></div>
+            <div class="stat-item"><div class="stat-number">50+</div><div class="stat-label">{textos_lang["countries"]}</div></div>
         </div>
         
         <div class="features-preview">
-            <div class="feature-item"><i class="fas fa-camera"></i><p>Escanea y resuelve</p></div>
-            <div class="feature-item"><i class="fas fa-language"></i><p>17 idiomas</p></div>
-            <div class="feature-item"><i class="fas fa-chart-line"></i><p>Explicaciones paso a paso</p></div>
-            <div class="feature-item"><i class="fas fa-mobile-alt"></i><p>Modo offline</p></div>
+            <div class="feature-item"><i class="fas fa-camera"></i><p>{textos_lang["features"]["camera"]}</p></div>
+            <div class="feature-item"><i class="fas fa-language"></i><p>{textos_lang["features"]["languages"]}</p></div>
+            <div class="feature-item"><i class="fas fa-chart-line"></i><p>{textos_lang["features"]["steps"]}</p></div>
+            <div class="feature-item"><i class="fas fa-mobile-alt"></i><p>{textos_lang["features"]["offline"]}</p></div>
         </div>
         
         <div class="download-section">
             <a href="https://play.google.com/store/apps/details?id=com.educareai.app" class="download-btn">
                 <i class="fab fa-google-play"></i>
-                DESCARGAR
+                {textos_lang["download"]}
             </a>
-            <div class="btn-sub">Gratis en Google Play • 15,000+ reseñas 5⭐</div>
+            <div class="btn-sub">{textos_lang["sub"]}</div>
         </div>
         
         <footer class="footer">
             <div class="footer-links">
-                <a href="#">Sobre Educare AI</a>
-                <a href="#">Privacidad</a>
-                <a href="#">Términos</a>
-                <a href="#">Contacto</a>
+                <a href="#">{textos_lang["footer"]}</a>
+                <a href="#">{textos_lang["privacy"]}</a>
+                <a href="#">{textos_lang["terms"]}</a>
+                <a href="#">{textos_lang["contact"]}</a>
             </div>
             <div class="copyright">
-                © 2025 Educare AI. Todos los derechos reservados. Imperio Global - 17 idiomas, 6400+ páginas.
+                {textos_lang["copyright"]}
             </div>
         </footer>
     </div>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
 </body>
-</html>"""
+</html>'''
+        
+        # Guardar en la raíz para el idioma por defecto (es) o en subcarpeta para otros idiomas
+        if lang == "es":
+            ruta_index = os.path.join(os.path.dirname(base_dir), 'index.html')
+        else:
+            # Crear carpeta para el idioma si no existe
+            ruta_idioma = os.path.join(os.path.dirname(base_dir), lang)
+            os.makedirs(ruta_idioma, exist_ok=True)
+            ruta_index = os.path.join(ruta_idioma, 'index.html')
+        
+        with open(ruta_index, 'w', encoding='utf-8') as f:
+            f.write(html)
+        
+        print(f"   ✅ Página principal en {lang.upper()} guardada en: {ruta_index}")
     
-    ruta_raiz = os.path.dirname(base_dir)
-    ruta_index = os.path.join(ruta_raiz, 'index.html')
-    
-    with open(ruta_index, 'w', encoding='utf-8') as f:
-        f.write(html)
-    
-    print(f"   ✅ PORTAZA PLAYSTATION CON ROBOT GIGANTE GUARDADA EN: {ruta_index}")
-    print(f"   ✅ DISPONIBLE EN: https://stef7773.github.io/educare-ai-global/")
+    print(f"   ✅ DISPONIBLE EN: https://stef7773.github.io/educare-ai-global/ (español)")
+    print(f"   ✅ Y en: https://stef7773.github.io/educare-ai-global/en/ (inglés)")
+    print(f"   ✅ Y así sucesivamente para los 17 idiomas")
 
 # ============================================
 # 🚀 FUNCIÓN PRINCIPAL
@@ -2546,11 +2947,12 @@ def fabricar_paginas_globales():
     
     print("""
     ╔══════════════════════════════════════════════════════════════════════════╗
-    ║     🚀 EDUCARE AI - IMPERIO PLAYSTATION v10.0                          ║
-    ║     20 PARTÍCULAS | ROBOT GIGANTE | TÍTULO ELEGANTE                   ║
+    ║     🚀 EDUCARE AI - IMPERIO GLOBAL v11.0                               ║
+    ║     17 IDIOMAS | PÁGINA PRINCIPAL MULTI-IDIOMA | COMPARTIR EN REDES   ║
     ╚══════════════════════════════════════════════════════════════════════════╝
     """)
     
+    # Generar páginas secundarias
     for lang, base_keywords in estrategia_global.items():
         print(f"\n⚙️  Generando backend para: {lang.upper()} (en web_seo_global/{lang}/)")
         
@@ -2605,7 +3007,7 @@ def fabricar_paginas_globales():
     generar_sitemap(paginas_generadas, base_dir)
     generar_robots_txt(base_dir)
     
-    print(f"\n🎨 Generando portada PlayStation con robot gigante...")
+    print(f"\n🎨 Generando páginas principales en 17 idiomas...")
     generar_frontend_impactante(base_dir)
     
     stats = {
@@ -2619,19 +3021,24 @@ def fabricar_paginas_globales():
         json.dump(stats, f, indent=2, ensure_ascii=False)
     
     print(f"\n{'='*80}")
-    print(f"✅ GENERACIÓN PLAYSTATION COMPLETADA CON ÉXITO")
+    print(f"✅ GENERACIÓN COMPLETADA CON ÉXITO")
     print(f"{'='*80}")
     print(f"📊 TOTAL DE PÁGINAS SEO: {total_paginas} (en web_seo_global/)")
-    print(f"🎨 PORTAZA PLAYSTATION EN: ~/EducareAI_Project/index.html")
-    print(f"🌐 URL PÚBLICA: https://stef7773.github.io/educare-ai-global/")
+    print(f"🎨 17 PÁGINAS PRINCIPALES CREADAS:")
+    print(f"   🌍 https://stef7773.github.io/educare-ai-global/ (español)")
+    print(f"   🌍 https://stef7773.github.io/educare-ai-global/en/ (inglés)")
+    print(f"   🌍 https://stef7773.github.io/educare-ai-global/fr/ (francés)")
+    print(f"   🌍 https://stef7773.github.io/educare-ai-global/de/ (alemán)")
+    print(f"   🌍 ... y 13 idiomas más")
     print(f"{'='*80}")
     print(f"\n📋 PRÓXIMOS PASOS:")
-    print(f"   1. cd ~/EducareAI_Project")
-    print(f"   2. git add .")
-    print(f"   3. git commit -m '✨ VERSIÓN PLAYSTATION v10.0 - Robot gigante, 20 partículas, título elegante'")
-    print(f"   4. git push origin main")
-    print(f"   5. Esperar 5 minutos")
-    print(f"   6. Abrir https://stef7773.github.io/educare-ai-global/")
+    print(f"   1. Crea un logo PNG para compartir y súbelo como 'logo-educare.png'")
+    print(f"   2. cd ~/EducareAI_Project")
+    print(f"   3. git add .")
+    print(f"   4. git commit -m '✨ VERSIÓN 11.0 - Página principal en 17 idiomas + meta tags'")
+    print(f"   5. git push origin main")
+    print(f"   6. Esperar 5 minutos")
+    print(f"   7. Comparte en WhatsApp y verás el logo")
     print(f"{'='*80}")
 
 if __name__ == "__main__":
